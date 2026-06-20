@@ -6,9 +6,12 @@ public class BasicAttackHitBox : MonoBehaviour
 {
 
     public BoxCollider2D coll;
+    private SpriteRenderer spriteRenderer;
+
     public float startDelay = 0.2f; // 공격 판정이 켜지기 전 시간
     public float activeTime = 0.2f;  // 공격 판정이 유지되는 시간
     public float damage;
+    
 
     private HashSet<EnemyHealth> hitEnemies = new HashSet<EnemyHealth>(); //이 공격을 맞은 적 목록
 
@@ -16,6 +19,8 @@ public class BasicAttackHitBox : MonoBehaviour
     {
         coll = GetComponent<BoxCollider2D>(); 
         coll.enabled = false; //판정off
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        spriteRenderer.enabled = false;
     }
     private void Start()
     {
@@ -48,6 +53,7 @@ public class BasicAttackHitBox : MonoBehaviour
 
         yield return new WaitForSeconds(startDelay); //선딜
         coll.enabled = true;// 판정 on
+        spriteRenderer.enabled = true;
         yield return new WaitForSeconds(activeTime); //공격판정시간
         EndAttack(); //공격 끝
     }
