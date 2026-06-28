@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55d22e5c6146e8468b9137b7a2d8bd0, type: 3}
+  m_Name: FinalDamageUp
+  m_EditorClassIdentifier: 
+  id: effect_attack_percent_mul_150
+  displayName: "\uCD5C\uC885\uD798\uC99D\uAC00"
+  category: 0
+  description: "\uD798 1.5\uBC30 \uC99D\uAC00!"
+  icon: {fileID: 21300000, guid: df96032537d4c482e9b20c674c73dc45, type: 3}
+  isUnLock: 0
+  damageMultiplier: 0
+  range: 0
+  cooldown: 10
+  manaCost: 10
+  castTime: 1
+  skillPrefab: {fileID: 0}
+  spawnType: 0
+  animationType: 4
+  isBuffSkill: 1
+  skillElement: 0
+  requiredRank: 0
+  effects:
+  - id: 
+    displayName: "\uCD5C\uC885\uD798\uC99D\uAC00\uBC84\uD504"
+    triggerType: 7
+    targetStat: 0
+    modifierType: 2
+    value: 1.5
+    duration: 10
+    isPermanent: 0
+    interval: 0
+    elementType: 0
+    ignoreRank: 0
+    rankPenetrationValue: 0
+    requiredTargetTags: 
+    forbiddenTargetTags: 
+    requiredUserElements: 
+    forbiddenUserElements: 
+    requiredPassiveIds: []
+    forbiddenPassiveIds: []
+    restrictionResultType: 0
+    penaltyMultiplier: 0
+    canAffectBoss: 0
+    canAffectFlying: 0
+  restrictionRules: []

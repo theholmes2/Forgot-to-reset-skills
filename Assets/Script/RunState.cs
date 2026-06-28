@@ -13,7 +13,8 @@ public class RunState
     public string equippedActiveSkillId = "";
     public string equippedPassiveSkillId = "";
 
-
+    public List<string> availableSkillPool = new(); // 이번 회차에서 사용 가능한 스킬 ID
+    public List<string> temporarySkillPool = new(); // 이번 회차 임시 스킬 ID
 
 
 }

@@ -21,7 +21,7 @@ public class Enemy : MonoBehaviour
     
     public Transform player;
     public float speed = 3f;
-    public float knockBack = 40f;
+    public float knockBack = 15f;
     
 
     private Rigidbody2D rb;
@@ -35,18 +35,35 @@ public class Enemy : MonoBehaviour
     public LayerMask groundLayer; // 바닥으로 인식할 레이어
     public float rayLength = 1.0f; // 레이 발사 길이
 
+    private EnemyTraitController traitController; // EnemyData 연결 담당
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        currentState = State.Patrol;
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         anim = GetComponentInChildren<Animator>();
-        if(player == null)
+        traitController = GetComponent<EnemyTraitController>();  // EnemyData 연결 담당
+
+        currentState = State.Patrol;
+
+        if (player == null)
         {
-            player = GameObject.FindGameObjectWithTag("Player").transform;
+            GameObject playerObject =
+                GameObject.FindGameObjectWithTag("Player");
+
+            if (playerObject != null)
+            {
+                player = playerObject.transform;
+            }
         }
-        
+
+        if (traitController != null &&
+            traitController.EnemyData != null &&
+            traitController.EnemyData.baseStats != null)
+        {
+            speed = traitController.EnemyData.baseStats.moveSpeed; // 데이터 이동속도 적용
+            knockBack = traitController.EnemyData.baseStats.knockBack; // 데이터 넉백 힘 적용
+        }
     }
 
     void Update()
@@ -104,6 +121,9 @@ public class Enemy : MonoBehaviour
 
     void Chase()
     {
+        if (player == null) // 플레이어를 못 찾았으면 추적 중단
+            return;
+
         // 플레이어가 있는 방향으로 이동
         float direction = player.position.x > transform.position.x ? 1f : -1f;
         rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);

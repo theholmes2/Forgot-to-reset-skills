@@ -38,8 +38,19 @@ public class PlayerSkillController : MonoBehaviour
     public event Action OnSlotChanged;
 
     public Transform attackPoint; //공격 위치 기준
+    public CombatResolver combatResolver; // 최종 데미지 계산 담당
 
     public SPUM_Prefabs PrefabsController; //애니메이션 참조
+    public PlayerStatController playerStatController;
+    private void Awake()
+    {
+        // 인스펙터에 안 넣었을 때 자동으로 찾기
+        if (combatResolver == null)
+        {
+            combatResolver = GetComponent<CombatResolver>();
+        }
+    }
+
 
     private void Update()
     {
@@ -155,7 +166,10 @@ public class PlayerSkillController : MonoBehaviour
             case SkillAnimationType.Attack:
                 PrefabsController.AttackAnimation();
                 break;
+            default:
+                break;
         }
+        
     }
 
     private bool UseSkill(SkillData skillData)
@@ -163,7 +177,19 @@ public class PlayerSkillController : MonoBehaviour
         if (skillData == null) //스킬검사
             return false;
 
+        if (skillData.isBuffSkill) //버프스킬이라면 (일단 프리팹 없어서 위에둠)
+        {
+            foreach (EffectData effect in skillData.effects)
+            {
+                playerStatController.AddEffect(effect, skillData.id);
+            }
+            return true;
+        }
+
         if (skillData.skillPrefab == null) //실제 스킬 범위 및 이펙트
+            return false;
+
+        if (combatResolver == null) // 데미지 계산기 검사
             return false;
 
         Vector3 spawnPosition = transform.position; //플레이어 위치로 포지션 설정
@@ -178,11 +204,13 @@ public class PlayerSkillController : MonoBehaviour
 
         BasicAttackHitBox hitBox = skillObject.GetComponent<BasicAttackHitBox>();
 
+     
         if (hitBox != null)
         {
-            hitBox.Init(skillData.damage);
-        }
+            float finalDamage = combatResolver.GetFinalAttackDamage(skillData); // 최종 데미지 계산
 
+            hitBox.Init(finalDamage); // 계산된 데미지를 공격 판정에 전달
+        }
         return true;
     }
 }

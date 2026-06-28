@@ -1,0 +1,119 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8003fdac9e4b9384f9d707ddb5d85ede, type: 3}
+  m_Name: WarriorSkillTree
+  m_EditorClassIdentifier: 
+  id: tree_warrior
+  displayName: "\uC804\uC0AC \uC2A4\uD0AC\uD2B8\uB9AC"
+  description: "\uAC80\uACFC \uADFC\uC811 \uC804\uD22C\uB97C \uC911\uC2EC\uC73C\uB85C
+    \uC131\uC7A5\uD558\uB294 \uAE30\uBCF8 \uC804\uC0AC \uD2B8\uB9AC"
+  ownerType: 0
+  nodes:
+  - nodeId: node_warrior_basic_slash
+    displayName: "\uAE30\uBCF8 \uAC80\uACA9"
+    description: "\uAC00\uC7A5 \uAE30\uBCF8\uC774 \uB418\uB294 \uADFC\uC811 \uBCA0\uAE30"
+    skillData: {fileID: 11400000, guid: de94518980a070948a9bc8c2c10af539, type: 2}
+    iconOverride: {fileID: 0}
+    uiPosition: {x: 0, y: 0}
+    needSkillPoint: 0
+    needPlayerLevel: 0
+    needRank: 0
+    isStartNode: 1
+    requireAllRequiredNodes: 1
+    requiredNodeIds: []
+    statRequirements: []
+    requiredQuestIds: []
+    requiredAchievementIds: []
+    canBeStolen: 1
+    canBeTemporaryUnlocked: 1
+    canBeForceUnlocked: 1
+  - nodeId: node_warrior_power_up
+    displayName: "\uD798 \uB04C\uC5B4\uC62C\uB9AC\uAE30"
+    description: "\uC77C\uC815 \uC2DC\uAC04 \uACF5\uACA9 \uB2A5\uB825\uC744 \uAC15\uD654\uD558\uB294
+      \uC804\uC0AC \uAE30\uBCF8 \uBC84\uD504"
+    skillData: {fileID: 0}
+    iconOverride: {fileID: 0}
+    uiPosition: {x: -220, y: -160}
+    needSkillPoint: 1
+    needPlayerLevel: 1
+    needRank: 0
+    isStartNode: 0
+    requireAllRequiredNodes: 1
+    requiredNodeIds:
+    - node_warrior_basic_slash
+    statRequirements: []
+    requiredQuestIds: []
+    requiredAchievementIds: []
+    canBeStolen: 1
+    canBeTemporaryUnlocked: 1
+    canBeForceUnlocked: 1
+  - nodeId: node_warrior_fire_slash
+    displayName: "\uD654\uC5FC \uAC80\uACA9"
+    description: "\uAC80\uACA9\uC5D0 \uD654\uC5FC \uC18D\uC131\uC744 \uB354\uD574
+      \uC804\uBC29\uC744 \uBCA0\uB294 \uAE30\uC220"
+    skillData: {fileID: 0}
+    iconOverride: {fileID: 0}
+    uiPosition: {x: 220, y: -160}
+    needSkillPoint: 1
+    needPlayerLevel: 1
+    needRank: 0
+    isStartNode: 0
+    requireAllRequiredNodes: 1
+    requiredNodeIds:
+    - node_warrior_basic_slash
+    statRequirements: []
+    requiredQuestIds: []
+    requiredAchievementIds: []
+    canBeStolen: 1
+    canBeTemporaryUnlocked: 1
+    canBeForceUnlocked: 1
+  - nodeId: node_warrior_blood_slash
+    displayName: "\uD761\uD608 \uBCA0\uAE30"
+    description: "\uC801\uC5D0\uAC8C \uD53C\uD574\uB97C \uC8FC\uACE0 \uC0DD\uC874\uB825\uC744
+      \uD68C\uBCF5\uD558\uB294 \uAC80\uC220"
+    skillData: {fileID: 0}
+    iconOverride: {fileID: 0}
+    uiPosition: {x: -220, y: -320}
+    needSkillPoint: 2
+    needPlayerLevel: 3
+    needRank: 0
+    isStartNode: 0
+    requireAllRequiredNodes: 1
+    requiredNodeIds:
+    - node_warrior_power_up
+    statRequirements: []
+    requiredQuestIds: []
+    requiredAchievementIds: []
+    canBeStolen: 1
+    canBeTemporaryUnlocked: 1
+    canBeForceUnlocked: 1
+  - nodeId: node_warrior_final_slash
+    displayName: "\uC885\uB9D0 \uBCA0\uAE30"
+    description: "\uB450 \uAC08\uB798 \uC131\uC7A5\uC744 \uBAA8\uB450 \uC694\uAD6C\uD558\uB294
+      \uC0C1\uC704 \uAC80\uACA9"
+    skillData: {fileID: 0}
+    iconOverride: {fileID: 0}
+    uiPosition: {x: 0, y: -500}
+    needSkillPoint: 3
+    needPlayerLevel: 5
+    needRank: 1
+    isStartNode: 0
+    requireAllRequiredNodes: 1
+    requiredNodeIds:
+    - node_warrior_fire_slash
+    - node_warrior_blood_slash
+    statRequirements: []
+    requiredQuestIds: []
+    requiredAchievementIds: []
+    canBeStolen: 1
+    canBeTemporaryUnlocked: 1
+    canBeForceUnlocked: 1
