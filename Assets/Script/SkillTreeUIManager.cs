@@ -16,10 +16,14 @@ public class SkillTreeUIManager : MonoBehaviour
     private Dictionary<string, SkillTreeNodeData> nodeMap = new(); // nodeId로 노드 찾기
     private Dictionary<string, int> depthMap = new(); // nodeId별 계층 깊이
 
+    public GameObject skillTreePanel; // 스킬트리 전체 패널
+    private bool isOpen; // 현재 열려있는지
 
     private void Start()
     {
+       
         BuildTreeUI(); // 시작 시 스킬트리 UI 생성
+        CloseSkillTree(); // 시작할 때 닫아둠
     }
 
     public void BuildTreeUI()
@@ -219,4 +223,37 @@ public class SkillTreeUIManager : MonoBehaviour
 
         return skillTreeController.CanUnlockNode(nodeId);
     }
+
+
+
+    public void ToggleSkillTree()
+    {
+        if (isOpen)
+        {
+            CloseSkillTree(); // 열려 있으면 닫기
+        }
+        else
+        {
+            OpenSkillTree(); // 닫혀 있으면 열기
+        }
+    }
+
+    public void OpenSkillTree()
+    {
+        isOpen = true;
+
+        if (skillTreePanel != null)
+            skillTreePanel.SetActive(true); // 패널 켜기
+
+        BuildTreeUI(); // 열릴 때 UI 갱신
+    }
+
+    public void CloseSkillTree()
+    {
+        isOpen = false;
+
+        if (skillTreePanel != null)
+            skillTreePanel.SetActive(false); // 패널 끄기
+    }
+
 }

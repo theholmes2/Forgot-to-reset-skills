@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -6,6 +7,8 @@ public class EnemyHealth : MonoBehaviour
     public float currentHealth;
 
     public Enemy enemy;
+
+    public event Action<EnemyHealth> OnDied; // 죽었을 때 알림
 
     private EnemyTraitController traitController; // EnemyData 연결 담당
 
@@ -32,7 +35,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (enemy.currentState == Enemy.State.Dead)
             return; // 죽은 적은 데미지를 받지 않음
-
+        Debug.Log("Enemy 데미지 받음: " + damage);
         currentHealth -= damage;
 
         if (currentHealth <= 0f)
@@ -47,6 +50,7 @@ public class EnemyHealth : MonoBehaviour
 
     private void Die()
     {
+        OnDied?.Invoke(this); // 죽었다고 알림
         enemy.ChangeState(Enemy.State.Dead);
     }
 }

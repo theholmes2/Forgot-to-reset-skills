@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     bool isRun;
     bool isJumping;
     bool isRight;
+ 
 
     public int JumpCount;
     public int MaxJumpCount;
@@ -21,8 +22,17 @@ public class Player : MonoBehaviour
     public SPUM_Prefabs PrefabsController;
     public PlayerSkillController playerSkillController;
 
+    public SkillTreeUIManager skillTreeUIManager;
+
+    public PlayerControlLock controlLock;
+
+    public PlayerHealth playerHealth;
+
     private void Awake()
     {
+        if (playerHealth == null)
+            playerHealth = GetComponent<PlayerHealth>();
+
         rigid = GetComponent<Rigidbody2D>(); //리지드 바디 초기화
         JumpCount = MaxJumpCount; //초기 점프 초기화
         playerSkillController = GetComponent<PlayerSkillController>();
@@ -30,15 +40,47 @@ public class Player : MonoBehaviour
         PrefabsController.PopulateAnimationLists();
         PrefabsController.OverrideControllerInit();
 
+        if (skillTreeUIManager == null)
+        {
+            skillTreeUIManager = FindAnyObjectByType<SkillTreeUIManager>();
+        }
+        if (controlLock == null)
+            controlLock = GetComponent<PlayerControlLock>();
+
     }
     void FixedUpdate()
     {
+
+        if (playerHealth != null && playerHealth.IsDead)
+        {
+            rigid.linearVelocity = Vector2.zero; // 죽으면 완전히 멈춤
+            return; // Move, Jump, Idle 실행 안 함
+        }
+
+
+
+        if (controlLock != null && controlLock.IsLocked)
+        {
+            rigid.linearVelocity = new Vector2(0, rigid.linearVelocity.y); // 좌우 이동만 멈춤
+            
+            return;
+        }
+
         Move();
         Jump();
         SetIdle();
     }
     void OnMove(InputValue value)
     {
+
+
+        if (CannotControl())
+        {
+            inputVec = Vector2.zero; // 죽었거나 잠겼으면 입력 제거
+            return;
+        }
+        
+
         inputVec = value.Get<Vector2>(); //wasd 받아서 방향전달
 
         if (inputVec.x > 0 && !isRight) //오른쪽이동 + 오른쪽안보면
@@ -84,6 +126,9 @@ public class Player : MonoBehaviour
 
     void OnJump()
     {
+        if (controlLock != null && controlLock.IsLocked)
+            return;
+
         if ((inputVec.y < 0))
             return;
         if (!canJump) //점프 가 안되면 false  -> return 한다.
@@ -115,31 +160,41 @@ public class Player : MonoBehaviour
 
     void OnJSkill() //J키 입력
     {
-         playerSkillController.UseJSkill();
+        if (controlLock != null && controlLock.IsLocked)
+            return;
+        playerSkillController.UseJSkill();
 
       
     }
     void OnLSkill()
     {
-       playerSkillController.UseLSkill();
+        if (controlLock != null && controlLock.IsLocked)
+            return;
+        playerSkillController.UseLSkill();
 
         
     }
     void OnUSkill()
     {
-      playerSkillController.UseUSkill();
+        if (controlLock != null && controlLock.IsLocked)
+            return;
+        playerSkillController.UseUSkill();
       
       
     }
     void OnISkill()
     {
-      playerSkillController.UseISkill();
+        if (controlLock != null && controlLock.IsLocked)
+            return;
+        playerSkillController.UseISkill();
        
         
     }
     void OnOSkill()
     {
-     playerSkillController.UseOSkill();
+        if (controlLock != null && controlLock.IsLocked)
+            return;
+        playerSkillController.UseOSkill();
    
         
     }
@@ -152,6 +207,29 @@ public class Player : MonoBehaviour
             canJump = true; //점프가능
             JumpCount = MaxJumpCount;
         }
+    }
+
+    void OnSkillTree()
+    {
+        if (controlLock != null && controlLock.IsLocked)
+            return;
+
+        if (skillTreeUIManager == null)
+            return;
+
+        skillTreeUIManager.ToggleSkillTree(); // 스킬트리 열기/닫기
+    }
+
+
+    private bool CannotControl()
+    {
+        if (playerHealth != null && playerHealth.IsDead)
+            return true; // 죽었으면 조작 불가
+
+        if (controlLock != null && controlLock.IsLocked)
+            return true; // 연출/패배 등으로 잠겨도 조작 불가
+
+        return false;
     }
 
 }
