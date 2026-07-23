@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class SkillTreeController : MonoBehaviour
 {
+    public List<SkillTreeData> skillTrees = new(); // 전체 스킬트리 목록
     public SkillTreeData currentData;
 
     PlayerProgress playerProgress;
     RunState runState;
+
+
+
 
     private void Awake()
     {
@@ -46,7 +50,7 @@ public class SkillTreeController : MonoBehaviour
             return false;
 
         return playerProgress.unlockedSkillNodeIds.Contains(nodeId);
-        
+
 
     }
 
@@ -81,8 +85,9 @@ public class SkillTreeController : MonoBehaviour
     }
     bool HasAllRequiredNodes(SkillTreeNodeData node) //선행노드 해금확인
     {
-        foreach (string nodeId in node.requiredNodeIds) { //부모노드 하나씩
-            if(IsNodeUnlocked(nodeId) == false)
+        foreach (string nodeId in node.requiredNodeIds)
+        { //부모노드 하나씩
+            if (IsNodeUnlocked(nodeId) == false)
             {
                 return false;
             }
@@ -151,24 +156,73 @@ public class SkillTreeController : MonoBehaviour
 
     List<SkillTreeNodeData> GetChildNodes(string nodeId) //부모 아이디 입력
     {
-       List<SkillTreeNodeData> children = new List<SkillTreeNodeData>(); //리턴용 리스트
+        List<SkillTreeNodeData> children = new List<SkillTreeNodeData>(); //리턴용 리스트
 
 
 
-        foreach(SkillTreeNodeData skillTreeNodeData in currentData.nodes) //현제 대상인 스킬트리의 노드들을 전부 확인
+        foreach (SkillTreeNodeData skillTreeNodeData in currentData.nodes) //현제 대상인 스킬트리의 노드들을 전부 확인
         {
-            foreach(string parentNodeIds in skillTreeNodeData.requiredNodeIds) //해당 노드한개의 부모노드 전부 확인
+            foreach (string parentNodeIds in skillTreeNodeData.requiredNodeIds) //해당 노드한개의 부모노드 전부 확인
             {
-                if(nodeId == parentNodeIds) //부모아이디와 찾는게 같다면
+                if (nodeId == parentNodeIds) //부모아이디와 찾는게 같다면
                 {
                     children.Add(skillTreeNodeData); //리스트에 추가
                 }
             }
-       }
+        }
 
-        return children; 
+        return children;
     }
 
-  
+    public void SetCurrentTree(SkillTreeData treeData)
+    {
+        currentData = treeData; // 현재 보고 있는 스킬트리 변경
+    }
 
+    public List<SkillTreeData> GetVisibleTrees()
+    {
+        List<SkillTreeData> visibleTrees = new List<SkillTreeData>();
+
+        foreach (SkillTreeData tree in skillTrees)
+        {
+            if (tree == null)
+                continue;
+
+            if (CanShowTree(tree))
+                visibleTrees.Add(tree); // 보여줄 수 있는 트리만 추가
+        }
+
+        return visibleTrees;
+    }
+
+    private bool CanShowTree(SkillTreeData tree)
+    {
+        if (tree == null)
+            return false;
+
+        foreach (SkillTreeNodeData node in tree.nodes)
+        {
+            if (node == null)
+                continue;
+
+            if (IsNodeUnlocked(node.nodeId))
+                return true; // 이미 하나라도 해금했으면 표시
+
+            if (CanUnlockNodeInTree(tree, node.nodeId))
+                return true; // 하나라도 해금 가능하면 표시
+        }
+
+        return false; // 해금된 것도, 해금 가능한 것도 없으면 숨김
+    }
+
+    private bool CanUnlockNodeInTree(SkillTreeData tree, string nodeId)
+    {
+        SkillTreeData beforeTree = currentData; // 원래 보고 있던 트리 저장
+
+        currentData = tree; // 검사할 트리로 잠깐 변경
+        bool result = CanUnlockNode(nodeId); // 기존 해금 가능 검사 재사용
+        currentData = beforeTree; // 다시 원래 트리로 복구
+
+        return result;
+    }
 }

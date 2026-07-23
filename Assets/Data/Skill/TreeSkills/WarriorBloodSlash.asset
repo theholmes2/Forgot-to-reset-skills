@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55d22e5c6146e8468b9137b7a2d8bd0, type: 3}
+  m_Name: WarriorBloodSlash
+  m_EditorClassIdentifier: 
+  id: skill_warrior_blood_slash
+  displayName: "\uD761\uD608 \uBCA0\uAE30"
+  category: 0
+  description: "\uC801\uC744 \uBCA0\uACE0 \uC0DD\uBA85\uB825\uC744 \uD761\uC218\uD558\uB294
+    \uAC80\uACA9."
+  icon: {fileID: 5291485295137070733, guid: d5fc7510819e4baaa47947a1acba6582, type: 3}
+  isUnLock: 0
+  damageMultiplier: 1.3
+  range: 1
+  cooldown: 3
+  manaCost: 10
+  castTime: 0
+  skillPrefab: {fileID: 0}
+  spawnType: 1
+  animationType: 1
+  isBuffSkill: 0
+  skillElement: 6
+  requiredRank: 0
+  effects: []
+  restrictionRules: []

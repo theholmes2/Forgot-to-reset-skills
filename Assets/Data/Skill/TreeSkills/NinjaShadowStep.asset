@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55d22e5c6146e8468b9137b7a2d8bd0, type: 3}
+  m_Name: NinjaShadowStep
+  m_EditorClassIdentifier: 
+  id: skill_ninja_shadow_step
+  displayName: "\uADF8\uB9BC\uC790 \uBC1C\uAC78\uC74C"
+  category: 0
+  description: "\uADF8\uB9BC\uC790\uCC98\uB7FC \uBE60\uB974\uAC8C \uC6C0\uC9C1\uC774\uB294
+    \uAE30\uC220."
+  icon: {fileID: 5663849170487204221, guid: 037fc907e6014c9f8c40c8a0dc891061, type: 3}
+  isUnLock: 0
+  damageMultiplier: 0
+  range: 1
+  cooldown: 4
+  manaCost: 8
+  castTime: 0
+  skillPrefab: {fileID: 0}
+  spawnType: 0
+  animationType: 3
+  isBuffSkill: 0
+  skillElement: 6
+  requiredRank: 0
+  effects: []
+  restrictionRules: []

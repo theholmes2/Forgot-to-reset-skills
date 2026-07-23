@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55d22e5c6146e8468b9137b7a2d8bd0, type: 3}
+  m_Name: SwordsmanStance
+  m_EditorClassIdentifier: 
+  id: skill_swordsman_stance
+  displayName: "\uAC80\uC758 \uC790\uC138"
+  category: 0
+  description: "\uAC80\uC0AC\uC758 \uAE30\uBCF8 \uC790\uC138\uB97C \uC7A1\uC544 \uACF5\uACA9\uC744
+    \uC548\uC815\uC2DC\uD0A8\uB2E4."
+  icon: {fileID: 5388447880852448052, guid: 034ca53e46c04280a990181ccafaf3bb, type: 3}
+  isUnLock: 0
+  damageMultiplier: 0
+  range: 1
+  cooldown: 5
+  manaCost: 5
+  castTime: 0
+  skillPrefab: {fileID: 0}
+  spawnType: 0
+  animationType: 4
+  isBuffSkill: 1
+  skillElement: 0
+  requiredRank: 0
+  effects: []
+  restrictionRules: []

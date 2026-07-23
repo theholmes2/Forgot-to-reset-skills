@@ -19,10 +19,22 @@ public class SkillTreeUIManager : MonoBehaviour
     public GameObject skillTreePanel; // 스킬트리 전체 패널
     private bool isOpen; // 현재 열려있는지
 
+    public GameObject tabViewObject; // 탭 목록 ScrollView
+    public GameObject treeViewObject; // 스킬트리 ScrollView
+
+    [Header("Tabs")]
+    public RectTransform tabRoot; // 탭 버튼들이 생성될 부모 Content
+    public SkillTreeTabButtonUI tabButtonPrefab; // 탭 버튼 프리팹
+
+    private List<SkillTreeTabButtonUI> spawnedTabs = new(); // 생성된 탭 목록
+
+    [Header("Equip Popup")]
+    public SkillTreeEquipPopupUI equipPopup; // 해금된 스킬 장착 팝업
+
     private void Start()
     {
        
-        BuildTreeUI(); // 시작 시 스킬트리 UI 생성
+       
         CloseSkillTree(); // 시작할 때 닫아둠
     }
 
@@ -174,6 +186,9 @@ public class SkillTreeUIManager : MonoBehaviour
 
     public void ClearTreeUI()
     {
+        if (equipPopup != null)
+            equipPopup.Close(); // 트리 바뀔 때 팝업 닫기
+
         foreach (SkillTreeNodeUI nodeUI in spawnedNodes)
         {
             if (nodeUI != null)
@@ -183,20 +198,34 @@ public class SkillTreeUIManager : MonoBehaviour
         spawnedNodes.Clear();
     }
 
-    public void OnClickNode(string nodeId)
+    public void OnClickNode(string nodeId, RectTransform clickedNodeRect)
     {
         if (skillTreeController == null)
             return;
-
-        if (!skillTreeController.CanUnlockNode(nodeId))
-        {
-            Debug.Log("해금 조건을 만족하지 못함: " + nodeId);
-            RefreshAllNodes();
+        if (!nodeMap.ContainsKey(nodeId))
             return;
+        SkillTreeNodeData nodeData = nodeMap[nodeId]; // 클릭한 노드 데이터
+
+        bool isUnlocked = skillTreeController.IsNodeUnlocked(nodeId); // 이미 해금됐는지 확인
+
+        if (!isUnlocked)
+        {
+            if (!skillTreeController.CanUnlockNode(nodeId))
+            {
+                Debug.Log("해금 조건을 만족하지 못함: " + nodeId);
+                RefreshAllNodes();
+                return;
+            }
+
+            skillTreeController.UnlockNode(nodeId); // 해금 요청
+            RefreshAllNodes(); // 해금 상태 UI 갱신
+            isUnlocked = true;
         }
 
-        skillTreeController.UnlockNode(nodeId); // 해금 요청
-        RefreshAllNodes(); // UI 갱신
+        if (isUnlocked && nodeData.skillData != null && equipPopup != null)
+        {
+            equipPopup.Open(nodeData, clickedNodeRect); // 해금된 스킬이면 장착 팝업 열기
+        }
     }
 
     public void RefreshAllNodes()
@@ -243,17 +272,112 @@ public class SkillTreeUIManager : MonoBehaviour
         isOpen = true;
 
         if (skillTreePanel != null)
-            skillTreePanel.SetActive(true); // 패널 켜기
+            skillTreePanel.SetActive(true);
 
-        BuildTreeUI(); // 열릴 때 UI 갱신
+        if (tabViewObject != null)
+            tabViewObject.SetActive(true); // 탭 화면 켜기
+
+        if (treeViewObject != null)
+            treeViewObject.SetActive(false); // 스킬트리 화면 끄기
+
+        BuildTabs();
+        ClearTreeUI();
     }
 
     public void CloseSkillTree()
     {
         isOpen = false;
 
+        ClearTabs();
+        ClearTreeUI();
+
+        if (tabViewObject != null)
+            tabViewObject.SetActive(false);
+
+        if (treeViewObject != null)
+            treeViewObject.SetActive(false);
+
         if (skillTreePanel != null)
-            skillTreePanel.SetActive(false); // 패널 끄기
+            skillTreePanel.SetActive(false);
+    }
+
+
+    public void BuildTabs()
+    {
+        ClearTabs();
+
+        if (skillTreeController == null)
+        {
+            Debug.Log("SkillTreeController 없음");
+            return;
+        }
+
+        if (tabRoot == null)
+        {
+            Debug.Log("TabRoot 없음");
+            return;
+        }
+
+        if (tabButtonPrefab == null)
+        {
+            Debug.Log("TabButtonPrefab 없음");
+            return;
+        }
+
+        List<SkillTreeData> visibleTrees = skillTreeController.GetVisibleTrees();
+
+        Debug.Log("보이는 스킬트리 개수: " + visibleTrees.Count);
+
+        foreach (SkillTreeData tree in visibleTrees)
+        {
+            Debug.Log("탭 생성: " + tree.displayName);
+
+            SkillTreeTabButtonUI tab = Instantiate(tabButtonPrefab, tabRoot);
+            tab.Init(tree, this);
+            spawnedTabs.Add(tab);
+        }
+    }
+
+    private void ClearTabs()
+    {
+        foreach (SkillTreeTabButtonUI tab in spawnedTabs)
+        {
+            if (tab != null)
+                Destroy(tab.gameObject);
+        }
+
+        spawnedTabs.Clear();
+    }
+
+    private void SelectFirstVisibleTree()
+    {
+        if (skillTreeController == null)
+            return;
+
+        List<SkillTreeData> visibleTrees = skillTreeController.GetVisibleTrees();
+
+        if (visibleTrees.Count == 0)
+        {
+            ClearTreeUI(); // 보여줄 트리가 없으면 노드 비우기
+            return;
+        }
+
+        SelectTree(visibleTrees[0]); // 첫 번째 탭 자동 선택
+    }
+
+    public void SelectTree(SkillTreeData treeData)
+    {
+        if (skillTreeController == null)
+            return;
+
+        if (tabViewObject != null)
+            tabViewObject.SetActive(false); // 탭 화면 끄기
+
+        if (treeViewObject != null)
+            treeViewObject.SetActive(true); // 스킬트리 화면 켜기
+
+        skillTreeController.SetCurrentTree(treeData);
+        BuildTreeUI();
     }
 
 }

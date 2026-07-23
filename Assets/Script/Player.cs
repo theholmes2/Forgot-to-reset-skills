@@ -208,7 +208,16 @@ public class Player : MonoBehaviour
             JumpCount = MaxJumpCount;
         }
     }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
 
+        if (canJump) { return; }//바닥붙은상태에서 점프시 위로 안 올라가면 점프 안되는 버그 수정용
+        if (collision.gameObject.CompareTag("Floor")) //바닥검사
+        {
+            canJump = true; //점프가능
+            JumpCount = MaxJumpCount;
+        }
+    }
     void OnSkillTree()
     {
         if (controlLock != null && controlLock.IsLocked)

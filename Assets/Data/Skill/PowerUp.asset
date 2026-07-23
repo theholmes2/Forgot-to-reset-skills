@@ -16,7 +16,7 @@ MonoBehaviour:
   displayName: "\uD30C\uC6CC\uC5C5"
   category: 0
   description: "\uD798 \uC99D\uAC00!"
-  icon: {fileID: 21300000, guid: df96032537d4c482e9b20c674c73dc45, type: 3}
+  icon: {fileID: -6574672325790640400, guid: 046b4dba9278ed04eb4786bfa8f02550, type: 3}
   isUnLock: 0
   damageMultiplier: 0
   range: 0

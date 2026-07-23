@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55d22e5c6146e8468b9137b7a2d8bd0, type: 3}
+  m_Name: ArcherCoronaArrow
+  m_EditorClassIdentifier: 
+  id: skill_archer_corona_arrow
+  displayName: "\uCF54\uB85C\uB098 \uC560\uB85C\uC6B0"
+  category: 0
+  description: "\uD0DC\uC591\uBE5B\uCC98\uB7FC \uD37C\uC9C0\uB294 \uACE0\uC704 \uD654\uC0B4
+    \uC2A4\uD0AC."
+  icon: {fileID: 4754886863941023212, guid: 62457d839e0a4bb0833f8e85b96de8af, type: 3}
+  isUnLock: 0
+  damageMultiplier: 2.2
+  range: 1
+  cooldown: 7
+  manaCost: 30
+  castTime: 0
+  skillPrefab: {fileID: 0}
+  spawnType: 1
+  animationType: 2
+  isBuffSkill: 0
+  skillElement: 5
+  requiredRank: 0
+  effects: []
+  restrictionRules: []

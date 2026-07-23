@@ -1,0 +1,2193 @@
+fileFormatVersion: 2
+guid: 93a3cc2322cf48d45b4acee73758c9d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3291138782458699970
+    second: tailmapfix_0
+  - first:
+      213: -2729577438580352836
+    second: tailmapfix_1
+  - first:
+      213: 1846765277414251656
+    second: tailmapfix_2
+  - first:
+      213: 7986977006796834292
+    second: tailmapfix_3
+  - first:
+      213: -5675364634518258605
+    second: tailmapfix_4
+  - first:
+      213: -2536093870587668790
+    second: tailmapfix_5
+  - first:
+      213: -58436519662872747
+    second: tailmapfix_6
+  - first:
+      213: -7268623434781969279
+    second: tailmapfix_7
+  - first:
+      213: 3376176287576508097
+    second: tailmapfix_8
+  - first:
+      213: 3141148775968151615
+    second: tailmapfix_9
+  - first:
+      213: 8770586280283776540
+    second: tailmapfix_10
+  - first:
+      213: -6089981722112679999
+    second: tailmapfix_11
+  - first:
+      213: -3672532358022436422
+    second: tailmapfix_12
+  - first:
+      213: -4439964958646060962
+    second: tailmapfix_13
+  - first:
+      213: -4011534309284664841
+    second: tailmapfix_14
+  - first:
+      213: 7076030309977958732
+    second: tailmapfix_15
+  - first:
+      213: -6359204504005195411
+    second: tailmapfix_16
+  - first:
+      213: 1628330270522688993
+    second: tailmapfix_17
+  - first:
+      213: 5631813341235769995
+    second: tailmapfix_18
+  - first:
+      213: -824086516001009030
+    second: tailmapfix_19
+  - first:
+      213: 4008146339695257653
+    second: tailmapfix_20
+  - first:
+      213: 3745707148225544270
+    second: tailmapfix_21
+  - first:
+      213: 6294638311051503962
+    second: tailmapfix_22
+  - first:
+      213: -5667319555551399509
+    second: tailmapfix_23
+  - first:
+      213: 8795731842816685055
+    second: tailmapfix_24
+  - first:
+      213: 6430067029108883280
+    second: tailmapfix_25
+  - first:
+      213: -5183693090946395762
+    second: tailmapfix_26
+  - first:
+      213: -4208582689792685511
+    second: tailmapfix_27
+  - first:
+      213: 4487483120994970910
+    second: tailmapfix_28
+  - first:
+      213: 4111765850941400680
+    second: tailmapfix_29
+  - first:
+      213: -8562704166930388971
+    second: tailmapfix_30
+  - first:
+      213: -3140358761567488698
+    second: tailmapfix_31
+  - first:
+      213: -867194759246561423
+    second: tailmapfix_32
+  - first:
+      213: 5115102127421604691
+    second: tailmapfix_33
+  - first:
+      213: -2437276570257174727
+    second: tailmapfix_34
+  - first:
+      213: 471612684140616360
+    second: tailmapfix_35
+  - first:
+      213: -6956243194008281846
+    second: tailmapfix_36
+  - first:
+      213: 9119038273302642906
+    second: tailmapfix_37
+  - first:
+      213: -5131360407328107107
+    second: tailmapfix_38
+  - first:
+      213: -288189242536861896
+    second: tailmapfix_39
+  - first:
+      213: 5386415720222131701
+    second: tailmapfix_40
+  - first:
+      213: 2864689727723600817
+    second: tailmapfix_41
+  - first:
+      213: 2506382446695828737
+    second: tailmapfix_42
+  - first:
+      213: 6671176226031195310
+    second: tailmapfix_43
+  - first:
+      213: -4323676089483918102
+    second: tailmapfix_44
+  - first:
+      213: -5012051813789289111
+    second: tailmapfix_45
+  - first:
+      213: -5313687855784614440
+    second: tailmapfix_46
+  - first:
+      213: -5465330279285596755
+    second: tailmapfix_47
+  - first:
+      213: -8127087360920134809
+    second: tailmapfix_48
+  - first:
+      213: -3310126140605252988
+    second: tailmapfix_49
+  - first:
+      213: -5872979433275846676
+    second: tailmapfix_50
+  - first:
+      213: 4638591415235602543
+    second: tailmapfix_51
+  - first:
+      213: -732013081369482671
+    second: tailmapfix_52
+  - first:
+      213: 1490737510557012131
+    second: tailmapfix_53
+  - first:
+      213: -22576898412619502
+    second: tailmapfix_54
+  - first:
+      213: -8456402703135326346
+    second: tailmapfix_55
+  - first:
+      213: -5889133632660862411
+    second: tailmapfix_56
+  - first:
+      213: 3662959979259695909
+    second: tailmapfix_57
+  - first:
+      213: -3258907330793281946
+    second: tailmapfix_58
+  - first:
+      213: 1461323414278841819
+    second: tailmapfix_59
+  - first:
+      213: 2014550974167661167
+    second: tailmapfix_60
+  - first:
+      213: 3086999777610388870
+    second: tailmapfix_61
+  - first:
+      213: 1996972852765444822
+    second: tailmapfix_62
+  - first:
+      213: 8253041879163042593
+    second: tailmapfix_63
+  - first:
+      213: -7288446923328322488
+    second: tailmapfix_64
+  - first:
+      213: 9045556956456772294
+    second: tailmapfix_65
+  - first:
+      213: 5071915652160433103
+    second: tailmapfix_66
+  - first:
+      213: -6889251364911949336
+    second: tailmapfix_67
+  - first:
+      213: -1541759691006419733
+    second: tailmapfix_68
+  - first:
+      213: 6388275577576492290
+    second: tailmapfix_69
+  - first:
+      213: -5631939630253209615
+    second: tailmapfix_70
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 75
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tailmap_piece_006
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 741
+        width: 87
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2138d408c93cb49adad72ec8966695
+      internalID: -1014912715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_0
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 741
+        width: 84
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3b03c1257234214780379cfa72bddf9
+      internalID: 1493458703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_1
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 741
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75f6ba82fd7d50242ae2e7d06a96139b
+      internalID: 189245672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_2
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 741
+        width: 121
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91dc49dd898115e4db29a328bb192de3
+      internalID: 1709273103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_3
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 741
+        width: 111
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 440bc8f00a74e264baef58a58d8eba97
+      internalID: 1604973819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_4
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 741
+        width: 109
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4327262b1ef3d1c4e84422271c7c72b3
+      internalID: -444399102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_5
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 730
+        width: 98
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9753bb7a8f6724faa1c29f07802054
+      internalID: -896162261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_6
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 730
+        width: 63
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 476b292772f104340b5b62036743bb4f
+      internalID: 453787165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_7
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 730
+        width: 49
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c2216e16f6af84eaeda805cace918a
+      internalID: 359539828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_8
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 730
+        width: 36
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28817b82a3d3b634cbdb06420359b77f
+      internalID: 458507228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_9
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 796
+        width: 52
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00260ef99e1ba554d8baed4a81fc20c8
+      internalID: -1409545504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_10
+      rect:
+        serializedVersion: 2
+        x: 1371
+        y: 799
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8cbf09cae8bb964e88ab53ce09c8d47
+      internalID: 845458740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_11
+      rect:
+        serializedVersion: 2
+        x: 1458
+        y: 799
+        width: 52
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c100412125dd86d49bccd92d8acd208b
+      internalID: -1456325573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_12
+      rect:
+        serializedVersion: 2
+        x: 1523
+        y: 797
+        width: 49
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a63f48b0f8b514fb08781e21681f46
+      internalID: 1317360155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_13
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 798
+        width: 48
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a157be25670cb794e996827eba74fabc
+      internalID: 1775895657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_14
+      rect:
+        serializedVersion: 2
+        x: 1651
+        y: 798
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc0086ac2df7d24b86a265bc1dffb92
+      internalID: -824238493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_15
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 736
+        width: 47
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcc962e445ae0d4aacac000c87053c2
+      internalID: 118431417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_16
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 736
+        width: 45
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd408503d277e87419a90a419fc51bd5
+      internalID: 1444751464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_17
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 736
+        width: 65
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1677b046a1b09ae448d87b583dff5767
+      internalID: 1362754960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_18
+      rect:
+        serializedVersion: 2
+        x: 1404
+        y: 737
+        width: 61
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 858bd8812f592584d848b051148f5ac7
+      internalID: 1636416642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_19
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 735
+        width: 93
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f94a3b2b7aba66b4d89281e4d2e161fc
+      internalID: -970564168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_20
+      rect:
+        serializedVersion: 2
+        x: 1718
+        y: 729
+        width: 70
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21ac1544884ea564b827afebd83af7c2
+      internalID: 1193068208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_21
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 611
+        width: 95
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83d60c90ac6153f46a1ec9f0fc4c3725
+      internalID: 1265382931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_22
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 611
+        width: 100
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131356feab09d564ba535e0e2adec365
+      internalID: 1806641746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_23
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 606
+        width: 118
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82e22667df2399e42988bc211e593aad
+      internalID: -952659098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_24
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 606
+        width: 81
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28a60284864f344aa802a45b4f373d8
+      internalID: 2002203979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_25
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 606
+        width: 96
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b76a0d3264a3bf74a8c6df792f1ff059
+      internalID: -504259951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_26
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 606
+        width: 84
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e7f558347fdd04389167afe6b9fb99
+      internalID: 453460293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_27
+      rect:
+        serializedVersion: 2
+        x: 914
+        y: 606
+        width: 94
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc884a4b50fdf714f969551fe430acef
+      internalID: 1266590291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_28
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 601
+        width: 83
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85a7e49c0501eab419e603d9e2173f45
+      internalID: 566121067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_29
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 601
+        width: 74
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fcee2086bce24438bf96e7a1916729
+      internalID: 1502318210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_30
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 601
+        width: 53
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91511e015eddd49468cb31f180c14643
+      internalID: -214957594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_31
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 601
+        width: 65
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf95057ce2f39e49ac0c572710a5549
+      internalID: 527161316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_32
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 611
+        width: 122
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c182559d08c49c41af24a49a6e59971
+      internalID: -625198422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_33
+      rect:
+        serializedVersion: 2
+        x: 1598
+        y: 611
+        width: 82
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11af7d7436fbfdc4c8da71d0a7d18272
+      internalID: 447300824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_34
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 502
+        width: 136
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f67481901574e4295d048446e5c282
+      internalID: -929839379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_35
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 512
+        width: 97
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aab8bb92e6b6714aa73d71358b3a5ad
+      internalID: 2078058412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_36
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 522
+        width: 90
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c6f70e5c19be4499b088d907ef5ed0
+      internalID: -1780717527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_37
+      rect:
+        serializedVersion: 2
+        x: 557
+        y: 508
+        width: 111
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31dac932b4b4f0947913ed2ae1069cee
+      internalID: 1747909441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_38
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 523
+        width: 95
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827e0e93472910047807830c0d22f424
+      internalID: 810266399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_39
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 532
+        width: 81
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a200f36bd373b4a8600168f4173052
+      internalID: 936690759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_40
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 506
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e397018d63fa44f8db403935adb3ce
+      internalID: 100090573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_41
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 512
+        width: 30
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98edd20214034514eb11e8594fb830c1
+      internalID: 521479334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_42
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 486
+        width: 29
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be49aa8dd73bc24380979ca282f32be
+      internalID: 268003308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_43
+      rect:
+        serializedVersion: 2
+        x: 1046
+        y: 460
+        width: 31
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f12bf0e45abc81145a426c4e00dbd801
+      internalID: -1516144033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_44
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 478
+        width: 23
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f190dd3e8343ff242835c830d3a4b15b
+      internalID: -1816531980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_45
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 461
+        width: 22
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7857092bc04d4548bbe1b7c8417682a
+      internalID: 1921235112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_46
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 494
+        width: 23
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 316ee09a6c8464140aa5a4475a6e16c2
+      internalID: 1715813148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_47
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 504
+        width: 43
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6ea32d59b87fed479a948ff8bcf65c5
+      internalID: 1520430032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_48
+      rect:
+        serializedVersion: 2
+        x: 1305
+        y: 496
+        width: 86
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d6b80203eea0c74ea340c65bf0fb526
+      internalID: -2076755025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_49
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 294
+        width: 311
+        height: 293
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9d1696c7a186f47bc9c6e010c54ab8
+      internalID: -640666597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_50
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 289
+        width: 216
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d57d6648377a94abfe5f587abfc603
+      internalID: -2110655891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_51
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 292
+        width: 103
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604d5fa0bddcd254ea31abdc884be3e8
+      internalID: 1511995579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_52
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 288
+        width: 114
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8970c1c9adba08c4b88c2dc407b678ef
+      internalID: -1236755379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_53
+      rect:
+        serializedVersion: 2
+        x: 929
+        y: 299
+        width: 97
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d34d78952d52f0439ac83507ba6263e
+      internalID: -1151165162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_54
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 299
+        width: 78
+        height: 185
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b920405794a054e9969420ccc14a79
+      internalID: -1478023448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_55
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 437
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4361570947d16449d54b5832ebd4c9
+      internalID: 1841910249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_56
+      rect:
+        serializedVersion: 2
+        x: 721
+        y: 438
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46ad896a3006404ba790adfdf4e1fef
+      internalID: -732802805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_57
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 436
+        width: 56
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b93fb25d1d5ea2247bc2a3baf9212e2d
+      internalID: -445634414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_58
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 296
+        width: 142
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec30e2050bf45054dbd40e906dd845e7
+      internalID: -930784447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_59
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 295
+        width: 111
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9037e959da9ba46bec7d5122eb727c
+      internalID: -33250871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_60
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 299
+        width: 79
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 083f60dec963e984097a3047e9f0478c
+      internalID: 331796562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_61
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 301
+        width: 73
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd96f8158b0f9d84ab89c99d3041d583
+      internalID: -274384568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_62
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 299
+        width: 88
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b85d03903160494595bbfb0c4ae66b6
+      internalID: -2138611465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_63
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 299
+        width: 110
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d79f896a5e5bfd9458d35edb081e2afe
+      internalID: 1912178933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_64
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 435
+        width: 79
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d1b2a05586a454884825e8684929dc
+      internalID: 1514382146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_65
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 433
+        width: 98
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fea931a81b44da14db088dbfb4bed446
+      internalID: 1284443808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_66
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 438
+        width: 62
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 390ee678f58134d4bbac1d50f1a1d4ad
+      internalID: -734609912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_67
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 437
+        width: 71
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2c3c01e919897418b17f072d7570db
+      internalID: -967069824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tailmapfix_68
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 435
+        width: 84
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b0eff7adec659a48becd67cea600fe7
+      internalID: -1075307458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e772704a93988a148a9be700e6bd3c81
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tailmap_piece_000: 1927446627
+      tailmap_piece_001: 1908076774
+      tailmap_piece_002: -2127423562
+      tailmap_piece_003: 1979280698
+      tailmap_piece_004: -1371160786
+      tailmap_piece_005: -75627134
+      tailmap_piece_006: -1014912715
+      tailmap_piece_007: 1428133307
+      tailmap_piece_008: 212216061
+      tailmap_piece_009: 1976535447
+      tailmap_piece_010: 1323352853
+      tailmap_piece_011: 31976799
+      tailmap_piece_012: -1458083215
+      tailmap_piece_013: 1930084240
+      tailmap_piece_014: 1407195284
+      tailmap_piece_015: 93380074
+      tailmap_piece_016: -207200988
+      tailmap_piece_017: 133007112
+      tailmap_piece_018: -116268664
+      tailmap_piece_019: -27702398
+      tailmap_piece_020: 2108038155
+      tailmap_piece_021: 1208431789
+      tailmap_piece_022: 1592103324
+      tailmap_piece_023: -1760938227
+      tailmap_piece_024: -1206532311
+      tailmap_piece_025: 1053810609
+      tailmap_piece_026: -1446437560
+      tailmap_piece_027: 293651457
+      tailmap_piece_028: -230330617
+      tailmap_piece_029: 1453414990
+      tailmap_piece_030: 951197158
+      tailmap_piece_031: 2032861154
+      tailmap_piece_032: -1341851625
+      tailmap_piece_033: -1944875074
+      tailmap_piece_034: -279241664
+      tailmap_piece_035: -36873075
+      tailmap_piece_036: 105911081
+      tailmap_piece_037: -403732707
+      tailmap_piece_038: -1112313191
+      tailmap_piece_039: -9715838
+      tailmap_piece_040: -1449403824
+      tailmap_piece_041: 1457720321
+      tailmap_piece_042: -124310117
+      tailmap_piece_043: -181917727
+      tailmap_piece_044: -1871652946
+      tailmap_piece_045: -140427314
+      tailmap_piece_046: -1023960090
+      tailmap_piece_047: 1807559057
+      tailmap_piece_048: -1240379997
+      tailmap_piece_049: -1655072358
+      tailmap_piece_050: -646463313
+      tailmap_piece_051: -520403522
+      tailmap_piece_052: -765734588
+      tailmap_piece_053: 1977940790
+      tailmap_piece_054: -1329777194
+      tailmap_piece_055: 1864090518
+      tailmap_piece_056: 91524651
+      tailmap_piece_057: 761147942
+      tailmap_piece_058: -638272025
+      tailmap_piece_059: -357653552
+      tailmap_piece_060: 1032035530
+      tailmap_piece_061: -388933087
+      tailmap_piece_062: -646949050
+      tailmap_piece_063: -1883840271
+      tailmap_piece_064: 1654152622
+      tailmap_piece_065: 1868129223
+      tailmap_piece_066: 368762341
+      tailmap_piece_067: 75459991
+      tailmap_piece_068: 1894135130
+      tailmap_piece_069: 823152014
+      tailmap_piece_070: -1698217367
+      tailmap_piece_071: -1235803499
+      tailmap_piece_072: -860785055
+      tailmap_piece_073: 1046188039
+      tailmap_piece_074: -1103679670
+      tailmap_piece_075: -336980260
+      tailmap_piece_076: -1094942608
+      tailmap_piece_077: -1052362461
+      tailmap_piece_078: -2071951918
+      tailmap_piece_079: 608947361
+      tailmap_piece_080: 1288757720
+      tailmap_piece_081: 591918511
+      tailmap_piece_082: -916457762
+      tailmap_piece_083: 2088062569
+      tailmap_piece_084: 964250463
+      tailmap_piece_085: -1877128289
+      tailmap_piece_086: 1658556250
+      tailmap_piece_087: -690943752
+      tailmap_piece_088: 2060738147
+      tailmap_piece_089: -200899809
+      tailmap_piece_090: 1016138028
+      tailmap_piece_091: 253212478
+      tailmap_piece_092: 796095162
+      tailmap_piece_093: 2139175022
+      tailmap_piece_094: 1857234314
+      tailmap_piece_095: -960759983
+      tailmap_piece_096: -1989846791
+      tailmap_piece_097: -1491722142
+      tailmap_piece_098: -422788886
+      tailmap_piece_099: -890347222
+      tailmap_piece_100: 322045564
+      tailmap_piece_101: 541938669
+      tailmap_piece_102: 1894171259
+      tailmap_piece_103: 1527377519
+      tailmap_piece_104: 211382206
+      tailmap_piece_105: 1529057244
+      tailmap_piece_106: 1633701829
+      tailmap_piece_107: 308211687
+      tailmap_piece_108: -951269323
+      tailmap_piece_109: 1043506582
+      tailmap_piece_110: -557194203
+      tailmap_piece_111: 1247580294
+      tailmap_piece_112: 906470730
+      tailmap_piece_113: -1061818892
+      tailmap_piece_114: -686142749
+      tailmap_piece_115: -2129704423
+      tailmap_piece_116: 289268723
+      tailmap_piece_117: 1117319063
+      tailmap_piece_118: -2089094498
+      tailmap_piece_119: -540768868
+      tailmap_piece_120: -2091367872
+      tailmap_piece_121: -911704874
+      tailmap_piece_122: 1332404776
+      tailmap_piece_123: -1789381423
+      tailmap_piece_124: -362839432
+      tailmap_piece_125: 497653102
+      tailmap_piece_126: 1516031303
+      tailmap_piece_127: -235897270
+      tailmap_piece_128: -1456436324
+      tailmap_piece_129: -1762887145
+      tailmap_piece_130: 871735753
+      tailmap_piece_131: -495066008
+      tailmap_piece_132: -469619979
+      tailmap_piece_133: 1558459848
+      tailmap_piece_134: 791119215
+      tailmap_piece_135: 672112907
+      tailmap_piece_136: 1799970076
+      tailmap_piece_137: 1310642453
+      tailmap_piece_138: 2088205160
+      tailmap_piece_139: 2025029673
+      tailmap_piece_140: -1240309067
+      tailmap_piece_141: -194642831
+      tailmap_piece_142: 104031400
+      tailmap_piece_143: 958304916
+      tailmap_piece_144: -2140567894
+      tailmap_piece_145: 695069035
+      tailmap_piece_146: 1272182525
+      tailmap_piece_147: -1440006029
+      tailmap_piece_148: 1116230999
+      tailmap_piece_149: -335413863
+      tailmap_piece_150: 2013888283
+      tailmap_piece_151: 1974942492
+      tailmap_piece_152: -306041339
+      tailmap_piece_153: 776853970
+      tailmap_piece_154: 1723096757
+      tailmap_piece_155: 773238214
+      tailmap_piece_156: -1034195025
+      tailmap_piece_157: 966930448
+      tailmap_piece_158: -1187965410
+      tailmap_piece_159: -1458312724
+      tailmap_piece_160: 1149114878
+      tailmap_piece_161: -864518595
+      tailmap_piece_162: -478606483
+      tailmap_piece_163: 501720640
+      tailmap_piece_164: 2111780179
+      tailmap_piece_165: -194132070
+      tailmap_piece_166: 122178332
+      tailmap_piece_167: 809437975
+      tailmap_piece_168: -1593266875
+      tailmap_piece_169: -1033648545
+      tailmap_piece_170: 566569693
+      tailmap_piece_171: 1103446166
+      tailmap_piece_172: -1955891702
+      tailmap_piece_173: -1357155389
+      tailmap_piece_174: -202311854
+      tailmap_piece_175: -205526253
+      tailmap_piece_176: 1806138029
+      tailmap_piece_177: 511993538
+      tailmap_piece_178: 326747123
+      tailmap_piece_179: 914953668
+      tailmap_piece_180: 687291364
+      tailmap_piece_181: -1544300166
+      tailmap_piece_182: -2077335570
+      tailmap_piece_183: 984604980
+      tailmap_piece_184: -125825568
+      tailmap_piece_185: -1523899400
+      tailmap_piece_186: -1834743219
+      tailmap_piece_187: -1793838511
+      tailmap_piece_188: -873427490
+      tailmap_piece_189: -2083627600
+      tailmap_piece_190: -459031246
+      tailmap_piece_191: -1132027951
+      tailmap_piece_192: -951187598
+      tailmap_piece_193: -517122096
+      tailmap_piece_194: 551609191
+      tailmap_piece_195: 973065426
+      tailmap_piece_196: -1991695668
+      tailmap_piece_197: -1279802301
+      tailmap_piece_198: -1074630846
+      tailmap_piece_199: -1786915017
+      tailmap_piece_200: 556715738
+      tailmap_piece_201: 1134786735
+      tailmap_piece_202: 1073337052
+      tailmap_piece_203: -1323339911
+      tailmap_piece_204: 131541446
+      tailmap_piece_205: -885101183
+      tailmap_piece_206: 400461706
+      tailmap_piece_207: 1369245924
+      tailmap_piece_208: 1479445531
+      tailmap_piece_209: -1113657569
+      tailmap_piece_210: -1928430988
+      tailmap_piece_211: -19689190
+      tailmap_piece_212: -975581730
+      tailmap_piece_213: 1775498355
+      tailmap_piece_214: -811423087
+      tailmap_piece_215: 1991913986
+      tailmap_piece_216: 2087193454
+      tailmap_piece_217: 57290626
+      tailmap_piece_218: -1469063718
+      tailmap_piece_219: 1838934720
+      tailmap_piece_220: -1311736609
+      tailmap_piece_221: -1303850834
+      tailmap_piece_222: 2138463300
+      tailmap_piece_223: -340173237
+      tailmap_piece_224: -1442920744
+      tailmap_piece_225: 89139382
+      tailmap_piece_226: 2037261290
+      tailmap_piece_227: -1132698861
+      tailmap_piece_228: -1980133589
+      tailmap_piece_229: -126991279
+      tailmap_piece_230: 914905136
+      tailmap_piece_231: -897802835
+      tailmap_piece_232: -1450840627
+      tailmap_piece_233: -765394310
+      tailmap_piece_234: 44893700
+      tailmap_piece_235: 965874756
+      tailmap_piece_236: -622569116
+      tailmap_piece_237: 270121952
+      tailmap_piece_238: 2143207019
+      tailmap_piece_239: 1625376014
+      tailmap_piece_240: -1543292597
+      tailmapfix_0: 1493458703
+      tailmapfix_1: 189245672
+      tailmapfix_10: 845458740
+      tailmapfix_11: -1456325573
+      tailmapfix_12: 1317360155
+      tailmapfix_13: 1775895657
+      tailmapfix_14: -824238493
+      tailmapfix_15: 118431417
+      tailmapfix_16: 1444751464
+      tailmapfix_17: 1362754960
+      tailmapfix_18: 1636416642
+      tailmapfix_19: -970564168
+      tailmapfix_2: 1709273103
+      tailmapfix_20: 1193068208
+      tailmapfix_21: 1265382931
+      tailmapfix_22: 1806641746
+      tailmapfix_23: -952659098
+      tailmapfix_24: 2002203979
+      tailmapfix_25: -504259951
+      tailmapfix_26: 453460293
+      tailmapfix_27: 1266590291
+      tailmapfix_28: 566121067
+      tailmapfix_29: 1502318210
+      tailmapfix_3: 1604973819
+      tailmapfix_30: -214957594
+      tailmapfix_31: 527161316
+      tailmapfix_32: -625198422
+      tailmapfix_33: 447300824
+      tailmapfix_34: -929839379
+      tailmapfix_35: 2078058412
+      tailmapfix_36: -1780717527
+      tailmapfix_37: 1747909441
+      tailmapfix_38: 810266399
+      tailmapfix_39: 936690759
+      tailmapfix_4: -444399102
+      tailmapfix_40: 100090573
+      tailmapfix_41: 521479334
+      tailmapfix_42: 268003308
+      tailmapfix_43: -1516144033
+      tailmapfix_44: -1816531980
+      tailmapfix_45: 1921235112
+      tailmapfix_46: 1715813148
+      tailmapfix_47: 1520430032
+      tailmapfix_48: -2076755025
+      tailmapfix_49: -640666597
+      tailmapfix_5: -896162261
+      tailmapfix_50: -2110655891
+      tailmapfix_51: 1511995579
+      tailmapfix_52: -1236755379
+      tailmapfix_53: -1151165162
+      tailmapfix_54: -1478023448
+      tailmapfix_55: 1841910249
+      tailmapfix_56: -732802805
+      tailmapfix_57: -445634414
+      tailmapfix_58: -930784447
+      tailmapfix_59: -33250871
+      tailmapfix_6: 453787165
+      tailmapfix_60: 331796562
+      tailmapfix_61: -274384568
+      tailmapfix_62: -2138611465
+      tailmapfix_63: 1912178933
+      tailmapfix_64: 1514382146
+      tailmapfix_65: 1284443808
+      tailmapfix_66: -734609912
+      tailmapfix_67: -967069824
+      tailmapfix_68: -1075307458
+      tailmapfix_7: 359539828
+      tailmapfix_8: 458507228
+      tailmapfix_9: -1409545504
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55d22e5c6146e8468b9137b7a2d8bd0, type: 3}
+  m_Name: IceShard
+  m_EditorClassIdentifier: 
+  id: skill_ice_shard
+  displayName: "\uC5BC\uC74C \uD30C\uD3B8"
+  category: 0
+  description: "\uCC28\uAC00\uC6B4 \uC5BC\uC74C \uD30C\uD3B8\uC744 \uB0A0\uB9B0\uB2E4."
+  icon: {fileID: -1215605892658704986, guid: 6169f2d173505934dbd725e6a738814f, type: 3}
+  isUnLock: 0
+  damageMultiplier: 1.2
+  range: 5
+  cooldown: 2
+  manaCost: 10
+  castTime: 0
+  skillPrefab: {fileID: 0}
+  spawnType: 1
+  animationType: 2
+  isBuffSkill: 0
+  skillElement: 2
+  requiredRank: 0
+  effects: []
+  restrictionRules: []

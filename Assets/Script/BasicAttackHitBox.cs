@@ -15,6 +15,8 @@ public class BasicAttackHitBox : MonoBehaviour
 
     private HashSet<EnemyHealth> hitEnemies = new HashSet<EnemyHealth>(); //이 공격을 맞은 적 목록
 
+    public Transform owner; // 이 공격을 만든 대상
+
     private void Awake()
     {
         coll = GetComponent<BoxCollider2D>(); 
@@ -26,6 +28,13 @@ public class BasicAttackHitBox : MonoBehaviour
     {
         StartCoroutine(AttackLife());
 
+    }
+   
+
+    public void Init(float skillDamage, Transform skillOwner)
+    {
+        damage = skillDamage;
+        owner = skillOwner;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -43,7 +52,7 @@ public class BasicAttackHitBox : MonoBehaviour
                 // hitEnemies에 enemyHealth 추가
                 hitEnemies.Add(enemyHealth);
                 // enemyHealth에게 damage 전달
-                enemyHealth.TakeDamage(damage);
+                enemyHealth.TakeDamage(damage, owner);
             }
         }
     }

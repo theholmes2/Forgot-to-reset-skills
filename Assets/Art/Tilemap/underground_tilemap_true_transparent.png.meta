@@ -1,0 +1,3614 @@
+fileFormatVersion: 2
+guid: 927ecb52ec010bd44bd4ce613cbb326f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1979386226759024770
+    second: underground_tilemap_true_transparent_0
+  - first:
+      213: 106639086802188991
+    second: underground_tilemap_true_transparent_1
+  - first:
+      213: -6255261452537246650
+    second: underground_tilemap_true_transparent_2
+  - first:
+      213: -7152504361865293979
+    second: underground_tilemap_true_transparent_3
+  - first:
+      213: -1330290580210377330
+    second: underground_tilemap_true_transparent_4
+  - first:
+      213: -4057690419367925481
+    second: underground_tilemap_true_transparent_5
+  - first:
+      213: -7107375492090610230
+    second: underground_tilemap_true_transparent_6
+  - first:
+      213: -7120731593385539607
+    second: underground_tilemap_true_transparent_7
+  - first:
+      213: -4122357291568934316
+    second: underground_tilemap_true_transparent_8
+  - first:
+      213: 5952061678275659674
+    second: underground_tilemap_true_transparent_9
+  - first:
+      213: 8356391385326261329
+    second: underground_tilemap_true_transparent_10
+  - first:
+      213: -3945990438529195348
+    second: underground_tilemap_true_transparent_11
+  - first:
+      213: -1722697997640574564
+    second: underground_tilemap_true_transparent_12
+  - first:
+      213: -6772189161740733635
+    second: underground_tilemap_true_transparent_13
+  - first:
+      213: 5661136604386316664
+    second: underground_tilemap_true_transparent_14
+  - first:
+      213: -4990028093723531341
+    second: underground_tilemap_true_transparent_15
+  - first:
+      213: 8277486198863079406
+    second: underground_tilemap_true_transparent_16
+  - first:
+      213: 3045701808014398867
+    second: underground_tilemap_true_transparent_17
+  - first:
+      213: 7655087559847208032
+    second: underground_tilemap_true_transparent_18
+  - first:
+      213: 2206042675664469217
+    second: underground_tilemap_true_transparent_19
+  - first:
+      213: -8016087002411409343
+    second: underground_tilemap_true_transparent_20
+  - first:
+      213: 4864984848054296156
+    second: underground_tilemap_true_transparent_21
+  - first:
+      213: -7018668957311047946
+    second: underground_tilemap_true_transparent_22
+  - first:
+      213: 998043666166443131
+    second: underground_tilemap_true_transparent_23
+  - first:
+      213: 1017121570827415826
+    second: underground_tilemap_true_transparent_24
+  - first:
+      213: -9141550784781690179
+    second: underground_tilemap_true_transparent_25
+  - first:
+      213: 1584268657443182656
+    second: underground_tilemap_true_transparent_26
+  - first:
+      213: 8366459572786517302
+    second: underground_tilemap_true_transparent_27
+  - first:
+      213: 2081548097017437893
+    second: underground_tilemap_true_transparent_28
+  - first:
+      213: -7769911082563365148
+    second: underground_tilemap_true_transparent_29
+  - first:
+      213: -1745324361018807924
+    second: underground_tilemap_true_transparent_30
+  - first:
+      213: 2924657475216723321
+    second: underground_tilemap_true_transparent_31
+  - first:
+      213: -2457496577166299729
+    second: underground_tilemap_true_transparent_32
+  - first:
+      213: 1948864330261688898
+    second: underground_tilemap_true_transparent_33
+  - first:
+      213: 3330593648672901353
+    second: underground_tilemap_true_transparent_34
+  - first:
+      213: -8043842635478667798
+    second: underground_tilemap_true_transparent_35
+  - first:
+      213: -3641859599959326119
+    second: underground_tilemap_true_transparent_36
+  - first:
+      213: -4137483529955293861
+    second: underground_tilemap_true_transparent_37
+  - first:
+      213: -3214230203789659138
+    second: underground_tilemap_true_transparent_38
+  - first:
+      213: -4365851926616050859
+    second: underground_tilemap_true_transparent_39
+  - first:
+      213: 657919162916231397
+    second: underground_tilemap_true_transparent_40
+  - first:
+      213: 545692625654508545
+    second: underground_tilemap_true_transparent_41
+  - first:
+      213: 258532214040925068
+    second: underground_tilemap_true_transparent_42
+  - first:
+      213: -877188553698186602
+    second: underground_tilemap_true_transparent_43
+  - first:
+      213: -1603143380412843801
+    second: underground_tilemap_true_transparent_44
+  - first:
+      213: -7085814722200623749
+    second: underground_tilemap_true_transparent_45
+  - first:
+      213: -6103381850378974538
+    second: underground_tilemap_true_transparent_46
+  - first:
+      213: 8949115016767113033
+    second: underground_tilemap_true_transparent_47
+  - first:
+      213: 4250395994516871695
+    second: underground_tilemap_true_transparent_48
+  - first:
+      213: 2917607301749919433
+    second: underground_tilemap_true_transparent_49
+  - first:
+      213: 1784090480256154651
+    second: underground_tilemap_true_transparent_50
+  - first:
+      213: -1238734406310425853
+    second: underground_tilemap_true_transparent_51
+  - first:
+      213: -1436634367284826537
+    second: underground_tilemap_true_transparent_52
+  - first:
+      213: 5404458917356355168
+    second: underground_tilemap_true_transparent_53
+  - first:
+      213: 835766452819937710
+    second: underground_tilemap_true_transparent_54
+  - first:
+      213: -1039166904048410176
+    second: underground_tilemap_true_transparent_55
+  - first:
+      213: -1711680767795188907
+    second: underground_tilemap_true_transparent_56
+  - first:
+      213: 1376454437357374249
+    second: underground_tilemap_true_transparent_57
+  - first:
+      213: -5460351871812375963
+    second: underground_tilemap_true_transparent_58
+  - first:
+      213: -187633414124017749
+    second: underground_tilemap_true_transparent_59
+  - first:
+      213: 208094739808509286
+    second: underground_tilemap_true_transparent_60
+  - first:
+      213: 4907475074054538675
+    second: underground_tilemap_true_transparent_61
+  - first:
+      213: -8125992164933640631
+    second: underground_tilemap_true_transparent_62
+  - first:
+      213: 4060241731584345717
+    second: underground_tilemap_true_transparent_63
+  - first:
+      213: -1639913090284870486
+    second: underground_tilemap_true_transparent_64
+  - first:
+      213: -1555292189163207175
+    second: underground_tilemap_true_transparent_65
+  - first:
+      213: 7619549986227257861
+    second: underground_tilemap_true_transparent_66
+  - first:
+      213: 9076958825150266522
+    second: underground_tilemap_true_transparent_67
+  - first:
+      213: -6260261147723635794
+    second: underground_tilemap_true_transparent_68
+  - first:
+      213: 6152010109851905119
+    second: underground_tilemap_true_transparent_69
+  - first:
+      213: 707927978058970809
+    second: underground_tilemap_true_transparent_70
+  - first:
+      213: 968768893976056175
+    second: underground_tilemap_true_transparent_71
+  - first:
+      213: 2399477372197108893
+    second: underground_tilemap_true_transparent_72
+  - first:
+      213: 8395715643669598894
+    second: underground_tilemap_true_transparent_73
+  - first:
+      213: -5432667790180136449
+    second: underground_tilemap_true_transparent_74
+  - first:
+      213: 4993902390282124199
+    second: underground_tilemap_true_transparent_75
+  - first:
+      213: -3002820884906445590
+    second: underground_tilemap_true_transparent_76
+  - first:
+      213: 9013975372629509560
+    second: underground_tilemap_true_transparent_77
+  - first:
+      213: 6816308008114821197
+    second: underground_tilemap_true_transparent_78
+  - first:
+      213: 5561333158852117556
+    second: underground_tilemap_true_transparent_79
+  - first:
+      213: 4167989483442522222
+    second: underground_tilemap_true_transparent_80
+  - first:
+      213: 1976191265009408442
+    second: underground_tilemap_true_transparent_81
+  - first:
+      213: -2560410122437977286
+    second: underground_tilemap_true_transparent_82
+  - first:
+      213: -977140310027653660
+    second: underground_tilemap_true_transparent_83
+  - first:
+      213: -6642310598381697497
+    second: underground_tilemap_true_transparent_84
+  - first:
+      213: -709954378866334819
+    second: underground_tilemap_true_transparent_85
+  - first:
+      213: 9124766120539111907
+    second: underground_tilemap_true_transparent_86
+  - first:
+      213: -4799675180573536725
+    second: underground_tilemap_true_transparent_87
+  - first:
+      213: -2598203385021975029
+    second: underground_tilemap_true_transparent_88
+  - first:
+      213: 4925058337475360188
+    second: underground_tilemap_true_transparent_89
+  - first:
+      213: 8541860533418561937
+    second: underground_tilemap_true_transparent_90
+  - first:
+      213: -104010500514339027
+    second: underground_tilemap_true_transparent_91
+  - first:
+      213: -5948556546782565853
+    second: underground_tilemap_true_transparent_92
+  - first:
+      213: 2768035785187182058
+    second: underground_tilemap_true_transparent_93
+  - first:
+      213: -1081267215345880318
+    second: underground_tilemap_true_transparent_94
+  - first:
+      213: 1771531999954235267
+    second: underground_tilemap_true_transparent_95
+  - first:
+      213: -2972663795420602287
+    second: underground_tilemap_true_transparent_96
+  - first:
+      213: 2643076763392833801
+    second: underground_tilemap_true_transparent_97
+  - first:
+      213: -7922177543431494753
+    second: underground_tilemap_true_transparent_98
+  - first:
+      213: 3544515268719732868
+    second: underground_tilemap_true_transparent_99
+  - first:
+      213: -3726297912575055970
+    second: underground_tilemap_true_transparent_100
+  - first:
+      213: 2874810627281399029
+    second: underground_tilemap_true_transparent_101
+  - first:
+      213: -1701148972142840409
+    second: underground_tilemap_true_transparent_102
+  - first:
+      213: -6449561037378308612
+    second: underground_tilemap_true_transparent_103
+  - first:
+      213: -4843114314026960102
+    second: underground_tilemap_true_transparent_104
+  - first:
+      213: -7246357016676641049
+    second: underground_tilemap_true_transparent_105
+  - first:
+      213: 3660230756817469564
+    second: underground_tilemap_true_transparent_106
+  - first:
+      213: 9186599703441177898
+    second: underground_tilemap_true_transparent_107
+  - first:
+      213: -4444917914121509146
+    second: underground_tilemap_true_transparent_108
+  - first:
+      213: 2866170661897937718
+    second: underground_tilemap_true_transparent_109
+  - first:
+      213: -5460120495593498695
+    second: underground_tilemap_true_transparent_110
+  - first:
+      213: 4262557722219062650
+    second: underground_tilemap_true_transparent_111
+  - first:
+      213: 1785592099804100498
+    second: underground_tilemap_true_transparent_112
+  - first:
+      213: 2071075682504912289
+    second: underground_tilemap_true_transparent_113
+  - first:
+      213: 2400912780248053903
+    second: underground_tilemap_true_transparent_114
+  - first:
+      213: -7600731595630874296
+    second: underground_tilemap_true_transparent_115
+  - first:
+      213: -687479089899929843
+    second: underground_tilemap_true_transparent_116
+  - first:
+      213: -1506961584828563102
+    second: underground_tilemap_true_transparent_117
+  - first:
+      213: -8841586664554428359
+    second: underground_tilemap_true_transparent_118
+  - first:
+      213: 2053482629473217530
+    second: underground_tilemap_true_transparent_119
+  - first:
+      213: -2686082157850091874
+    second: underground_tilemap_true_transparent_120
+  - first:
+      213: 1882641481451267262
+    second: underground_tilemap_true_transparent_121
+  - first:
+      213: -5812113028214928526
+    second: underground_tilemap_true_transparent_122
+  - first:
+      213: -3053979824343196601
+    second: underground_tilemap_true_transparent_123
+  - first:
+      213: 8138052082199050813
+    second: underground_tilemap_true_transparent_124
+  - first:
+      213: 7295891266337773883
+    second: underground_tilemap_true_transparent_125
+  - first:
+      213: 3399234161421058023
+    second: underground_tilemap_true_transparent_126
+  - first:
+      213: -5839235226145112740
+    second: underground_tilemap_true_transparent_127
+  - first:
+      213: -7644326891270366891
+    second: underground_tilemap_true_transparent_128
+  - first:
+      213: -1538301152314166519
+    second: underground_tilemap_true_transparent_129
+  - first:
+      213: -4368334314763139203
+    second: underground_tilemap_true_transparent_130
+  - first:
+      213: -3304796988741936275
+    second: underground_tilemap_true_transparent_131
+  - first:
+      213: 4628622924635541946
+    second: underground_tilemap_true_transparent_132
+  - first:
+      213: 3099456161832966074
+    second: underground_tilemap_true_transparent_133
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 70
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 904
+        width: 96
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7f3ab8c6bec784e0800000000000000
+      internalID: -1979386226759024770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 904
+        width: 87
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fba34083fabda7100800000000000000
+      internalID: 106639086802188991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 904
+        width: 79
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64cc258c9d8d039a0800000000000000
+      internalID: -6255261452537246650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 904
+        width: 92
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f4690bd233dbc90800000000000000
+      internalID: -7152504361865293979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 522
+        y: 904
+        width: 88
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d1386f3cbd98de0800000000000000
+      internalID: -1330290580210377330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 905
+        width: 80
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719a119ef0030b7c0800000000000000
+      internalID: -4057690419367925481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 759
+        y: 905
+        width: 79
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd3f9c75a78d5d90800000000000000
+      internalID: -7107375492090610230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 873
+        y: 905
+        width: 83
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e78a53d7541e2d90800000000000000
+      internalID: -7120731593385539607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 905
+        width: 97
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 452dace62e17ac6c0800000000000000
+      internalID: -4122357291568934316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 907
+        width: 76
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9706de9f88f99250800000000000000
+      internalID: 5952061678275659674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 899
+        width: 57
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154918ed0bdd7f370800000000000000
+      internalID: 8356391385326261329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 899
+        width: 56
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca221685a960d39c0800000000000000
+      internalID: -3945990438529195348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 902
+        width: 92
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c995b536c4fb718e0800000000000000
+      internalID: -1722697997640574564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 810
+        width: 96
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3371b686d95402a0800000000000000
+      internalID: -6772189161740733635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 810
+        width: 94
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87158696fb5609e40800000000000000
+      internalID: 5661136604386316664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 810
+        width: 102
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b7a36613ebdfbab0800000000000000
+      internalID: -4990028093723531341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 810
+        width: 71
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee7ae6487d98fd270800000000000000
+      internalID: 8277486198863079406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 811
+        width: 49
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 395967658a1844a20800000000000000
+      internalID: 3045701808014398867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 811
+        width: 50
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0646439c3955c3a60800000000000000
+      internalID: 7655087559847208032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 811
+        width: 59
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ec355a10207d9e10800000000000000
+      internalID: 2206042675664469217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 810
+        width: 65
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14064a4a75321c090800000000000000
+      internalID: -8016087002411409343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 811
+        width: 83
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5e1fe981f5e38340800000000000000
+      internalID: 4864984848054296156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 813
+        width: 99
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6e96315cda89e90800000000000000
+      internalID: -7018668957311047946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 1077
+        y: 810
+        width: 125
+        height: 65
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ced203d63c9dd00800000000000000
+      internalID: 998043666166443131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 818
+        width: 55
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2113e820eaa8d1e00800000000000000
+      internalID: 1017121570827415826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 1318
+        y: 820
+        width: 56
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbad4e8ceffa22180800000000000000
+      internalID: -9141550784781690179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 819
+        width: 89
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0489fab33f37cf510800000000000000
+      internalID: 1584268657443182656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_27
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 666
+        width: 115
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6355b9f67a2ab1470800000000000000
+      internalID: 8366459572786517302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_28
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 666
+        width: 108
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce5d9937f423ec10800000000000000
+      internalID: 2081548097017437893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_29
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 665
+        width: 110
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e69073890bbb2490800000000000000
+      internalID: -7769911082563365148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_30
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 665
+        width: 96
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8963a3adbc57c7e0800000000000000
+      internalID: -1745324361018807924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_31
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 664
+        width: 97
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97dcbfb6a78769820800000000000000
+      internalID: 2924657475216723321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_32
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 666
+        width: 83
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fada34922e735edd0800000000000000
+      internalID: -2457496577166299729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_33
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 666
+        width: 71
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2427da868c1cb0b10800000000000000
+      internalID: 1948864330261688898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_34
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 664
+        width: 79
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e80258f645a83e20800000000000000
+      internalID: 3330593648672901353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_35
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 665
+        width: 78
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aede62bbdb78e5090800000000000000
+      internalID: -8043842635478667798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_36
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 667
+        width: 92
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 952049e3df3857dc0800000000000000
+      internalID: -3641859599959326119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_37
+      rect:
+        serializedVersion: 2
+        x: 1297
+        y: 667
+        width: 81
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b554cfc96a4b496c0800000000000000
+      internalID: -4137483529955293861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_38
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 666
+        width: 85
+        height: 113
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef339ccc8a2c463d0800000000000000
+      internalID: -3214230203789659138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_39
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 549
+        width: 106
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5537814ddc06963c0800000000000000
+      internalID: -4365851926616050859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_40
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 549
+        width: 81
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e85b8c2ef5612900800000000000000
+      internalID: 657919162916231397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_41
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 549
+        width: 98
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10cefa44d80b29700800000000000000
+      internalID: 545692625654508545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_42
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 549
+        width: 109
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8397eccdad769300800000000000000
+      internalID: 258532214040925068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_43
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 549
+        width: 77
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ae7cf68a993d3f0800000000000000
+      internalID: -877188553698186602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_44
+      rect:
+        serializedVersion: 2
+        x: 685
+        y: 551
+        width: 85
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e8397ed69d70c9e0800000000000000
+      internalID: -1603143380412843801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_45
+      rect:
+        serializedVersion: 2
+        x: 801
+        y: 547
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b75affa6d012aad90800000000000000
+      internalID: -7085814722200623749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_46
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 549
+        width: 97
+        height: 79
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba489f4b8e6c4ba0800000000000000
+      internalID: -6103381850378974538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_47
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 614
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 947848c71b4a13c70800000000000000
+      internalID: 8949115016767113033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_48
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 551
+        width: 55
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0adbef23a07cfa30800000000000000
+      internalID: 4250395994516871695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_49
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 557
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cec3eef16c6d7820800000000000000
+      internalID: 2917607301749919433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_50
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 554
+        width: 76
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cf2dad6dc52c810800000000000000
+      internalID: 1784090480256154651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_51
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 549
+        width: 64
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30b00dcde912fcee0800000000000000
+      internalID: -1238734406310425853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_52
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 552
+        width: 70
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75eaed197ac001ce0800000000000000
+      internalID: -1436634367284826537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_53
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 449
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06eb73450ce700b40800000000000000
+      internalID: 5404458917356355168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_54
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 449
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea94587292d399b00800000000000000
+      internalID: 835766452819937710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_55
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 449
+        width: 71
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c12addd4332491f0800000000000000
+      internalID: -1039166904048410176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_56
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 448
+        width: 69
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55b23ba1963ee38e0800000000000000
+      internalID: -1711680767795188907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_57
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 449
+        width: 76
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92b423c94062a1310800000000000000
+      internalID: 1376454437357374249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_58
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 449
+        width: 75
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56aebfb17eee834b0800000000000000
+      internalID: -5460351871812375963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_59
+      rect:
+        serializedVersion: 2
+        x: 645
+        y: 448
+        width: 56
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7e42b6764656df0800000000000000
+      internalID: -187633414124017749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_60
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 447
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66dd9e5301d43e200800000000000000
+      internalID: 208094739808509286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_61
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 448
+        width: 74
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5ca15349ada1440800000000000000
+      internalID: 4907475074054538675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_62
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 449
+        width: 60
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ed589ed2daa3f80800000000000000
+      internalID: -8125992164933640631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_63
+      rect:
+        serializedVersion: 2
+        x: 987
+        y: 449
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5764d41c750e85830800000000000000
+      internalID: 4060241731584345717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_64
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 447
+        width: 81
+        height: 74
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4ae07abbbdd39e0800000000000000
+      internalID: -1639913090284870486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_65
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 449
+        width: 76
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f5ccf68efd7a6ae0800000000000000
+      internalID: -1555292189163207175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_66
+      rect:
+        serializedVersion: 2
+        x: 1268
+        y: 447
+        width: 66
+        height: 72
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5028865a7541eb960800000000000000
+      internalID: 7619549986227257861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_67
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 449
+        width: 43
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9cbdeda5f5d7fd70800000000000000
+      internalID: 9076958825150266522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_68
+      rect:
+        serializedVersion: 2
+        x: 1438
+        y: 449
+        width: 56
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3e0c887a51f19a0800000000000000
+      internalID: -6260261147723635794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_69
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 338
+        width: 57
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ca554a994506550800000000000000
+      internalID: 6152010109851905119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_70
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 338
+        width: 64
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b6f3caceb013d900800000000000000
+      internalID: 707927978058970809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_71
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 338
+        width: 112
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6114e22d22c17d00800000000000000
+      internalID: 968768893976056175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_72
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 338
+        width: 91
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9c756005f7ac4120800000000000000
+      internalID: 2399477372197108893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_73
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 338
+        width: 91
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2dd1045e2938470800000000000000
+      internalID: 8395715643669598894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_74
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 338
+        width: 55
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff94b97ad694b94b0800000000000000
+      internalID: -5432667790180136449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_75
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 338
+        width: 98
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab7dbfd3c7ed4540800000000000000
+      internalID: 4993902390282124199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_76
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 338
+        width: 106
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae4f6079056d356d0800000000000000
+      internalID: -3002820884906445590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_77
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 338
+        width: 86
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b583b3e7d2181d70800000000000000
+      internalID: 9013975372629509560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_78
+      rect:
+        serializedVersion: 2
+        x: 954
+        y: 369
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48955fd404689e50800000000000000
+      internalID: 6816308008114821197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_79
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 338
+        width: 84
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4344bf2fa03dd2d40800000000000000
+      internalID: 5561333158852117556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_80
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 336
+        width: 81
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e68c72c2a5ca7d930800000000000000
+      internalID: 4167989483442522222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_81
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 338
+        width: 101
+        height: 85
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab99d173c77dc6b10800000000000000
+      internalID: 1976191265009408442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_82
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 336
+        width: 99
+        height: 89
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3b15cc2f88977cd0800000000000000
+      internalID: -2560410122437977286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_83
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 338
+        width: 89
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ed261da0108072f0800000000000000
+      internalID: -977140310027653660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_84
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 348
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72685a704b5c1d3a0800000000000000
+      internalID: -6642310598381697497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_85
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 245
+        width: 91
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9360f0014cb526f0800000000000000
+      internalID: -709954378866334819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_86
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 245
+        width: 79
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1c049017ea1ae70800000000000000
+      internalID: 9124766120539111907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_87
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 250
+        width: 50
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ec7a06ad0246db0800000000000000
+      internalID: -4799675180573536725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_88
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 248
+        width: 82
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b063c8589c351fbd0800000000000000
+      internalID: -2598203385021975029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_89
+      rect:
+        serializedVersion: 2
+        x: 317
+        y: 274
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb57b4fb672595440800000000000000
+      internalID: 4925058337475360188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_90
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 245
+        width: 94
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191975ff5e8ca8670800000000000000
+      internalID: 8541860533418561937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_91
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 245
+        width: 86
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27aee7300b7e8ef0800000000000000
+      internalID: -104010500514339027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_92
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 245
+        width: 95
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a63b6665b727da0800000000000000
+      internalID: -5948556546782565853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_93
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 245
+        width: 99
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5c6a581e90a6620800000000000000
+      internalID: 2768035785187182058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_94
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 245
+        width: 88
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203780a42319ef0f0800000000000000
+      internalID: -1081267215345880318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_95
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 245
+        width: 101
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38f628dc7feb59810800000000000000
+      internalID: 1771531999954235267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_96
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 245
+        width: 114
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1506a45270afeb6d0800000000000000
+      internalID: -2972663795420602287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_97
+      rect:
+        serializedVersion: 2
+        x: 1248
+        y: 248
+        width: 81
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9097e1c00581ea420800000000000000
+      internalID: 2643076763392833801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_98
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 245
+        width: 142
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93603c6f75ce0290800000000000000
+      internalID: -7922177543431494753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_99
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 254
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 488ecf47bd5a03130800000000000000
+      internalID: 3544515268719732868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_100
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 46
+        width: 54
+        height: 167
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e972fa19ac7894cc0800000000000000
+      internalID: -3726297912575055970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_101
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 198
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fc20abb80165e720800000000000000
+      internalID: 2874810627281399029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_102
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 200
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a5b76dd50e4468e0800000000000000
+      internalID: -1701148972142840409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_103
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 53
+        width: 64
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5bdd1686e8e76a0800000000000000
+      internalID: -6449561037378308612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_104
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 141
+        width: 57
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1b30d9f03dc9ccb0800000000000000
+      internalID: -4843114314026960102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_105
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 154
+        width: 74
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e65459afa4cf6b90800000000000000
+      internalID: -7246357016676641049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_106
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 169
+        width: 83
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7080180b70cbc230800000000000000
+      internalID: 3660230756817469564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_107
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 169
+        width: 67
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2df151f1cb5d7f70800000000000000
+      internalID: 9186599703441177898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_108
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 169
+        width: 66
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e6640115ba7052c0800000000000000
+      internalID: -4444917914121509146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_109
+      rect:
+        serializedVersion: 2
+        x: 745
+        y: 161
+        width: 41
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 633a218080fa6c720800000000000000
+      internalID: 2866170661897937718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_110
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 161
+        width: 50
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b7d1559651c934b0800000000000000
+      internalID: -5460120495593498695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_111
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 161
+        width: 53
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7527731aa5a72b30800000000000000
+      internalID: 4262557722219062650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_112
+      rect:
+        serializedVersion: 2
+        x: 993
+        y: 161
+        width: 53
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2973196ed82b7c810800000000000000
+      internalID: 1785592099804100498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_113
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 161
+        width: 48
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ada7a63c50fdbc10800000000000000
+      internalID: 2071075682504912289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_114
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 161
+        width: 35
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f88716bf371c15120800000000000000
+      internalID: 2400912780248053903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_115
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 161
+        width: 52
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 841755952e6c48690800000000000000
+      internalID: -7600731595630874296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_116
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 161
+        width: 40
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f710009659576f0800000000000000
+      internalID: -687479089899929843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_117
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 161
+        width: 44
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 261422e3c62361be0800000000000000
+      internalID: -1506961584828563102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_118
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 161
+        width: 44
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9380768f5cf5c4580800000000000000
+      internalID: -8841586664554428359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_119
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 49
+        width: 76
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afbaf2a529f6f7c10800000000000000
+      internalID: 2053482629473217530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_120
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 51
+        width: 75
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e94d7428e19bad0800000000000000
+      internalID: -2686082157850091874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_121
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 46
+        width: 99
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb46155e37c702a10800000000000000
+      internalID: 1882641481451267262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_122
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 49
+        width: 93
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27b44d6aef9375fa0800000000000000
+      internalID: -5812113028214928526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_123
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 53
+        width: 74
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74c50dac7851e95d0800000000000000
+      internalID: -3053979824343196601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_124
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 58
+        width: 56
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a3a13604b20f070800000000000000
+      internalID: 8138052082199050813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_125
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 57
+        width: 47
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3910f19376304560800000000000000
+      internalID: 7295891266337773883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_126
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 58
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7efffdbb5718c2f20800000000000000
+      internalID: 3399234161421058023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_127
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 58
+        width: 43
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d3ca9df7ed6fea0800000000000000
+      internalID: -5839235226145112740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_128
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 59
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5591dda9135e9e590800000000000000
+      internalID: -7644326891270366891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_129
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 58
+        width: 49
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9037db2904bd6aae0800000000000000
+      internalID: -1538301152314166519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_130
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 60
+        width: 54
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d77c46cc51f8063c0800000000000000
+      internalID: -4368334314763139203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_131
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 59
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6b9147f5a00322d0800000000000000
+      internalID: -3304796988741936275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_132
+      rect:
+        serializedVersion: 2
+        x: 1372
+        y: 59
+        width: 46
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab19126c60c2c3040800000000000000
+      internalID: 4628622924635541946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: underground_tilemap_true_transparent_133
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 59
+        width: 50
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab713f225fa730b20800000000000000
+      internalID: 3099456161832966074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 06dddd169c2382b4785e951a29d76e5f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      underground_tilemap_true_transparent_0: -1979386226759024770
+      underground_tilemap_true_transparent_1: 106639086802188991
+      underground_tilemap_true_transparent_10: 8356391385326261329
+      underground_tilemap_true_transparent_100: -3726297912575055970
+      underground_tilemap_true_transparent_101: 2874810627281399029
+      underground_tilemap_true_transparent_102: -1701148972142840409
+      underground_tilemap_true_transparent_103: -6449561037378308612
+      underground_tilemap_true_transparent_104: -4843114314026960102
+      underground_tilemap_true_transparent_105: -7246357016676641049
+      underground_tilemap_true_transparent_106: 3660230756817469564
+      underground_tilemap_true_transparent_107: 9186599703441177898
+      underground_tilemap_true_transparent_108: -4444917914121509146
+      underground_tilemap_true_transparent_109: 2866170661897937718
+      underground_tilemap_true_transparent_11: -3945990438529195348
+      underground_tilemap_true_transparent_110: -5460120495593498695
+      underground_tilemap_true_transparent_111: 4262557722219062650
+      underground_tilemap_true_transparent_112: 1785592099804100498
+      underground_tilemap_true_transparent_113: 2071075682504912289
+      underground_tilemap_true_transparent_114: 2400912780248053903
+      underground_tilemap_true_transparent_115: -7600731595630874296
+      underground_tilemap_true_transparent_116: -687479089899929843
+      underground_tilemap_true_transparent_117: -1506961584828563102
+      underground_tilemap_true_transparent_118: -8841586664554428359
+      underground_tilemap_true_transparent_119: 2053482629473217530
+      underground_tilemap_true_transparent_12: -1722697997640574564
+      underground_tilemap_true_transparent_120: -2686082157850091874
+      underground_tilemap_true_transparent_121: 1882641481451267262
+      underground_tilemap_true_transparent_122: -5812113028214928526
+      underground_tilemap_true_transparent_123: -3053979824343196601
+      underground_tilemap_true_transparent_124: 8138052082199050813
+      underground_tilemap_true_transparent_125: 7295891266337773883
+      underground_tilemap_true_transparent_126: 3399234161421058023
+      underground_tilemap_true_transparent_127: -5839235226145112740
+      underground_tilemap_true_transparent_128: -7644326891270366891
+      underground_tilemap_true_transparent_129: -1538301152314166519
+      underground_tilemap_true_transparent_13: -6772189161740733635
+      underground_tilemap_true_transparent_130: -4368334314763139203
+      underground_tilemap_true_transparent_131: -3304796988741936275
+      underground_tilemap_true_transparent_132: 4628622924635541946
+      underground_tilemap_true_transparent_133: 3099456161832966074
+      underground_tilemap_true_transparent_14: 5661136604386316664
+      underground_tilemap_true_transparent_15: -4990028093723531341
+      underground_tilemap_true_transparent_16: 8277486198863079406
+      underground_tilemap_true_transparent_17: 3045701808014398867
+      underground_tilemap_true_transparent_18: 7655087559847208032
+      underground_tilemap_true_transparent_19: 2206042675664469217
+      underground_tilemap_true_transparent_2: -6255261452537246650
+      underground_tilemap_true_transparent_20: -8016087002411409343
+      underground_tilemap_true_transparent_21: 4864984848054296156
+      underground_tilemap_true_transparent_22: -7018668957311047946
+      underground_tilemap_true_transparent_23: 998043666166443131
+      underground_tilemap_true_transparent_24: 1017121570827415826
+      underground_tilemap_true_transparent_25: -9141550784781690179
+      underground_tilemap_true_transparent_26: 1584268657443182656
+      underground_tilemap_true_transparent_27: 8366459572786517302
+      underground_tilemap_true_transparent_28: 2081548097017437893
+      underground_tilemap_true_transparent_29: -7769911082563365148
+      underground_tilemap_true_transparent_3: -7152504361865293979
+      underground_tilemap_true_transparent_30: -1745324361018807924
+      underground_tilemap_true_transparent_31: 2924657475216723321
+      underground_tilemap_true_transparent_32: -2457496577166299729
+      underground_tilemap_true_transparent_33: 1948864330261688898
+      underground_tilemap_true_transparent_34: 3330593648672901353
+      underground_tilemap_true_transparent_35: -8043842635478667798
+      underground_tilemap_true_transparent_36: -3641859599959326119
+      underground_tilemap_true_transparent_37: -4137483529955293861
+      underground_tilemap_true_transparent_38: -3214230203789659138
+      underground_tilemap_true_transparent_39: -4365851926616050859
+      underground_tilemap_true_transparent_4: -1330290580210377330
+      underground_tilemap_true_transparent_40: 657919162916231397
+      underground_tilemap_true_transparent_41: 545692625654508545
+      underground_tilemap_true_transparent_42: 258532214040925068
+      underground_tilemap_true_transparent_43: -877188553698186602
+      underground_tilemap_true_transparent_44: -1603143380412843801
+      underground_tilemap_true_transparent_45: -7085814722200623749
+      underground_tilemap_true_transparent_46: -6103381850378974538
+      underground_tilemap_true_transparent_47: 8949115016767113033
+      underground_tilemap_true_transparent_48: 4250395994516871695
+      underground_tilemap_true_transparent_49: 2917607301749919433
+      underground_tilemap_true_transparent_5: -4057690419367925481
+      underground_tilemap_true_transparent_50: 1784090480256154651
+      underground_tilemap_true_transparent_51: -1238734406310425853
+      underground_tilemap_true_transparent_52: -1436634367284826537
+      underground_tilemap_true_transparent_53: 5404458917356355168
+      underground_tilemap_true_transparent_54: 835766452819937710
+      underground_tilemap_true_transparent_55: -1039166904048410176
+      underground_tilemap_true_transparent_56: -1711680767795188907
+      underground_tilemap_true_transparent_57: 1376454437357374249
+      underground_tilemap_true_transparent_58: -5460351871812375963
+      underground_tilemap_true_transparent_59: -187633414124017749
+      underground_tilemap_true_transparent_6: -7107375492090610230
+      underground_tilemap_true_transparent_60: 208094739808509286
+      underground_tilemap_true_transparent_61: 4907475074054538675
+      underground_tilemap_true_transparent_62: -8125992164933640631
+      underground_tilemap_true_transparent_63: 4060241731584345717
+      underground_tilemap_true_transparent_64: -1639913090284870486
+      underground_tilemap_true_transparent_65: -1555292189163207175
+      underground_tilemap_true_transparent_66: 7619549986227257861
+      underground_tilemap_true_transparent_67: 9076958825150266522
+      underground_tilemap_true_transparent_68: -6260261147723635794
+      underground_tilemap_true_transparent_69: 6152010109851905119
+      underground_tilemap_true_transparent_7: -7120731593385539607
+      underground_tilemap_true_transparent_70: 707927978058970809
+      underground_tilemap_true_transparent_71: 968768893976056175
+      underground_tilemap_true_transparent_72: 2399477372197108893
+      underground_tilemap_true_transparent_73: 8395715643669598894
+      underground_tilemap_true_transparent_74: -5432667790180136449
+      underground_tilemap_true_transparent_75: 4993902390282124199
+      underground_tilemap_true_transparent_76: -3002820884906445590
+      underground_tilemap_true_transparent_77: 9013975372629509560
+      underground_tilemap_true_transparent_78: 6816308008114821197
+      underground_tilemap_true_transparent_79: 5561333158852117556
+      underground_tilemap_true_transparent_8: -4122357291568934316
+      underground_tilemap_true_transparent_80: 4167989483442522222
+      underground_tilemap_true_transparent_81: 1976191265009408442
+      underground_tilemap_true_transparent_82: -2560410122437977286
+      underground_tilemap_true_transparent_83: -977140310027653660
+      underground_tilemap_true_transparent_84: -6642310598381697497
+      underground_tilemap_true_transparent_85: -709954378866334819
+      underground_tilemap_true_transparent_86: 9124766120539111907
+      underground_tilemap_true_transparent_87: -4799675180573536725
+      underground_tilemap_true_transparent_88: -2598203385021975029
+      underground_tilemap_true_transparent_89: 4925058337475360188
+      underground_tilemap_true_transparent_9: 5952061678275659674
+      underground_tilemap_true_transparent_90: 8541860533418561937
+      underground_tilemap_true_transparent_91: -104010500514339027
+      underground_tilemap_true_transparent_92: -5948556546782565853
+      underground_tilemap_true_transparent_93: 2768035785187182058
+      underground_tilemap_true_transparent_94: -1081267215345880318
+      underground_tilemap_true_transparent_95: 1771531999954235267
+      underground_tilemap_true_transparent_96: -2972663795420602287
+      underground_tilemap_true_transparent_97: 2643076763392833801
+      underground_tilemap_true_transparent_98: -7922177543431494753
+      underground_tilemap_true_transparent_99: 3544515268719732868
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

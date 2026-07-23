@@ -18,12 +18,17 @@ public class BossIntroDirector : MonoBehaviour
     public float shakePower = 0.15f;
 
     [Header("Timing")]
-    public float introTime = 1.5f; // 등장 연출 시간
+    public float introTime = 1.5f; // 등장 문구 유지 시간
 
     [Header("Camera Focus")]
     public bool moveCameraToBoss = true; // 등장 전에 카메라를 보스 쪽으로 이동
     public Transform cameraFocusTarget; // 카메라가 볼 위치
-    public float cameraMoveTime = 0.6f; // 카메라 이동 시간
+    public float cameraMoveTime = 0.6f; // 보스 위치로 이동하는 시간
+
+    [Header("Camera Follow During Intro")]
+    public bool followBossDuringIntro = true; // 등장 중 보스를 계속 따라갈지
+    public float followBossTime = 1f; // 보스를 따라가는 시간
+    public float followBossSpeed = 8f; // 보스를 따라가는 속도
 
     private void Awake()
     {
@@ -31,7 +36,7 @@ public class BossIntroDirector : MonoBehaviour
             cameraShake = Camera.main.GetComponent<CameraShake>(); // 카메라 흔들림 자동 찾기
 
         if (cameraFocusTarget == null && bossObject != null)
-            cameraFocusTarget = bossObject.transform; // 기본은 보스 위치
+            cameraFocusTarget = bossObject.transform; // 기본 포커스는 보스 위치
     }
 
     public IEnumerator PlayIntro()
@@ -39,13 +44,13 @@ public class BossIntroDirector : MonoBehaviour
         if (showIntroPanel && introPanel != null)
             introPanel.SetActive(true); // 글자 표시
 
-        if (useCameraShake && cameraShake != null)
-            cameraShake.Shake(shakeTime, shakePower); // 흔들림
-
         if (bossObject != null)
             bossObject.SetActive(true); // 보스 출현
 
-        yield return new WaitForSeconds(introTime * 0.5f); // 보스 보인 상태로 잠깐 유지
+        if (useCameraShake && cameraShake != null)
+            cameraShake.Shake(shakeTime, shakePower); // 흔들림 시작
+
+        yield return new WaitForSeconds(introTime); // 연출 유지
 
         if (introPanel != null)
             introPanel.SetActive(false); // 글자 사라짐

@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55d22e5c6146e8468b9137b7a2d8bd0, type: 3}
+  m_Name: MageManaIgnition
+  m_EditorClassIdentifier: 
+  id: skill_mage_mana_ignition
+  displayName: "\uB9C8\uB098 \uC810\uD654"
+  category: 0
+  description: "\uB9C8\uB098\uB97C \uC810\uD654\uD574 \uB9C8\uBC95 \uACF5\uACA9\uC744
+    \uC900\uBE44\uD55C\uB2E4."
+  icon: {fileID: 5700505988459496361, guid: 77227d0e714d47ed9d2931ab06dab823, type: 3}
+  isUnLock: 0
+  damageMultiplier: 0
+  range: 1
+  cooldown: 5
+  manaCost: 8
+  castTime: 0
+  skillPrefab: {fileID: 0}
+  spawnType: 0
+  animationType: 4
+  isBuffSkill: 1
+  skillElement: 8
+  requiredRank: 0
+  effects: []
+  restrictionRules: []

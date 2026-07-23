@@ -93,17 +93,7 @@ public class PlayerSkillController : MonoBehaviour
         OnSlotChanged?.Invoke();
     }
 
-    public void SetSkill(SkillSlotKey key, SkillData data) //키와 데이터 받아서 스킬 세팅
-    {
-        SkillSlot slot = GetSlot(key); //받은 키로 슬롯 고름
-        if (slot == null) return;
-
-        slot.skillData = data; //골라둔 슬롯에 스킬데이터 넣음
-        slot.isCooldown = false; //쿨 초기화
-        slot.remainCooldown = 0f;
-
-        NotifySlotChanged(); //변경했다 알림
-    }
+   
 
     public bool UseJSkill()
     {
@@ -209,8 +199,52 @@ public class PlayerSkillController : MonoBehaviour
         {
             float finalDamage = combatResolver.GetFinalAttackDamage(skillData); // 최종 데미지 계산
 
-            hitBox.Init(finalDamage); // 계산된 데미지를 공격 판정에 전달
+            hitBox.Init(finalDamage, transform); // 계산된 데미지를 공격 판정에 전달,내위치도 전달 
         }
         return true;
     }
+
+    public void SetSkill(SkillSlotKey key, SkillData data) //키와 데이터 받아서 스킬 세팅
+    {
+        SkillSlot targetSlot = GetSlot(key); //받은 키로 슬롯 고름
+        if (targetSlot == null) return;
+
+        if (data != null)
+        {
+            ClearSameSkillFromOtherSlots(key, data); // 같은 스킬이 다른 슬롯에 있으면 제거
+        }
+
+        targetSlot.skillData = data; //비어있는 슬롯에도 스킬 장착 가능
+        targetSlot.isCooldown = false; //쿨 초기화
+        targetSlot.remainCooldown = 0f;
+
+        NotifySlotChanged(); //변경했다 알림
+    }
+
+    private void ClearSameSkillFromOtherSlots(SkillSlotKey targetKey, SkillData data)
+    {
+        ClearSameSkillFromSlot(SkillSlotKey.J, targetKey, data);
+        ClearSameSkillFromSlot(SkillSlotKey.L, targetKey, data);
+        ClearSameSkillFromSlot(SkillSlotKey.U, targetKey, data);
+        ClearSameSkillFromSlot(SkillSlotKey.I, targetKey, data);
+        ClearSameSkillFromSlot(SkillSlotKey.O, targetKey, data);
+    }
+
+    private void ClearSameSkillFromSlot(SkillSlotKey checkKey, SkillSlotKey targetKey, SkillData data)
+    {
+        if (checkKey == targetKey)
+            return; // 지금 장착할 슬롯은 비우면 안 됨
+
+        SkillSlot slot = GetSlot(checkKey);
+        if (slot == null || slot.skillData == null)
+            return;
+
+        if (slot.skillData == data || slot.skillData.id == data.id)
+        {
+            slot.skillData = null; // 같은 스킬이면 기존 슬롯에서 제거
+            slot.isCooldown = false;
+            slot.remainCooldown = 0f;
+        }
+    }
+
 }

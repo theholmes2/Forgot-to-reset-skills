@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public enum SkillTreeOwnerType
@@ -16,6 +16,7 @@ public class SkillTreeData : ScriptableObject
     public string id; // 스킬트리 ID
     public string displayName; // 스킬트리 이름
     public string description; // 스킬트리 설명
+    public Sprite icon; // 스킬트리 대표 아이콘
 
     [Header("Owner")]
     public SkillTreeOwnerType ownerType; // 누구의 스킬트리인지

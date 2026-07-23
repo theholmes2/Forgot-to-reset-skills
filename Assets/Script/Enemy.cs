@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
         Idle,
         Patrol,
         Chase,
+        Alert,
         Attack,
         Hit,
         Dead,
@@ -15,121 +16,34 @@ public class Enemy : MonoBehaviour
 
     public State currentState;
 
-    public Transform player;
-    public float speed = 3f;
     public float knockBack = 15f;
 
     private Rigidbody2D rb;
-    private SpriteRenderer[] spriteRenderers; // 자식 포함 모든 스프라이트
-    public Animator anim;
+    private SpriteRenderer[] spriteRenderers;
+    private Animator anim;
+    private EnemyMovement movement;
 
-    private bool isMovingRight = false;
+    private Coroutine hitRoutine;
+    private Transform lastAttacker; // 마지막으로 나를 때린 대상
 
-    public Transform floorCheck; // 적 앞쪽 발끝 위치
-    public LayerMask groundLayer; // 바닥으로 인식할 레이어
-    public float rayLength = 1.0f; // 레이 발사 길이
+    public float deadReturnTime = 1f; //  죽음 애니메이션 후 비활성화까지 걸리는 시간
 
-    private EnemyTraitController traitController; // EnemyData 연결 담당
-
-    void Awake()
+    private EnemyHealth enemyHealth; // 풀 재사용 시 체력 초기화용
+    private Collider2D enemyCollider; // 죽을 때 끄고, 재사용 때 다시 켤 콜라이더
+    private int defaultLayer; //  DeadEnemy 레이어로 바꾼 뒤 원래 레이어 복구용
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
         anim = GetComponentInChildren<Animator>();
-        traitController = GetComponent<EnemyTraitController>();
+        spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
+        movement = GetComponent<EnemyMovement>();
 
-        currentState = State.Patrol;
+        enemyHealth = GetComponent<EnemyHealth>(); 
+        enemyCollider = GetComponent<BoxCollider2D>(); 
+        defaultLayer = gameObject.layer; // 원래 레이어 저장
 
-        if (player == null)
-        {
-            GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
-
-            if (playerObject != null)
-                player = playerObject.transform;
-        }
-
-        if (traitController != null &&
-            traitController.EnemyData != null &&
-            traitController.EnemyData.baseStats != null)
-        {
-            speed = traitController.EnemyData.baseStats.moveSpeed;
-            knockBack = traitController.EnemyData.baseStats.knockBack;
-        }
-    }
-
-    void Update()
-    {
-        if (currentState == State.Dead)
-            return;
-
-        if (currentState == State.Hit)
-            return;
-
-        if (currentState == State.Attack)
-            return; // 공격 중에는 이동/절벽체크 안 함
-
-        if (currentState == State.Patrol)
-        {
-            Patrol();
-
-            if (anim != null)
-                anim.SetBool("1_Move", true);
-        }
-        else if (currentState == State.Chase)
-        {
-            Chase();
-
-            if (anim != null)
-                anim.SetBool("1_Move", true);
-        }
-
-        if (floorCheck == null)
-            return;
-
-        bool isGrounded = Physics2D.Raycast(floorCheck.position, Vector2.down, rayLength, groundLayer);
-
-        if (!isGrounded)
-        {
-            Flip();
-        }
-    }
-
-    void Flip()
-    {
-        isMovingRight = !isMovingRight;
-        transform.Rotate(0, 180, 0);
-    }
-
-    void OnDrawGizmos()
-    {
-        if (floorCheck != null)
-        {
-            Debug.DrawRay(floorCheck.position, Vector2.down * rayLength, Color.red);
-        }
-    }
-
-    void Patrol()
-    {
-        float direction = isMovingRight ? 1f : -1f;
-        rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
-    }
-
-    void Chase()
-    {
-        if (player == null)
-            return;
-
-        float direction = player.position.x > transform.position.x ? 1f : -1f;
-        rb.linearVelocity = new Vector2(direction * speed, rb.linearVelocity.y);
-
-        if (player.position.x < transform.position.x)
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-        else
-        {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
-        }
+        currentState = State.Idle;
+        EnterIdleState();
     }
 
     public void ChangeState(State newState)
@@ -139,9 +53,33 @@ public class Enemy : MonoBehaviour
 
         currentState = newState;
 
-        if (currentState == State.Dead)
+        if (currentState == State.Idle)
         {
-            EnterDeadState();
+            EnterIdleState();
+            return;
+        }
+
+        if (currentState == State.Patrol)
+        {
+            EnterPatrolState();
+            return;
+        }
+
+        if (currentState == State.Chase)
+        {
+            EnterChaseState();
+            return;
+        }
+
+        if (currentState == State.Alert)
+        {
+            EnterAlertState();
+            return;
+        }
+
+        if (currentState == State.Attack)
+        {
+            EnterAttackState();
             return;
         }
 
@@ -151,20 +89,73 @@ public class Enemy : MonoBehaviour
             return;
         }
 
-        if (currentState == State.Attack)
+        if (currentState == State.Dead)
         {
-            EnterAttackState();
+            EnterDeadState();
             return;
         }
     }
 
+    public bool CanMove()
+    {
+        // 이동 가능한 상태만 Movement가 처리
+        return currentState == State.Idle ||
+               currentState == State.Patrol ||
+               currentState == State.Chase ||
+               currentState == State.Alert;
+    }
+
+    public void OnDamaged(Transform attacker)
+    {
+        if (!gameObject.activeInHierarchy)
+            return; // 비활성 상태면 피격 처리 안 함
+
+        if (currentState == State.Dead)
+            return;
+        lastAttacker = attacker; // 넉백 방향 계산용
+        // 누가 때렸는지 Movement에게 넘겨서 그 대상을 추적
+        if (movement != null)
+            movement.StartChase(attacker);
+
+        ChangeState(State.Hit);
+    }
+
+    private void EnterIdleState()
+    {
+        // 대기 상태 애니메이션
+        SetMoveAnimation(false);
+    }
+
+    private void EnterPatrolState()
+    {
+        // 순찰 상태 애니메이션
+        SetMoveAnimation(true);
+    }
+
+    private void EnterChaseState()
+    {
+        // 추적 상태 애니메이션
+        SetMoveAnimation(true);
+    }
+
+    private void EnterAlertState()
+    {
+        // 경계 상태
+        // TODO: Alert 전용 애니메이션 추가하면 여기에서 교체
+        // 지금은 Alert 애니메이션이 없으니 Idle처럼 보이게 처리
+
+        SetMoveAnimation(false);
+    }
+
     private void EnterAttackState()
     {
-        rb.linearVelocity = Vector2.zero;
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
+
+        SetMoveAnimation(true);
 
         if (anim != null)
         {
-            anim.SetBool("1_Move", false);
             anim.ResetTrigger("Attack1");
             anim.SetTrigger("Attack1");
         }
@@ -172,81 +163,128 @@ public class Enemy : MonoBehaviour
 
     private void EnterHitState()
     {
-        rb.linearVelocity = Vector2.zero;
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
+
+        SetMoveAnimation(true);
 
         if (anim != null)
-        {
-            anim.SetBool("1_Move", false);
-             anim.SetTrigger("isHurt"); 
-        }
+            anim.SetTrigger("isHurt");
 
-        StartCoroutine(HitKnockBack());
+        if (hitRoutine != null)
+            StopCoroutine(hitRoutine);
+
+        hitRoutine = StartCoroutine(HitRoutine());
     }
 
-    IEnumerator HitKnockBack()
+    private IEnumerator HitRoutine()
     {
-        if (player != null)
-        {
-            rb.AddForce((rb.transform.position - player.transform.position).normalized * 1.5f * knockBack, ForceMode2D.Impulse);
-        }
 
-        rb.AddForce(Vector2.up * knockBack, ForceMode2D.Impulse);
+        ApplyKnockBack(); // 피격 즉시 밀림
 
-        SetSpriteColor(Color.red);
+       
 
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.25f);
 
-        SetSpriteColor(Color.white);
+       
 
-        ChangeState(State.Chase);
+        if (currentState != State.Dead)
+            ChangeState(State.Chase);
+    }
+
+    private void ApplyKnockBack()
+    {
+        if (rb == null)
+            return;
+
+        if (lastAttacker == null)
+            return;
+
+        // 공격자 반대 방향으로 밀림
+        Vector2 knockBackDirection = transform.position - lastAttacker.position;
+        knockBackDirection.y = 0.3f; // 살짝 위로 뜨게 보정
+        knockBackDirection.Normalize();
+
+        rb.AddForce(knockBackDirection * knockBack, ForceMode2D.Impulse);
     }
 
     private void EnterDeadState()
     {
-        rb.linearVelocity = Vector2.zero;
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
 
         gameObject.layer = LayerMask.NameToLayer("DeadEnemy");
 
         if (anim != null)
-        {
-            anim.SetBool("1_Move", false);
-            anim.SetTrigger("isDie"); 
-        }
+            anim.SetTrigger("isDie");
 
         SetSpriteColor(Color.gray);
 
-        StartCoroutine(DeadKnockBack());
-
-        Destroy(gameObject, 1f);
+       
+        StartCoroutine(DeadRoutine()); //  죽음 애니 후 비활성화
     }
-
-    IEnumerator DeadKnockBack()
+    private IEnumerator DeadRoutine() // 죽음 애니메이션 후 풀 반환 전 단계
     {
-        if (player != null)
+        yield return new WaitForSeconds(deadReturnTime);
+
+        PooledEnemy pooledEnemy = GetComponent<PooledEnemy>();
+
+        if (pooledEnemy != null)
         {
-            rb.AddForce((rb.transform.position - player.transform.position).normalized * knockBack, ForceMode2D.Impulse);
+            pooledEnemy.ReturnToPool(); // 풀로 반환
+            yield break;
         }
 
-        rb.AddForce(Vector2.up * 2 * knockBack, ForceMode2D.Impulse);
-
-        yield return new WaitForSeconds(0.7f);
-
-        rb.AddForce(Vector2.up * knockBack, ForceMode2D.Impulse);
+        gameObject.SetActive(false); //  지금은 비활성화, 나중에는 Pool.Return으로 교체
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void ResetEnemy() //  풀에서 다시 꺼낼 때 호출할 초기화 함수
     {
-        if (currentState == State.Attack || currentState == State.Hit || currentState == State.Dead)
+        StopAllCoroutines(); // 이전 피격/죽음 루틴 정리
+
+        currentState = State.Idle; // 기본 상태로 복구
+        lastAttacker = null; // 이전 공격자 정보 제거
+
+        if (movement != null)
+            movement.ClearTarget(); //   이전 추적 대상 제거
+
+        gameObject.layer = defaultLayer; // DeadEnemy 레이어에서 원래 레이어로 복구
+
+        if (rb != null)
+        {
+            rb.simulated = true;
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+
+        if (enemyCollider != null)
+            enemyCollider.enabled = true; // 콜라이더 다시 켜기
+
+        if (enemyHealth != null)
+            enemyHealth.ResetHealth(); // EnemyData 반영 포함 체력 초기화
+
+        SetSpriteColor(Color.white); // 죽을 때 회색 처리한 것 복구
+
+        if (anim != null)
+        {
+            anim.ResetTrigger("Attack1");
+            anim.ResetTrigger("isHurt");
+            anim.ResetTrigger("isDie");
+
+            anim.SetBool("1_Move", false);
+
+            anim.SetTrigger("Respawn"); // Die -> Idle 연결용 트리거
+        }
+
+        gameObject.SetActive(true); // 오브젝트 활성화
+    }
+    private void SetMoveAnimation(bool isMove)
+    {
+        if (anim == null)
             return;
 
-        if (collision.transform.position.x - transform.position.x > 0.5f && isMovingRight)
-        {
-            Flip();
-        }
-        else if (collision.transform.position.x - transform.position.x < -0.5f && !isMovingRight)
-        {
-            Flip();
-        }
+        anim.SetBool("1_Move", isMove);
+        
     }
 
     private void SetSpriteColor(Color color)
@@ -259,4 +297,13 @@ public class Enemy : MonoBehaviour
             renderer.color = color;
         }
     }
+
+    public void ForceDead() // [추가] 보스 사망/구역 이탈 등으로 강제로 죽일 때 사용
+    {
+        if (currentState == State.Dead)
+            return;
+
+        ChangeState(State.Dead); // 죽음 애니메이션 후 DeadRoutine에서 풀 반환
+    }
+
 }

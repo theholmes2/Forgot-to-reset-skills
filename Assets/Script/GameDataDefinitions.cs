@@ -185,7 +185,7 @@ public class EquipmentData : ScriptableObject
     public Sprite icon;                         // 아이콘
 
     public EquipmentSlotType slotType;          // 장비 슬롯 위치
-    public ElementType equipmentElement;        // 장비 속성
+    public ElementType[] equipmentElements;        // 장비 속성들
     public int requiredRank = 0;                // 요구 격
 
     public List<EffectData> grantedEffects = new();       // 장비가 주는 효과

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d55d22e5c6146e8468b9137b7a2d8bd0, type: 3}
+  m_Name: ArcherPiercingArrow
+  m_EditorClassIdentifier: 
+  id: skill_archer_piercing_arrow
+  displayName: "\uAD00\uD1B5 \uD654\uC0B4"
+  category: 0
+  description: "\uC801\uC744 \uAFF0\uB6AB\uB294 \uB0A0\uCE74\uB85C\uC6B4 \uD654\uC0B4."
+  icon: {fileID: 5127285539522790024, guid: eed345b072f549d69d995bf221346cea, type: 3}
+  isUnLock: 0
+  damageMultiplier: 1.3
+  range: 1
+  cooldown: 3
+  manaCost: 12
+  castTime: 0
+  skillPrefab: {fileID: 0}
+  spawnType: 1
+  animationType: 2
+  isBuffSkill: 0
+  skillElement: 4
+  requiredRank: 0
+  effects: []
+  restrictionRules: []

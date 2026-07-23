@@ -8,7 +8,7 @@ public class BossSpawnTrigger : MonoBehaviour
     private void Awake()
     {
         if (bossStageController == null)
-            bossStageController = GetComponent<BossStageController>(); // 부모에서 자동 찾기
+            bossStageController = GetComponentInParent<BossStageController>(); // 부모에서 자동 찾기
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

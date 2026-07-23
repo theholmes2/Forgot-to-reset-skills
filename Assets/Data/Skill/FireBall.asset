@@ -16,6 +16,18 @@ MonoBehaviour:
   displayName: "\uD30C\uC774\uC5B4\uBCFC"
   category: 0
   description: "\uBD88 \uACF5\uC744 \uBC1C\uC0AC\uD568"
-  icon: {fileID: 0}
+  icon: {fileID: 4406269049281162047, guid: 0086295f621ecfc4797c4f51d69a0d23, type: 3}
   isUnLock: 0
-  needMana: 10
+  damageMultiplier: 1
+  range: 1
+  cooldown: 1
+  manaCost: 10
+  castTime: 0
+  skillPrefab: {fileID: 0}
+  spawnType: 0
+  animationType: 0
+  isBuffSkill: 0
+  skillElement: 0
+  requiredRank: 0
+  effects: []
+  restrictionRules: []

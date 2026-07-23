@@ -1,0 +1,38 @@
+﻿%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8003fdac9e4b9384f9d707ddb5d85ede, type: 3}
+  m_Name: MageSkillTree
+  m_EditorClassIdentifier: 
+  id: tree_mage
+  displayName: "\uBC95\uC0AC"
+  description: "마나, 원소, 광역 주문을 중심으로 성장하는 법사 트리"
+  icon: {fileID: 4708948157073368957, guid: 0492cce1ae6a476ca07d5dcf25d8b2b4, type: 3}
+  ownerType: 0
+  nodes:
+  - nodeId: node_mage_start
+    displayName: "\uB9C8\uB098 \uC810\uD654"
+    description: "\uBC95\uC0AC \uC2A4\uD0AC\uD2B8\uB9AC\uC758 \uC2DC\uC791 \uAE30\uC220"
+    skillData: {fileID: 11400000, guid: afaf0c8f5a4742c883a906f4e87fc485, type: 2}
+    iconOverride: {fileID: 0}
+    uiPosition: {x: 0, y: 0}
+    needSkillPoint: 0
+    needPlayerLevel: 0
+    needRank: 0
+    isStartNode: 1
+    requireAllRequiredNodes: 1
+    requiredNodeIds: []
+    statRequirements: []
+    requiredQuestIds: []
+    requiredAchievementIds: []
+    canBeStolen: 1
+    canBeTemporaryUnlocked: 1
+    canBeForceUnlocked: 1

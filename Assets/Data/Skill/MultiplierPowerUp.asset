@@ -16,7 +16,7 @@ MonoBehaviour:
   displayName: "\uBA40\uD2F0\uD30C\uC6CC\uC5C5"
   category: 0
   description: "\uD798 50% \uC99D\uAC00!"
-  icon: {fileID: 21300000, guid: df96032537d4c482e9b20c674c73dc45, type: 3}
+  icon: {fileID: -1667932184973754929, guid: b209d7cc3e5cb024b8c4b72eb9b58efb, type: 3}
   isUnLock: 0
   damageMultiplier: 0
   range: 0

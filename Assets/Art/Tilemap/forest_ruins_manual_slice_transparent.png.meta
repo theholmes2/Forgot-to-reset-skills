@@ -1,0 +1,1976 @@
+fileFormatVersion: 2
+guid: 2975d88d4c68d02409d90e9d9401f333
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2102012904090024682
+    second: forest_ruins_manual_slice_transparent_0
+  - first:
+      213: -7915495171413586193
+    second: forest_ruins_manual_slice_transparent_1
+  - first:
+      213: 5104232990508858507
+    second: forest_ruins_manual_slice_transparent_2
+  - first:
+      213: -6633094461363009967
+    second: forest_ruins_manual_slice_transparent_3
+  - first:
+      213: -8474392533046213735
+    second: forest_ruins_manual_slice_transparent_4
+  - first:
+      213: -8583763788609489516
+    second: forest_ruins_manual_slice_transparent_5
+  - first:
+      213: 7610084935382230337
+    second: forest_ruins_manual_slice_transparent_6
+  - first:
+      213: 5288770032143512155
+    second: forest_ruins_manual_slice_transparent_7
+  - first:
+      213: -2692471621097024194
+    second: forest_ruins_manual_slice_transparent_8
+  - first:
+      213: -7286471930568698814
+    second: forest_ruins_manual_slice_transparent_9
+  - first:
+      213: -2090291683496827686
+    second: forest_ruins_manual_slice_transparent_10
+  - first:
+      213: -4026203199423104194
+    second: forest_ruins_manual_slice_transparent_11
+  - first:
+      213: -6457477427783733448
+    second: forest_ruins_manual_slice_transparent_12
+  - first:
+      213: -1575014809959266908
+    second: forest_ruins_manual_slice_transparent_13
+  - first:
+      213: 8014457271815397147
+    second: forest_ruins_manual_slice_transparent_14
+  - first:
+      213: -8482871799209386649
+    second: forest_ruins_manual_slice_transparent_15
+  - first:
+      213: -2710642696608064579
+    second: forest_ruins_manual_slice_transparent_16
+  - first:
+      213: -5925288385639443936
+    second: forest_ruins_manual_slice_transparent_17
+  - first:
+      213: 8426287481914787675
+    second: forest_ruins_manual_slice_transparent_18
+  - first:
+      213: -1489755961089227756
+    second: forest_ruins_manual_slice_transparent_19
+  - first:
+      213: -3351581972889889769
+    second: forest_ruins_manual_slice_transparent_20
+  - first:
+      213: 9033559604931750732
+    second: forest_ruins_manual_slice_transparent_21
+  - first:
+      213: 8432002985119381749
+    second: forest_ruins_manual_slice_transparent_22
+  - first:
+      213: 1201669976658397336
+    second: forest_ruins_manual_slice_transparent_23
+  - first:
+      213: 266026001637358946
+    second: forest_ruins_manual_slice_transparent_24
+  - first:
+      213: -1556534287718332076
+    second: forest_ruins_manual_slice_transparent_25
+  - first:
+      213: -5095916197259814246
+    second: forest_ruins_manual_slice_transparent_26
+  - first:
+      213: 5131998224463886325
+    second: forest_ruins_manual_slice_transparent_27
+  - first:
+      213: -3143715383642660031
+    second: forest_ruins_manual_slice_transparent_28
+  - first:
+      213: -4150331926491035465
+    second: forest_ruins_manual_slice_transparent_29
+  - first:
+      213: -4170140953635028813
+    second: forest_ruins_manual_slice_transparent_30
+  - first:
+      213: 8947225893015695397
+    second: forest_ruins_manual_slice_transparent_31
+  - first:
+      213: -7243239392852619644
+    second: forest_ruins_manual_slice_transparent_32
+  - first:
+      213: 6006732241105543956
+    second: forest_ruins_manual_slice_transparent_33
+  - first:
+      213: -6397433937545217585
+    second: forest_ruins_manual_slice_transparent_34
+  - first:
+      213: -5928976663243123301
+    second: forest_ruins_manual_slice_transparent_35
+  - first:
+      213: -6127725760722861859
+    second: forest_ruins_manual_slice_transparent_36
+  - first:
+      213: 8207095922476282583
+    second: forest_ruins_manual_slice_transparent_37
+  - first:
+      213: -6060490581820485859
+    second: forest_ruins_manual_slice_transparent_38
+  - first:
+      213: -1029117186776648737
+    second: forest_ruins_manual_slice_transparent_39
+  - first:
+      213: -8806390949118233154
+    second: forest_ruins_manual_slice_transparent_40
+  - first:
+      213: 6272491364044803906
+    second: forest_ruins_manual_slice_transparent_41
+  - first:
+      213: 8209967171455486202
+    second: forest_ruins_manual_slice_transparent_42
+  - first:
+      213: -1261851672630410454
+    second: forest_ruins_manual_slice_transparent_43
+  - first:
+      213: 2148851745910902952
+    second: forest_ruins_manual_slice_transparent_44
+  - first:
+      213: -7072455619076445967
+    second: forest_ruins_manual_slice_transparent_45
+  - first:
+      213: 924097196660030446
+    second: forest_ruins_manual_slice_transparent_46
+  - first:
+      213: 9188328260006049713
+    second: forest_ruins_manual_slice_transparent_47
+  - first:
+      213: -3305085757578108541
+    second: forest_ruins_manual_slice_transparent_48
+  - first:
+      213: 699837417430378391
+    second: forest_ruins_manual_slice_transparent_49
+  - first:
+      213: 7686290191350558536
+    second: forest_ruins_manual_slice_transparent_50
+  - first:
+      213: -8203396402769135633
+    second: forest_ruins_manual_slice_transparent_51
+  - first:
+      213: -99187241296731292
+    second: forest_ruins_manual_slice_transparent_52
+  - first:
+      213: -3106829693420368119
+    second: forest_ruins_manual_slice_transparent_53
+  - first:
+      213: -6419748310185742212
+    second: forest_ruins_manual_slice_transparent_54
+  - first:
+      213: 5360657843307028019
+    second: forest_ruins_manual_slice_transparent_55
+  - first:
+      213: 2833599189542101578
+    second: forest_ruins_manual_slice_transparent_56
+  - first:
+      213: 901099843724650086
+    second: forest_ruins_manual_slice_transparent_57
+  - first:
+      213: 1911027476640640539
+    second: forest_ruins_manual_slice_transparent_58
+  - first:
+      213: -9000788896201262195
+    second: forest_ruins_manual_slice_transparent_59
+  - first:
+      213: 3548493531053634540
+    second: forest_ruins_manual_slice_transparent_60
+  - first:
+      213: -7532808406615189552
+    second: forest_ruins_manual_slice_transparent_61
+  - first:
+      213: -438033442725550511
+    second: forest_ruins_manual_slice_transparent_62
+  - first:
+      213: 7384923028003242137
+    second: forest_ruins_manual_slice_transparent_63
+  - first:
+      213: 480401643586586981
+    second: forest_ruins_manual_slice_transparent_64
+  - first:
+      213: -5096479767790308765
+    second: forest_ruins_manual_slice_transparent_65
+  - first:
+      213: 3862655732717918862
+    second: forest_ruins_manual_slice_transparent_66
+  - first:
+      213: -4677924475808298254
+    second: forest_ruins_manual_slice_transparent_67
+  - first:
+      213: -1187024305094580819
+    second: forest_ruins_manual_slice_transparent_68
+  - first:
+      213: -8666355299388504158
+    second: forest_ruins_manual_slice_transparent_69
+  - first:
+      213: -788219138126092366
+    second: forest_ruins_manual_slice_transparent_70
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 606
+        width: 1536
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeab29d6999db2d10800000000000000
+      internalID: 2102012904090024682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 489
+        width: 87
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feec2966413862290800000000000000
+      internalID: -7915495171413586193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 489
+        width: 84
+        height: 93
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c3c1a8cd0e5d640800000000000000
+      internalID: 5104232990508858507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_3
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 489
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 156c8d42bb382f3a0800000000000000
+      internalID: -6633094461363009967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_4
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 489
+        width: 121
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 993ce84f3e8e46a80800000000000000
+      internalID: -8474392533046213735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_5
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 489
+        width: 111
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 495f110205850e880800000000000000
+      internalID: -8583763788609489516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_6
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 489
+        width: 108
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1456204cde37c9960800000000000000
+      internalID: 7610084935382230337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_7
+      rect:
+        serializedVersion: 2
+        x: 761
+        y: 478
+        width: 99
+        height: 99
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5235a8b25c756940800000000000000
+      internalID: 5288770032143512155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_8
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 502
+        width: 54
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3511b0735b62aad0800000000000000
+      internalID: -2692471621097024194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_9
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 478
+        width: 63
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2441990726041ea90800000000000000
+      internalID: -7286471930568698814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_10
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 478
+        width: 48
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad4e738e9cacdf2e0800000000000000
+      internalID: -2090291683496827686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_11
+      rect:
+        serializedVersion: 2
+        x: 1076
+        y: 478
+        width: 36
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b38d8958d0028c0800000000000000
+      internalID: -4026203199423104194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_12
+      rect:
+        serializedVersion: 2
+        x: 1150
+        y: 551
+        width: 40
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83fe8db1e7e6266a0800000000000000
+      internalID: -6457477427783733448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_13
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 550
+        width: 48
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a50668006c642ae0800000000000000
+      internalID: -1575014809959266908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_14
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 550
+        width: 49
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f5a122d62193f60800000000000000
+      internalID: 8014457271815397147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_15
+      rect:
+        serializedVersion: 2
+        x: 1360
+        y: 550
+        width: 43
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76d12f4fa09c64a80800000000000000
+      internalID: -8482871799209386649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_16
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 550
+        width: 43
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbb5bab34dcd16ad0800000000000000
+      internalID: -2710642696608064579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_17
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 550
+        width: 27
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02296365b9525cda0800000000000000
+      internalID: -5925288385639443936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_18
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 487
+        width: 86
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b570ad602df20f470800000000000000
+      internalID: 8426287481914787675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_19
+      rect:
+        serializedVersion: 2
+        x: 1243
+        y: 487
+        width: 54
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4148141b8d2535be0800000000000000
+      internalID: -1489755961089227756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_20
+      rect:
+        serializedVersion: 2
+        x: 1310
+        y: 487
+        width: 53
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7149b4ef3f9cc71d0800000000000000
+      internalID: -3351581972889889769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_21
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 488
+        width: 44
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b664d4996ad5d70800000000000000
+      internalID: 9033559604931750732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_22
+      rect:
+        serializedVersion: 2
+        x: 1462
+        y: 488
+        width: 41
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f8f2115a0e740570800000000000000
+      internalID: 8432002985119381749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_23
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 358
+        width: 98
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 898c9ff1a703da010800000000000000
+      internalID: 1201669976658397336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_24
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 358
+        width: 104
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26dbc903d3d11b300800000000000000
+      internalID: 266026001637358946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_25
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 351
+        width: 120
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45945dbef44166ae0800000000000000
+      internalID: -1556534287718332076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_26
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 351
+        width: 83
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9a5b29c73ba749b0800000000000000
+      internalID: -5095916197259814246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_27
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 353
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f7fa15d135883740800000000000000
+      internalID: 5131998224463886325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_28
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 353
+        width: 89
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1436c03c3874f54d0800000000000000
+      internalID: -3143715383642660031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_29
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 351
+        width: 98
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b80a8d2a1f0766c0800000000000000
+      internalID: -4150331926491035465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_30
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 348
+        width: 86
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b08643a5eea026c0800000000000000
+      internalID: -4170140953635028813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_31
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 347
+        width: 79
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520b0669b8eea2c70800000000000000
+      internalID: 8947225893015695397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_32
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 347
+        width: 55
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48e47e50628da7b90800000000000000
+      internalID: -7243239392852619644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_33
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 347
+        width: 68
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4136bf3f5233c5350800000000000000
+      internalID: 6006732241105543956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_34
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 358
+        width: 125
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc9b6969abfb737a0800000000000000
+      internalID: -6397433937545217585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_35
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 358
+        width: 86
+        height: 103
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9510d9432b08bda0800000000000000
+      internalID: -5928976663243123301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_36
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 250
+        width: 135
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd08a1ff2e1f5faa0800000000000000
+      internalID: -6127725760722861859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_37
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 262
+        width: 97
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d271c8224675e170800000000000000
+      internalID: 8207095922476282583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_38
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 278
+        width: 81
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1f4df9fcefc4eba0800000000000000
+      internalID: -6060490581820485859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_39
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 257
+        width: 104
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3bde10f57d7b1f0800000000000000
+      internalID: -1029117186776648737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_40
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 274
+        width: 89
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb5b79c071a69c580800000000000000
+      internalID: -8806390949118233154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_41
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 283
+        width: 75
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f889a99ad5c0750800000000000000
+      internalID: 6272491364044803906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_42
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 262
+        width: 29
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af80938e4a9afe170800000000000000
+      internalID: 8209967171455486202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_43
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 263
+        width: 23
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a23c1add6900d7ee0800000000000000
+      internalID: -1261851672630410454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_44
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 242
+        width: 16
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a05ffd174142dd10800000000000000
+      internalID: 2148851745910902952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_45
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 210
+        width: 24
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8ab3ff51799dd90800000000000000
+      internalID: -7072455619076445967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_46
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 234
+        width: 17
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eebfad8118d03dc00800000000000000
+      internalID: 924097196660030446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_47
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 214
+        width: 23
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7f751eedf738f70800000000000000
+      internalID: 9188328260006049713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_48
+      rect:
+        serializedVersion: 2
+        x: 1009
+        y: 248
+        width: 19
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381aa5bb30af122d0800000000000000
+      internalID: -3305085757578108541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_49
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 257
+        width: 37
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 797e67a5c6256b900800000000000000
+      internalID: 699837417430378391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_50
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 245
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84fe40094303baa60800000000000000
+      internalID: 7686290191350558536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_51
+      rect:
+        serializedVersion: 2
+        x: 1225
+        y: 49
+        width: 297
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe77a356f6ea72e80800000000000000
+      internalID: -8203396402769135633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_52
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 187
+        width: 72
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 463e144cabd9f9ef0800000000000000
+      internalID: -99187241296731292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_53
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 187
+        width: 92
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90f0b02cad252e4d0800000000000000
+      internalID: -3106829693420368119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_54
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 187
+        width: 54
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c70f6f7dce878e6a0800000000000000
+      internalID: -6419748310185742212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_55
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 187
+        width: 65
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33e1ab018e1e46a40800000000000000
+      internalID: 5360657843307028019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_56
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 187
+        width: 77
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a42ed782377f25720800000000000000
+      internalID: 2833599189542101578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_57
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 187
+        width: 52
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6662e5c9889518c00800000000000000
+      internalID: 901099843724650086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_58
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 187
+        width: 35
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e2d2d6d55558a10800000000000000
+      internalID: 1911027476640640539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_59
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 187
+        width: 48
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8bb4a7ef26c61380800000000000000
+      internalID: -9000788896201262195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_60
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 49
+        width: 76
+        height: 178
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce33936d018ce3130800000000000000
+      internalID: 3548493531053634540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_61
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 47
+        width: 91
+        height: 174
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d710aa2aa6167790800000000000000
+      internalID: -7532808406615189552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_62
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 49
+        width: 106
+        height: 141
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1562a9697eacbe9f0800000000000000
+      internalID: -438033442725550511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_63
+      rect:
+        serializedVersion: 2
+        x: 986
+        y: 49
+        width: 75
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9904cb1fd548c7660800000000000000
+      internalID: 7384923028003242137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_64
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 49
+        width: 202
+        height: 188
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5690e73efbabaa600800000000000000
+      internalID: 480401643586586981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_65
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 49
+        width: 108
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 362b4eb47aaa549b0800000000000000
+      internalID: -5096479767790308765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_66
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 47
+        width: 88
+        height: 109
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8a17467ce8ea9530800000000000000
+      internalID: 3862655732717918862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_67
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 49
+        width: 72
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa4755597ca41fb0800000000000000
+      internalID: -4677924475808298254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_68
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 49
+        width: 72
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da525130fa7d68fe0800000000000000
+      internalID: -1187024305094580819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_69
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 49
+        width: 102
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a7cf9285cbeab780800000000000000
+      internalID: -8666355299388504158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forest_ruins_manual_slice_transparent_70
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 49
+        width: 135
+        height: 116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b764dabedeaf05f0800000000000000
+      internalID: -788219138126092366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0d76c170502f60d4e981e92aa74f6b44
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      forest_ruins_manual_slice_transparent_0: 2102012904090024682
+      forest_ruins_manual_slice_transparent_1: -7915495171413586193
+      forest_ruins_manual_slice_transparent_10: -2090291683496827686
+      forest_ruins_manual_slice_transparent_11: -4026203199423104194
+      forest_ruins_manual_slice_transparent_12: -6457477427783733448
+      forest_ruins_manual_slice_transparent_13: -1575014809959266908
+      forest_ruins_manual_slice_transparent_14: 8014457271815397147
+      forest_ruins_manual_slice_transparent_15: -8482871799209386649
+      forest_ruins_manual_slice_transparent_16: -2710642696608064579
+      forest_ruins_manual_slice_transparent_17: -5925288385639443936
+      forest_ruins_manual_slice_transparent_18: 8426287481914787675
+      forest_ruins_manual_slice_transparent_19: -1489755961089227756
+      forest_ruins_manual_slice_transparent_2: 5104232990508858507
+      forest_ruins_manual_slice_transparent_20: -3351581972889889769
+      forest_ruins_manual_slice_transparent_21: 9033559604931750732
+      forest_ruins_manual_slice_transparent_22: 8432002985119381749
+      forest_ruins_manual_slice_transparent_23: 1201669976658397336
+      forest_ruins_manual_slice_transparent_24: 266026001637358946
+      forest_ruins_manual_slice_transparent_25: -1556534287718332076
+      forest_ruins_manual_slice_transparent_26: -5095916197259814246
+      forest_ruins_manual_slice_transparent_27: 5131998224463886325
+      forest_ruins_manual_slice_transparent_28: -3143715383642660031
+      forest_ruins_manual_slice_transparent_29: -4150331926491035465
+      forest_ruins_manual_slice_transparent_3: -6633094461363009967
+      forest_ruins_manual_slice_transparent_30: -4170140953635028813
+      forest_ruins_manual_slice_transparent_31: 8947225893015695397
+      forest_ruins_manual_slice_transparent_32: -7243239392852619644
+      forest_ruins_manual_slice_transparent_33: 6006732241105543956
+      forest_ruins_manual_slice_transparent_34: -6397433937545217585
+      forest_ruins_manual_slice_transparent_35: -5928976663243123301
+      forest_ruins_manual_slice_transparent_36: -6127725760722861859
+      forest_ruins_manual_slice_transparent_37: 8207095922476282583
+      forest_ruins_manual_slice_transparent_38: -6060490581820485859
+      forest_ruins_manual_slice_transparent_39: -1029117186776648737
+      forest_ruins_manual_slice_transparent_4: -8474392533046213735
+      forest_ruins_manual_slice_transparent_40: -8806390949118233154
+      forest_ruins_manual_slice_transparent_41: 6272491364044803906
+      forest_ruins_manual_slice_transparent_42: 8209967171455486202
+      forest_ruins_manual_slice_transparent_43: -1261851672630410454
+      forest_ruins_manual_slice_transparent_44: 2148851745910902952
+      forest_ruins_manual_slice_transparent_45: -7072455619076445967
+      forest_ruins_manual_slice_transparent_46: 924097196660030446
+      forest_ruins_manual_slice_transparent_47: 9188328260006049713
+      forest_ruins_manual_slice_transparent_48: -3305085757578108541
+      forest_ruins_manual_slice_transparent_49: 699837417430378391
+      forest_ruins_manual_slice_transparent_5: -8583763788609489516
+      forest_ruins_manual_slice_transparent_50: 7686290191350558536
+      forest_ruins_manual_slice_transparent_51: -8203396402769135633
+      forest_ruins_manual_slice_transparent_52: -99187241296731292
+      forest_ruins_manual_slice_transparent_53: -3106829693420368119
+      forest_ruins_manual_slice_transparent_54: -6419748310185742212
+      forest_ruins_manual_slice_transparent_55: 5360657843307028019
+      forest_ruins_manual_slice_transparent_56: 2833599189542101578
+      forest_ruins_manual_slice_transparent_57: 901099843724650086
+      forest_ruins_manual_slice_transparent_58: 1911027476640640539
+      forest_ruins_manual_slice_transparent_59: -9000788896201262195
+      forest_ruins_manual_slice_transparent_6: 7610084935382230337
+      forest_ruins_manual_slice_transparent_60: 3548493531053634540
+      forest_ruins_manual_slice_transparent_61: -7532808406615189552
+      forest_ruins_manual_slice_transparent_62: -438033442725550511
+      forest_ruins_manual_slice_transparent_63: 7384923028003242137
+      forest_ruins_manual_slice_transparent_64: 480401643586586981
+      forest_ruins_manual_slice_transparent_65: -5096479767790308765
+      forest_ruins_manual_slice_transparent_66: 3862655732717918862
+      forest_ruins_manual_slice_transparent_67: -4677924475808298254
+      forest_ruins_manual_slice_transparent_68: -1187024305094580819
+      forest_ruins_manual_slice_transparent_69: -8666355299388504158
+      forest_ruins_manual_slice_transparent_7: 5288770032143512155
+      forest_ruins_manual_slice_transparent_70: -788219138126092366
+      forest_ruins_manual_slice_transparent_8: -2692471621097024194
+      forest_ruins_manual_slice_transparent_9: -7286471930568698814
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,38 @@
+﻿%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8003fdac9e4b9384f9d707ddb5d85ede, type: 3}
+  m_Name: DemonSkillTree
+  m_EditorClassIdentifier: 
+  id: tree_demon
+  displayName: "\uC545\uB9C8"
+  description: "피, 저주, 계약의 힘을 다루는 악마 트리"
+  icon: {fileID: 5573424803968611174, guid: f41484b14b844942ae0cffa77030d6d7, type: 3}
+  ownerType: 0
+  nodes:
+  - nodeId: node_demon_start
+    displayName: "\uC5B4\uB460\uC758 \uACC4\uC57D"
+    description: "\uC545\uB9C8 \uC2A4\uD0AC\uD2B8\uB9AC\uC758 \uC2DC\uC791 \uAE30\uC220"
+    skillData: {fileID: 11400000, guid: 880b867c9bc04ab8870cc1683e2c1b92, type: 2}
+    iconOverride: {fileID: 0}
+    uiPosition: {x: 0, y: 0}
+    needSkillPoint: 0
+    needPlayerLevel: 0
+    needRank: 0
+    isStartNode: 1
+    requireAllRequiredNodes: 1
+    requiredNodeIds: []
+    statRequirements: []
+    requiredQuestIds: []
+    requiredAchievementIds: []
+    canBeStolen: 1
+    canBeTemporaryUnlocked: 1
+    canBeForceUnlocked: 1

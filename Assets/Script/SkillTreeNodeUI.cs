@@ -88,7 +88,10 @@ public class SkillTreeNodeUI : MonoBehaviour
         if (nodeData == null || uiManager == null)
             return;
 
-        uiManager.OnClickNode(nodeData.nodeId); // 클릭한 노드 ID 전달
+        // uiManager.OnClickNode(nodeData.nodeId); // 클릭한 노드 ID 전달
+
+        RectTransform rect = GetComponent<RectTransform>(); // 클릭한 노드 위치
+        uiManager.OnClickNode(nodeData.nodeId, rect); // 노드 ID + 위치 전달
     }
 
     private void SetUnlockedState()
