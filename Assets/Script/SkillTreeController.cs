@@ -13,7 +13,7 @@ public class SkillTreeController : MonoBehaviour
 
 
 
-    private void Awake()
+    private void Start()
     {
         if (GameManager.Instance != null)
         {
@@ -21,8 +21,9 @@ public class SkillTreeController : MonoBehaviour
             runState = GameManager.Instance.runState;
             return;
         }
-
-        // 테스트 씬에서 GameManager가 없을 때 임시 데이터 생성
+        // GameManager가 없는 단독 테스트 씬에서만 임시 데이터 사용
+        Debug.LogWarning("GameManager가 없어 SkillTreeController가 임시 데이터를 사용합니다.");
+        
         playerProgress = new PlayerProgress();
         runState = new RunState();
     }
@@ -117,7 +118,6 @@ public class SkillTreeController : MonoBehaviour
 
     public void UnlockNode(string nodeId)
     {
-
         SkillTreeNodeData node = FindNode(nodeId); // 노드 찾기
 
         if (node == null)
@@ -130,28 +130,44 @@ public class SkillTreeController : MonoBehaviour
 
         if (node.skillData != null)
         {
-            AddPermanentSkill(node.skillData); // 스킬 데이터가 있으면 스킬풀에도 추가
+            AddPermanentSkill(node.skillData, false);
+            // 노드 해금 중에 스킬도 추가
+            // 저장은 아래에서 한 번만 처리
         }
 
-        Debug.Log("노드 해금: " + nodeId);
+        SaveSystem.Save(playerProgress); // 내가 찍은 스킬 노드는 즉시 자동저장
 
+        Debug.Log("노드 해금: " + nodeId);
     }
 
-    void AddPermanentSkill(SkillData skillData)
+    public bool AddPermanentSkill(SkillData skillData, bool autoSave = true)
     {
         if (playerProgress == null || runState == null)
-            return;
+            return false;
 
-        if (skillData == null) return;
+        if (skillData == null)
+            return false;
 
-        if (!playerProgress.unlockedSkillPool.Contains(skillData.id)) //없으면 추가
-            playerProgress.unlockedSkillPool.Add(skillData.id);
+        bool isChanged = false; // 실제로 새로 추가됐는지 확인
 
-        if (!runState.availableSkillPool.Contains(skillData.id)) //없으면 추가
-            runState.availableSkillPool.Add(skillData.id);
+        if (!playerProgress.unlockedSkillPool.Contains(skillData.id))
+        {
+            playerProgress.unlockedSkillPool.Add(skillData.id); // 영구 스킬 목록에 추가
+            isChanged = true;
+        }
 
+        if (!runState.availableSkillPool.Contains(skillData.id))
+        {
+            runState.availableSkillPool.Add(skillData.id); // 이번 회차 사용 가능 목록에도 추가
+            isChanged = true;
+        }
 
+        if (isChanged && autoSave)
+        {
+            SaveSystem.Save(playerProgress); // 보스 보상 같은 외부 영구 해금도 즉시 저장
+        }
 
+        return isChanged;
     }
 
     List<SkillTreeNodeData> GetChildNodes(string nodeId) //부모 아이디 입력
@@ -224,5 +240,73 @@ public class SkillTreeController : MonoBehaviour
         currentData = beforeTree; // 다시 원래 트리로 복구
 
         return result;
+    }
+
+    private SkillTreeNodeData FindNodeBySkill(SkillData skillData)
+    {
+        if (skillData == null)
+            return null;
+
+        foreach (SkillTreeData tree in skillTrees)
+        {
+            if (tree == null || tree.nodes == null)
+                continue;
+
+            foreach (SkillTreeNodeData node in tree.nodes)
+            {
+                if (node == null || node.skillData == null)
+                    continue;
+
+                // ScriptableObject 참조가 같으면 해당 스킬 노드
+                if (node.skillData == skillData)
+                    return node;
+
+                // 혹시 다른 인스턴스라도 ID가 같으면 같은 스킬로 판단
+                if (!string.IsNullOrEmpty(skillData.id) &&
+                    node.skillData.id == skillData.id)
+                {
+                    return node;
+                }
+            }
+        }
+
+        return null;
+    }
+
+    public bool GrantPermanentSkillReward(
+    SkillData skillData,
+    bool autoSave = true)
+    {
+        if (playerProgress == null || runState == null)
+            return false;
+
+        if (skillData == null)
+            return false;
+
+        bool isChanged = AddPermanentSkill(skillData, false);
+
+        SkillTreeNodeData node = FindNodeBySkill(skillData);
+
+        if (node != null &&
+            !playerProgress.unlockedSkillNodeIds.Contains(node.nodeId))
+        {
+            playerProgress.unlockedSkillNodeIds.Add(node.nodeId);
+            isChanged = true;
+        }
+
+        if (node == null)
+        {
+            Debug.LogWarning(
+                "보상 스킬에 해당하는 스킬트리 노드를 찾지 못했습니다: "
+                + skillData.id
+            );
+        }
+
+        if (isChanged && autoSave)
+        {
+            SaveSystem.Save(playerProgress);
+        }
+
+        return isChanged;
     }
 }

@@ -40,6 +40,15 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void ForceDie()
+    {
+        if (isDead)
+            return; // 이미 죽었으면 중복 처리 안 함
+
+        currentHealth = 0f; // 체력을 0으로 만듦
+        Die(); // 기존 사망/회귀 흐름 사용
+    }
+
     public void Heal(float amount)
     {
         if (isDead)
@@ -88,5 +97,15 @@ public class PlayerHealth : MonoBehaviour
 
         Debug.Log("플레이어 사망 회귀 실행");
         GameManager.Instance.OnPlayerDeath(); // 회귀
+    }
+
+    public float GetHealthRate()
+    {
+        float maxHealth = GetMaxHealth();
+
+        if (maxHealth <= 0f)
+            return 0f;
+
+        return currentHealth / maxHealth; // 1 = 풀피, 0 = 사망
     }
 }

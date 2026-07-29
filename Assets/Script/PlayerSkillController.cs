@@ -189,18 +189,35 @@ public class PlayerSkillController : MonoBehaviour
             spawnPosition = attackPoint.position; //어택포인트로 위치 변경
         }
 
-        GameObject skillObject = Instantiate(skillData.skillPrefab, spawnPosition, transform.rotation); //프리팹을 설정된 위치에 생성
-        skillObject.transform.parent = transform;
+        Quaternion spawnRotation = skillData.skillPrefab.transform.rotation;
+
+        GameObject skillObject = Instantiate(
+            skillData.skillPrefab,
+            spawnPosition,
+            spawnRotation
+        );
+
 
         BasicAttackHitBox hitBox = skillObject.GetComponent<BasicAttackHitBox>();
 
-     
+
         if (hitBox != null)
         {
+            skillObject.transform.parent = transform; // 근접 히트박스만 플레이어 자식으로 붙임
             float finalDamage = combatResolver.GetFinalAttackDamage(skillData); // 최종 데미지 계산
 
             hitBox.Init(finalDamage, transform); // 계산된 데미지를 공격 판정에 전달,내위치도 전달 
         }
+
+
+        ProjectileSkillHitBox projectile = skillObject.GetComponent<ProjectileSkillHitBox>();
+        if (projectile != null)
+        {
+            float finalDamage = combatResolver.GetFinalAttackDamage(skillData); // 최종 데미지 계산
+
+            projectile.Init(finalDamage, transform, skillData.id); // 투사체에 데미지/주인/스킬id 전달
+        }
+
         return true;
     }
 

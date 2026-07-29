@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
     private Coroutine hitRoutine;
     private Transform lastAttacker; // 마지막으로 나를 때린 대상
 
-    public float deadReturnTime = 1f; //  죽음 애니메이션 후 비활성화까지 걸리는 시간
+    public float deadReturnTime = 0.66f; //  죽음 애니메이션 후 비활성화까지 걸리는 시간
 
     private EnemyHealth enemyHealth; // 풀 재사용 시 체력 초기화용
     private Collider2D enemyCollider; // 죽을 때 끄고, 재사용 때 다시 켤 콜라이더
@@ -235,7 +235,7 @@ public class Enemy : MonoBehaviour
             yield break;
         }
 
-        gameObject.SetActive(false); //  지금은 비활성화, 나중에는 Pool.Return으로 교체
+        gameObject.SetActive(false); 
     }
 
     public void ResetEnemy() //  풀에서 다시 꺼낼 때 호출할 초기화 함수
@@ -276,7 +276,7 @@ public class Enemy : MonoBehaviour
             anim.SetTrigger("Respawn"); // Die -> Idle 연결용 트리거
         }
 
-        gameObject.SetActive(true); // 오브젝트 활성화
+       
     }
     private void SetMoveAnimation(bool isMove)
     {

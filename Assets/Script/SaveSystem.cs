@@ -39,4 +39,8 @@ public static class SaveSystem
             Debug.Log("저장 파일 삭제 완료");
         }
     }
+    public static bool HasSave()
+    {
+        return File.Exists(SavePath); // 저장 파일이 있는지 확인
+    }
 }

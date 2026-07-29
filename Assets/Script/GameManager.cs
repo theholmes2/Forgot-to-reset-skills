@@ -8,6 +8,9 @@ public class GameManager : MonoBehaviour
     public PlayerProgress playerProgress;
     public RunState runState;
 
+    public int titleSceneIndex = 0;
+    public int mainStageSceneIndex = 1;
+
     private void Awake()
     {
         if (Instance == null) //인스턴스가 없다면 (최초)
@@ -23,18 +26,13 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject); //게임매니저 제거(중복 제거용)
         }
     }
-
-    public void OnPlayerDeath() //플레이어가 죽으면 
+    public void OnPlayerDeath()
     {
         SaveSystem.Save(playerProgress); // 영구 데이터 저장
         StartNewRun(); // 회차 데이터 초기화 + 영구 스킬 복사
-        LoadStage(0); //최초 씬 가져오기
+        SceneManager.LoadScene(mainStageSceneIndex); // 타이틀 말고 메인 스테이지로 회귀
     }
 
-    void LoadStage(int stage)
-    {
-        SceneManager.LoadScene(stage); //해당 번호의 씬 가져오기
-    }
 
     public void StartNewRun()
     {
@@ -48,4 +46,23 @@ public class GameManager : MonoBehaviour
             runState.availableSkillPool.Add(skillId); // 영구 해금 스킬을 이번 회차에 복사
         }
     }
+
+    public void StartNewGame()
+    {
+        SaveSystem.DeleteSave(); // 기존 저장 삭제
+
+        playerProgress = new PlayerProgress(); // 완전 새 영구 데이터
+        StartNewRun(); // 1회차 데이터 생성
+
+        SceneManager.LoadScene(mainStageSceneIndex); // 메인 게임 시작
+    }
+
+    public void ContinueGame()
+    {
+        playerProgress = SaveSystem.Load(); // 저장된 영구 데이터 불러오기
+        StartNewRun(); // 저장된 영구 데이터 기반으로 회차 시작
+
+        SceneManager.LoadScene(mainStageSceneIndex); // 메인 게임 시작
+    }
+
 }

@@ -61,16 +61,13 @@ public class EnemyPool : MonoBehaviour
         enemy.transform.position = position;
         enemy.transform.rotation = rotation;
 
+        enemy.SetActive(true); // 먼저 활성화
+
         Enemy enemyComponent = enemy.GetComponent<Enemy>();
 
         if (enemyComponent != null)
         {
-          
-            enemyComponent.ResetEnemy(); // 체력, 콜라이더, 상태 초기화
-        }
-        else
-        {
-            enemy.SetActive(true); // Enemy가 없으면 그냥 활성화
+            enemyComponent.ResetEnemy(); // 켜진 상태에서 체력, 콜라이더, 상태 초기화
         }
 
         return enemy;

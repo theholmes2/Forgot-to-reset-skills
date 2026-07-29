@@ -46,6 +46,23 @@ public class BossStageController : MonoBehaviour
     [Header("Restriction Wall")]
     public RestrictionWall[] restrictionWalls; // 보스전 중에만 켤 제한 벽들
 
+    [Header("Clear Flow")]
+    public float clearPanelShowTime = 2f; // 클리어 문구 표시 시간
+    public bool lockPlayerOnBossClear = false; // 최종 보스가 아니면 false
+    public BossRewardController bossRewardController; // 보스 처치 보상 지급
+
+    private Coroutine clearPanelRoutine; // 클리어 문구 코루틴 저장
+
+    [Header("Portal")]
+    public PortalController portalController; // 포탈 제어
+
+    [Header("Assist Event")]
+    public BossAssistEventController assistEventController; // 지원 NPC 이벤트
+    public bool openPortalOnBossClear = true; // 보스 죽으면 포탈 열기
+    public bool openPortalOnAssist = true; // 지원 이벤트로 포탈 열기
+    public bool disableWallsOnAssist = false; // 지원 이벤트 때 제한벽도 풀지 여부
+
+
     private EnemyHealth bossHealth;
     private SkillTreeController skillTreeController;
 
@@ -93,8 +110,14 @@ public class BossStageController : MonoBehaviour
         if (cameraFocusController == null && Camera.main != null)
             cameraFocusController = Camera.main.GetComponent<CameraFocusController>();
 
-        if (playerHealth != null)
-            playerHealth.OnDied += OnPlayerDied; // 플레이어 사망 감지
+        if (portalController == null)
+            portalController = GetComponentInChildren<PortalController>(true);
+
+        if (assistEventController == null)
+            assistEventController = GetComponentInChildren<BossAssistEventController>(true);
+
+        if (bossRewardController == null)
+            bossRewardController = GetComponentInChildren<BossRewardController>(true);
 
         if (skillTreeController == null)
             skillTreeController = FindAnyObjectByType<SkillTreeController>();
@@ -119,8 +142,12 @@ public class BossStageController : MonoBehaviour
         
         currentState = BossStageState.Appearing;
         SetRestrictionWalls(true); // 보스전 시작하면서 제한 벽 켜기
-       
-        
+        if (playerHealth != null)
+        {
+            playerHealth.OnDied -= OnPlayerDied; // 혹시 이미 등록되어 있으면 먼저 제거
+            playerHealth.OnDied += OnPlayerDied; // 보스전 중에만 사망 감지
+        }
+
 
         bool shouldLockPlayer = bossIntroDirector != null && bossIntroDirector.lockPlayerDuringIntro;
         bool shouldLockCamera = bossIntroDirector != null && bossIntroDirector.lockCameraDuringIntro;
@@ -172,7 +199,10 @@ public class BossStageController : MonoBehaviour
         bossSummonController = bossObject.GetComponent<BossSummonController>(); // 보스 소환 컨트롤러 찾기
 
         if (bossHealth != null)
+        {
+            bossHealth.OnDied -= OnBossDied; // 중복 등록 방지
             bossHealth.OnDied += OnBossDied; // 보스 사망 감지 등록
+        }
 
         Enemy bossEnemy = bossObject.GetComponent<Enemy>();
 
@@ -188,6 +218,9 @@ public class BossStageController : MonoBehaviour
         if (bossSummonController != null)
             bossSummonController.StartSummon(); // 보스전 시작 후 잡몹 소환 시작
         currentState = BossStageState.Battle;
+
+        if (assistEventController != null)
+            assistEventController.BeginAssistCheck(); // 보스전 시작 후 지원 이벤트 조건 확인
     }
 
     private void OnBossDied(EnemyHealth deadBoss)
@@ -203,6 +236,11 @@ public class BossStageController : MonoBehaviour
 
     private void OnPlayerDied()
     {
+        // 보스전이 실제로 진행 중일 때만 보스 패배 처리
+        if (currentState != BossStageState.Appearing &&
+            currentState != BossStageState.Battle)
+            return;
+
         DefeatStage();
     }
 
@@ -212,23 +250,54 @@ public class BossStageController : MonoBehaviour
         SetRestrictionWalls(false); // 보스전 끝나면 제한 벽 끄기
         Debug.Log("보스 클리어!");
 
-        if (clearPanel != null)
-            clearPanel.SetActive(true);
+        if (clearPanelRoutine != null)
+            StopCoroutine(clearPanelRoutine); // 이전 문구 코루틴 정리
+
+        clearPanelRoutine = StartCoroutine(ClearPanelRoutine()); // 클리어 문구 잠깐 표시
 
         if (cameraFollow != null)
             cameraFollow.isLocked = false;
 
-        if (playerControlLock != null)
-            playerControlLock.Lock("StageEnd");
+        if (lockPlayerOnBossClear && playerControlLock != null)
+            playerControlLock.Lock("StageEnd"); // 진짜 게임 끝일 때만 잠금
 
         if (bossSummonController != null)
             bossSummonController.StopSummon(true); // 클리어 시 잡몹 전부 정리
+        
+        if (playerHealth != null)
+            playerHealth.OnDied -= OnPlayerDied; // 보스전 끝나면 구독 해제
 
-        // 나중에 보상 지급, 저장, 다음 스테이지 이동 추가
+        if (assistEventController != null)
+            assistEventController.StopAssistCheck(); // 보스 클리어 시 지원 이벤트 정지
+
+        if (bossRewardController != null)
+            bossRewardController.GiveRewards(); // 보스 처치 보상 지급 + 영구 저장
+
+        if (openPortalOnBossClear && portalController != null)
+            portalController.PortalOpen(); // 보스 처치로 포탈 열기
+
+
+        // 나중에 다음 스테이지 이동 추가
     }
+    private IEnumerator ClearPanelRoutine()
+    {
+        if (clearPanel != null)
+            clearPanel.SetActive(true); // 클리어 문구 켜기
 
+        yield return new WaitForSeconds(clearPanelShowTime);
+
+        if (clearPanel != null)
+            clearPanel.SetActive(false); // 시간이 지나면 문구 끄기
+
+        clearPanelRoutine = null;
+    }
     public void DefeatStage()
     {
+        // 보스전 중이 아닐 때는 보스 패배 UI를 띄우지 않음
+        if (currentState != BossStageState.Appearing &&
+            currentState != BossStageState.Battle)
+            return;
+
         if (currentState == BossStageState.Clear || currentState == BossStageState.Defeat)
             return;
 
@@ -247,6 +316,13 @@ public class BossStageController : MonoBehaviour
 
         if (bossSummonController != null)
             bossSummonController.StopSummon(true); // 패배 시 잡몹 전부 정리
+
+        if (playerHealth != null)
+            playerHealth.OnDied -= OnPlayerDied; // 보스전 끝나면 구독 해제
+
+        if (assistEventController != null)
+            assistEventController.StopAssistCheck(); // 패배 시 지원 이벤트 정지
+
         // 나중에 GameManager.Instance.OnPlayerDeath() 강제 호출
     }
 
@@ -270,6 +346,21 @@ public class BossStageController : MonoBehaviour
 
             wall.SetWallActive(isActive); // 각 제한 벽 켜기/끄기
         }
+    }
+
+
+    public void OpenEscapePortalByAssist()
+    {
+        if (currentState != BossStageState.Battle)
+            return; // 보스전 중일 때만 지원 이벤트 허용
+
+        Debug.Log("지원 NPC가 포탈을 열었습니다.");
+
+        if (openPortalOnAssist && portalController != null)
+            portalController.PortalOpen(); // 포탈 열기
+
+        if (disableWallsOnAssist)
+            SetRestrictionWalls(false); // 필요하면 제한벽도 해제
     }
 
 }

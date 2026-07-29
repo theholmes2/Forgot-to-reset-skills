@@ -7,7 +7,7 @@ public class EnemyAttackController : MonoBehaviour
     public EnemyMovement movement;   // 타겟/거리/공격 이동 담당
 
     public float attackCooldown = 2f;    // 공격 쿨타임
-    public float attackMotionTime = 0.5f; // 돌진 이후 공격 모션 유지 시간
+    
 
     private float lastAttackTime;
     private bool isAttacking;
@@ -79,9 +79,6 @@ public class EnemyAttackController : MonoBehaviour
             yield break;
         }
 
-
-        // 공격 애니메이션/후딜 시간
-        yield return new WaitForSeconds(attackMotionTime);
 
         if (enemy.currentState != Enemy.State.Dead)
             enemy.ChangeState(Enemy.State.Chase);

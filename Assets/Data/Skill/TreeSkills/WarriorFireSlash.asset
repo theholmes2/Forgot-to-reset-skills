@@ -19,12 +19,12 @@ MonoBehaviour:
     \uBCA4\uB2E4."
   icon: {fileID: 4974743638414346765, guid: 71f16248f11c4ea1b37663d916df42d6, type: 3}
   isUnLock: 0
-  damageMultiplier: 1.5
+  damageMultiplier: 4
   range: 1
-  cooldown: 2
+  cooldown: 1
   manaCost: 8
   castTime: 0
-  skillPrefab: {fileID: 0}
+  skillPrefab: {fileID: 391080275294807371, guid: 85dc0e0716fa4ba4e9393cee482f9b43, type: 3}
   spawnType: 1
   animationType: 1
   isBuffSkill: 0

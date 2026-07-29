@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba5c04314509e84aa7725f29fe920d3, type: 3}
+  m_Name: reward_boss_fire_slash
+  m_EditorClassIdentifier: 
+  id: reward_boss_fire_slash
+  rewardType: 0
+  skillData: {fileID: 11400000, guid: 59e0a6c6ef1b4487a414d66318d4569e, type: 2}
+  amount: 1

@@ -78,7 +78,7 @@ public class SkillTreeEquipPopupUI : MonoBehaviour
                 slotButton.button.onClick.AddListener(() => EquipSelectedSkill(key));
         }
 
-        Close();
+     
     }
 
     private void Update()
