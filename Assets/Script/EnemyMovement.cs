@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+
 public class EnemyMovement : MonoBehaviour
 {
     [Header("Move")]
@@ -55,7 +56,11 @@ public class EnemyMovement : MonoBehaviour
 
     protected float stateTimer;
     protected float alertTimer;
-    
+
+    [Header("Attack")]
+    public float defaultAttackActiveTime = 0.2f;
+
+    public event System.Action<float> OnAttackActive;
 
     protected virtual void Awake()
     {
@@ -63,7 +68,16 @@ public class EnemyMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         if (visualRoot == null)
-            visualRoot = transform; // 비어 있으면 자기 자신 사용
+            visualRoot = transform;
+
+        EnemyTraitController traitController = GetComponent<EnemyTraitController>();
+
+        if (traitController != null &&
+            traitController.EnemyData != null &&
+            traitController.EnemyData.baseStats != null)
+        {
+            moveSpeed = traitController.EnemyData.baseStats.moveSpeed;
+        }
     }
 
     protected virtual void Start()
@@ -422,11 +436,8 @@ public class EnemyMovement : MonoBehaviour
         StopMove();
     }
 
-    public virtual IEnumerator AttackMoveRoutine()
-    {
-        // 기본 적은 공격 중 별도 이동 없음
-        yield break;
-    }
+
+  
 
     public void ClearTarget()
     {
@@ -452,5 +463,17 @@ public class EnemyMovement : MonoBehaviour
             Gizmos.color = Color.yellow;
             Gizmos.DrawRay(frontGroundCheck.position, Vector3.down * stepDownCheckDistance);
         }
+    }
+
+    protected void NotifyAttackActive(float activeTime)
+    {
+        OnAttackActive?.Invoke(activeTime);
+    }
+
+    public virtual IEnumerator AttackMoveRoutine()
+    {
+        NotifyAttackActive(defaultAttackActiveTime);
+
+        yield return new WaitForSeconds(defaultAttackActiveTime);
     }
 }

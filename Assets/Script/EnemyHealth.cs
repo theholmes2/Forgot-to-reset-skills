@@ -67,8 +67,8 @@ public class EnemyHealth : MonoBehaviour
 
         if (enemy.currentState == Enemy.State.Dead)
             return; // 죽은 적은 데미지를 받지 않음
-
-        Debug.Log("Enemy 데미지 받음: " + damage);
+        float finalDamage = ApplyDefense(damage);
+        Debug.Log("Enemy 데미지 받음: 원본 " + damage + " / 방어 적용 " + finalDamage);
 
         // [추가] 어떤 스킬에 맞았는지 보스 광폭화 컨트롤러에게 전달
         // 일반공격처럼 skillId가 없으면 빈 문자열이라서 광폭화 조건에 걸리지 않음
@@ -79,7 +79,7 @@ public class EnemyHealth : MonoBehaviour
             rageController.CheckRage(skillId);
         }
 
-        currentHealth -= damage;
+        currentHealth -= finalDamage;
         OnHealthChanged?.Invoke(currentHealth, maxHealth); // 데미지 받은 뒤 UI 갱신
 
         if (currentHealth <= 0f)
@@ -103,5 +103,21 @@ public class EnemyHealth : MonoBehaviour
         enemy.ChangeState(Enemy.State.Dead); // 먼저 죽음 상태로 전환
 
         OnDied?.Invoke(this); // 상태 변경 후 죽었다고 알림
+    }
+
+    private float ApplyDefense(float damage)
+    {
+        if (traitController == null)
+            return damage;
+
+        if (traitController.EnemyData == null)
+            return damage;
+
+        if (traitController.EnemyData.baseStats == null)
+            return damage;
+
+        float defense = traitController.EnemyData.baseStats.defense;
+
+        return Mathf.Max(1f, damage - defense);
     }
 }

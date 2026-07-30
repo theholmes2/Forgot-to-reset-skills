@@ -55,12 +55,10 @@ public class BossRewardController : MonoBehaviour
                     if (reward.skillData == null)
                         continue;
 
-                    bool added = skillTreeController.GrantPermanentSkillReward(
-                        reward.skillData
-                    );
+                    bool isNewReward = skillTreeController.GrantPermanentSkillReward(reward.skillData);
 
-                    if (!added)
-                        continue;
+                    if (!isNewReward)
+                        continue; // 기존 보상이면 데이터만 보정하고 획득 UI는 표시하지 않음
 
                     hasChanged = true;
                     receivedRewardNames.Add(reward.skillData.displayName);

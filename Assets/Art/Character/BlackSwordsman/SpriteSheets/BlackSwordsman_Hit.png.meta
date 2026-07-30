@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: 7067596893d06f54bbcee3510a048d88
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7759266429896543519
+    second: BlackSwordsman_Hit_0
+  - first:
+      213: 6894756945374034058
+    second: BlackSwordsman_Hit_1
+  - first:
+      213: -416139553764612376
+    second: BlackSwordsman_Hit_2
+  - first:
+      213: -4259459564311949731
+    second: BlackSwordsman_Hit_3
+  - first:
+      213: -4195815465090284036
+    second: BlackSwordsman_Hit_4
+  - first:
+      213: 1653101279355321980
+    second: BlackSwordsman_Hit_5
+  - first:
+      213: -5326644756099536879
+    second: BlackSwordsman_Hit_6
+  - first:
+      213: -4652136854297669350
+    second: BlackSwordsman_Hit_7
+  - first:
+      213: -7710509682364875544
+    second: BlackSwordsman_Hit_8
+  - first:
+      213: 6459648559461140028
+    second: BlackSwordsman_Hit_9
+  - first:
+      213: 9198940920288724788
+    second: BlackSwordsman_Hit_10
+  - first:
+      213: 5491358260816176561
+    second: BlackSwordsman_Hit_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlackSwordsman_Hit_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 215
+        width: 153
+        height: 274
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e23768da4c815490800000000000000
+      internalID: -7759266429896543519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Hit_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 219
+        width: 158
+        height: 251
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a883dad69e81faf50800000000000000
+      internalID: 6894756945374034058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Hit_3
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 222
+        width: 157
+        height: 272
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5ecb06081c53e4c0800000000000000
+      internalID: -4259459564311949731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Hit_4
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 221
+        width: 160
+        height: 248
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf5043c901875c5c0800000000000000
+      internalID: -4195815465090284036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Hit_6
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 219
+        width: 176
+        height: 235
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1186dfbe0d4f316b0800000000000000
+      internalID: -5326644756099536879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Hit_7
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 219
+        width: 180
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a119519dd2a407fb0800000000000000
+      internalID: -4652136854297669350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Hit_8
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 219
+        width: 183
+        height: 225
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ec7e61cb44cef490800000000000000
+      internalID: -7710509682364875544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Hit_9
+      rect:
+        serializedVersion: 2
+        x: 1511
+        y: 219
+        width: 179
+        height: 229
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c368b80e32845a950800000000000000
+      internalID: 6459648559461140028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Hit_10
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 216
+        width: 160
+        height: 234
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4374d97670439af70800000000000000
+      internalID: 9198940920288724788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Hit_11
+      rect:
+        serializedVersion: 2
+        x: 1956
+        y: 215
+        width: 152
+        height: 269
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b5ea566e39353c40800000000000000
+      internalID: 5491358260816176561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 10c9ce209a0b6eb4b893c1a9ba3e4c62
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BlackSwordsman_Hit_0: -7759266429896543519
+      BlackSwordsman_Hit_1: 6894756945374034058
+      BlackSwordsman_Hit_10: 9198940920288724788
+      BlackSwordsman_Hit_11: 5491358260816176561
+      BlackSwordsman_Hit_2: -416139553764612376
+      BlackSwordsman_Hit_3: -4259459564311949731
+      BlackSwordsman_Hit_4: -4195815465090284036
+      BlackSwordsman_Hit_5: 1653101279355321980
+      BlackSwordsman_Hit_6: -5326644756099536879
+      BlackSwordsman_Hit_7: -4652136854297669350
+      BlackSwordsman_Hit_8: -7710509682364875544
+      BlackSwordsman_Hit_9: 6459648559461140028
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

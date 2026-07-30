@@ -17,9 +17,10 @@ MonoBehaviour:
   baseStats:
     attack: 10
     defense: 0
-    maxHp: 100
+    maxHp: 250
     maxMp: 50
     moveSpeed: 3
+    knockBack: 15
     critRate: 0
     critDamage: 1.5
     castSpeed: 1

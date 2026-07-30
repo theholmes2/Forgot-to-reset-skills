@@ -1,16 +1,16 @@
 using System;
 using System.Collections;
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI;
+
 
 public class PlayerHealth : MonoBehaviour
 {
     public float currentHealth; // 현재 체력
 
     public PlayerStatController playerStatController; // 최종 스탯 계산기
-
+    public PlayerAnimationController animationController;
     public event Action OnDied; // 플레이어 사망 알림
-    SPUM_Prefabs prefabs;
+   
     private bool isDead;
     public bool IsDead
     {
@@ -22,8 +22,9 @@ public class PlayerHealth : MonoBehaviour
             playerStatController = GetComponent<PlayerStatController>();
 
         currentHealth = GetMaxHealth(); // 시작 체력 초기화
+        if (animationController == null)
+            animationController = GetComponent<PlayerAnimationController>();
 
-        prefabs = GetComponent<SPUM_Prefabs>();
     }
 
     public void TakeDamage(float damage)
@@ -37,7 +38,11 @@ public class PlayerHealth : MonoBehaviour
         {
             currentHealth = 0f;
             Die();
+            return;
         }
+
+        if (animationController != null)
+            animationController.PlayHit();
     }
 
     public void ForceDie()
@@ -77,10 +82,10 @@ public class PlayerHealth : MonoBehaviour
 
         isDead = true;
 
-        if (prefabs != null)
-            prefabs.PlayAnimation(PlayerState.DEATH, 0);
+        if (animationController != null)
+            animationController.PlayDie();
 
-        
+
         OnDied?.Invoke(); // 사망 알림
         StartCoroutine(DeathReturnRoutine()); // 잠깐 기다렸다가 회귀
 

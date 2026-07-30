@@ -77,6 +77,8 @@ public class HamsterMovement : EnemyMovement
             currentDashTime = Random.Range(randomDashTimeMin, randomDashTimeMax); //  랜덤 돌진 거리 느낌
         }
 
+        NotifyAttackActive(currentDashTime);
+
         float direction = isMovingRight ? 1f : -1f;
 
         if (canJump && IsGrounded() && Random.value < dashJumpChance)

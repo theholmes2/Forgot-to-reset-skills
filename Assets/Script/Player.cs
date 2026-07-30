@@ -11,15 +11,15 @@ public class Player : MonoBehaviour
     public float jumpPower = 10f;//점프힘
     Rigidbody2D rigid;
     public int speed = 10; //이동속도
-    bool isRun;
+  
     bool isJumping;
-    bool isRight;
+
  
 
     public int JumpCount;
     public int MaxJumpCount;
 
-    public SPUM_Prefabs PrefabsController;
+    public PlayerAnimationController animationController;
     public PlayerSkillController playerSkillController;
 
     public SkillTreeUIManager skillTreeUIManager;
@@ -37,8 +37,8 @@ public class Player : MonoBehaviour
         JumpCount = MaxJumpCount; //초기 점프 초기화
         playerSkillController = GetComponent<PlayerSkillController>();
 
-        PrefabsController.PopulateAnimationLists();
-        PrefabsController.OverrideControllerInit();
+        if (animationController == null)
+            animationController = GetComponent<PlayerAnimationController>();
 
         if (skillTreeUIManager == null)
         {
@@ -50,25 +50,28 @@ public class Player : MonoBehaviour
     }
     void FixedUpdate()
     {
-
         if (playerHealth != null && playerHealth.IsDead)
         {
-            rigid.linearVelocity = Vector2.zero; // 죽으면 완전히 멈춤
-            return; // Move, Jump, Idle 실행 안 함
+            rigid.linearVelocity = Vector2.zero;
+
+            if (animationController != null)
+                animationController.SetMovement(0f);
+
+            return;
         }
-
-
 
         if (controlLock != null && controlLock.IsLocked)
         {
-            rigid.linearVelocity = new Vector2(0, rigid.linearVelocity.y); // 좌우 이동만 멈춤
-            
+            rigid.linearVelocity = new Vector2(0f, rigid.linearVelocity.y);
+
+            if (animationController != null)
+                animationController.SetMovement(0f);
+
             return;
         }
 
         Move();
         Jump();
-        SetIdle();
     }
     void OnMove(InputValue value)
     {
@@ -83,44 +86,19 @@ public class Player : MonoBehaviour
 
         inputVec = value.Get<Vector2>(); //wasd 받아서 방향전달
 
-        if (inputVec.x > 0 && !isRight) //오른쪽이동 + 오른쪽안보면
-        {
-            transform.Rotate(0, 180, 0); //방향돌리기 (오른쪽)
-            isRight = true; //오른쪽 보는중
-        }
-        else if (inputVec.x < 0 && isRight) //왼쪽이동과 오른쪽보면
-        {
-            transform.Rotate(0, 180, 0);  //방향돌리기 (왼쪽)
-            isRight = false; //왼쪽보는중
-        }
+     
     }
 
     void Move()
     {
 
-        if (inputVec.y < 0) //아래 누르면
-        {
-            rigid.linearVelocity = new Vector2(inputVec.x * speed, inputVec.y * speed * 2); //아래로도 이동
-            PrefabsController.PlayAnimation(PlayerState.MOVE, 0);
-
-        }
+        if (inputVec.y < 0f)
+            rigid.linearVelocity = new Vector2(inputVec.x * speed, inputVec.y * speed * 2f);
         else
-        {
-            rigid.linearVelocity = new Vector2(inputVec.x * speed, rigid.linearVelocity.y); //좌우이동,위아래는 변동없음
+            rigid.linearVelocity = new Vector2(inputVec.x * speed, rigid.linearVelocity.y);
 
-            PrefabsController.PlayAnimation(PlayerState.MOVE, 0);
-
-        }
-
-
-
-    }
-    void SetIdle()
-    {
-        if (inputVec.x == 0)
-        { //좌우이동이 없다면 Idel로
-            PrefabsController.GoIdleAnimation();
-        }
+        if (animationController != null)
+            animationController.SetMovement(rigid.linearVelocity.x);
 
     }
 

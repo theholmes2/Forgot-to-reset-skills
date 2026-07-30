@@ -12,6 +12,14 @@ public class EnemyAttackController : MonoBehaviour
     private float lastAttackTime;
     private bool isAttacking;
 
+    [Header("Attack HitBox")]
+    public GameObject attackPrefab;
+    public Transform attackPoint;
+    public float fallbackDamage = 1f;
+
+    private EnemyTraitController traitController;
+
+
     private void Awake()
     {
         if (enemy == null)
@@ -19,6 +27,8 @@ public class EnemyAttackController : MonoBehaviour
 
         if (movement == null)
             movement = GetComponent<EnemyMovement>();
+
+        traitController = GetComponent<EnemyTraitController>();
     }
 
     private void Update()
@@ -69,6 +79,8 @@ public class EnemyAttackController : MonoBehaviour
 
         enemy.ChangeState(Enemy.State.Attack);
 
+       
+
         // 기본 적은 멈춤, 햄스터는 돌진
         yield return movement.AttackMoveRoutine();
 
@@ -84,5 +96,53 @@ public class EnemyAttackController : MonoBehaviour
             enemy.ChangeState(Enemy.State.Chase);
 
         isAttacking = false;
+    }
+
+    private float GetAttackDamage()
+    {
+        if (traitController == null)
+            return fallbackDamage;
+
+        if (traitController.EnemyData == null)
+            return fallbackDamage;
+
+        if (traitController.EnemyData.baseStats == null)
+            return fallbackDamage;
+
+        return traitController.EnemyData.baseStats.attack;
+    }
+
+    private void SpawnAttackHitBox(float activeTime)
+    {
+        if (attackPrefab == null)
+            return;
+
+        if (attackPoint == null)
+            return;
+
+        GameObject attackObject = Instantiate(attackPrefab, attackPoint.position, attackPoint.rotation, attackPoint);
+
+        EnemyAttackHitBox hitBox = attackObject.GetComponent<EnemyAttackHitBox>();
+
+        if (hitBox == null)
+        {
+            Debug.LogWarning("적 공격 프리팹에 EnemyAttackHitBox가 없습니다.");
+            Destroy(attackObject);
+            return;
+        }
+
+        hitBox.Init(GetAttackDamage(), activeTime);
+    }
+
+    private void OnEnable()
+    {
+        if (movement != null)
+            movement.OnAttackActive += SpawnAttackHitBox;
+    }
+
+    private void OnDisable()
+    {
+        if (movement != null)
+            movement.OnAttackActive -= SpawnAttackHitBox;
     }
 }

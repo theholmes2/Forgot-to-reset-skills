@@ -7,7 +7,11 @@ public class CombatResolver : MonoBehaviour
     public RankResolver rankResolver;
     public ElementResolver elementResolver;
 
-
+    private void Awake()
+    {
+        if (playerStatController == null)
+            playerStatController = GetComponent<PlayerStatController>();
+    }
     public float GetFinalAttackDamage(SkillData skillData)
     {
 

@@ -40,17 +40,27 @@ public class PlayerSkillController : MonoBehaviour
     public Transform attackPoint; //공격 위치 기준
     public CombatResolver combatResolver; // 최종 데미지 계산 담당
 
-    public SPUM_Prefabs PrefabsController; //애니메이션 참조
+    public PlayerAnimationController animationController;
     public PlayerStatController playerStatController;
     private void Awake()
     {
-        // 인스펙터에 안 넣었을 때 자동으로 찾기
         if (combatResolver == null)
-        {
             combatResolver = GetComponent<CombatResolver>();
+
+        if (animationController == null)
+            animationController = GetComponent<PlayerAnimationController>();
+
+        if (playerStatController == null)
+            playerStatController = GetComponent<PlayerStatController>();
+
+        if (attackPoint == null)
+        {
+            Transform facingRoot = transform.Find("FacingRoot");
+
+            if (facingRoot != null)
+                attackPoint = facingRoot.Find("AttackPoint");
         }
     }
-
 
     private void Update()
     {
@@ -146,20 +156,17 @@ public class PlayerSkillController : MonoBehaviour
         return false;
     }
 
-    void PlaySkillAnimation(SkillAnimationType skillanim) //타입별 애니 재생
+    private void PlaySkillAnimation(SkillAnimationType skillAnimation)
     {
-        if (PrefabsController == null)
+        if (animationController == null)
             return;
 
-        switch (skillanim)
+        switch (skillAnimation)
         {
             case SkillAnimationType.Attack:
-                PrefabsController.AttackAnimation();
-                break;
-            default:
+                animationController.PlayAttack();
                 break;
         }
-        
     }
 
     private bool UseSkill(SkillData skillData)

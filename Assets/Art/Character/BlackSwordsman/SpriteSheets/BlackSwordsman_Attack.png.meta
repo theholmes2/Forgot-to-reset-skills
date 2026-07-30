@@ -1,0 +1,482 @@
+fileFormatVersion: 2
+guid: 120937704162360479f118576fb79532
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1666774723217277621
+    second: BlackSwordsman_Attack_0
+  - first:
+      213: 3273645071204537620
+    second: BlackSwordsman_Attack_1
+  - first:
+      213: 6006735338024465660
+    second: BlackSwordsman_Attack_2
+  - first:
+      213: -4844923512505551779
+    second: BlackSwordsman_Attack_3
+  - first:
+      213: -480404946010849955
+    second: BlackSwordsman_Attack_4
+  - first:
+      213: 9047521459965895638
+    second: BlackSwordsman_Attack_5
+  - first:
+      213: -8296099710497455881
+    second: BlackSwordsman_Attack_6
+  - first:
+      213: 1115241755981467919
+    second: BlackSwordsman_Attack_7
+  - first:
+      213: -5361170103338401543
+    second: BlackSwordsman_Attack_8
+  - first:
+      213: -8545618144580717476
+    second: BlackSwordsman_Attack_9
+  - first:
+      213: 2346069259016875152
+    second: BlackSwordsman_Attack_10
+  - first:
+      213: 5919935430943053563
+    second: BlackSwordsman_Attack_11
+  - first:
+      213: 1746502034752933787
+    second: BlackSwordsman_Attack_12
+  - first:
+      213: 4041093013841545544
+    second: BlackSwordsman_Attack_13
+  - first:
+      213: 4022238202655439966
+    second: BlackSwordsman_Attack_14
+  - first:
+      213: 5861678048909636504
+    second: BlackSwordsman_Attack_15
+  - first:
+      213: 3871130927362420615
+    second: BlackSwordsman_Attack_16
+  - first:
+      213: -4228365732532808360
+    second: BlackSwordsman_Attack_17
+  - first:
+      213: 4372370030069470115
+    second: BlackSwordsman_Attack_18
+  - first:
+      213: 2054522446001676310
+    second: BlackSwordsman_Attack_19
+  - first:
+      213: 6486820609970937097
+    second: BlackSwordsman_Attack_20
+  - first:
+      213: 608891169020219242
+    second: BlackSwordsman_Attack_21
+  - first:
+      213: -6075292951201253869
+    second: BlackSwordsman_Attack_22
+  - first:
+      213: 7297738694027641768
+    second: BlackSwordsman_Attack_23
+  - first:
+      213: -9022419911745100482
+    second: BlackSwordsman_Attack_24
+  - first:
+      213: -1044534081250175846
+    second: BlackSwordsman_Attack_25
+  - first:
+      213: 1349961937144354827
+    second: BlackSwordsman_Attack_26
+  - first:
+      213: -1010402376837438586
+    second: BlackSwordsman_Attack_27
+  - first:
+      213: 2588327584641864764
+    second: BlackSwordsman_Attack_28
+  - first:
+      213: 2676970708902170569
+    second: BlackSwordsman_Attack_29
+  - first:
+      213: -6924599111667512129
+    second: BlackSwordsman_Attack_30
+  - first:
+      213: -633404427948735647
+    second: BlackSwordsman_Attack_31
+  - first:
+      213: -3548841445934131189
+    second: BlackSwordsman_Attack_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlackSwordsman_Attack_23
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 80
+        width: 99
+        height: 133
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a304295da6c64560800000000000000
+      internalID: 7297738694027641768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Attack_24
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 81
+        width: 145
+        height: 150
+      alignment: 9
+      pivot: {x: 0.625804, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35a502a4ece9c280800000000000000
+      internalID: -9022419911745100482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Attack_25
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 82
+        width: 204
+        height: 147
+      alignment: 9
+      pivot: {x: 0.16862173, y: 0.007299618}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a945b4b89c11181f0800000000000000
+      internalID: -1044534081250175846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Attack_26
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 61
+        width: 257
+        height: 162
+      alignment: 9
+      pivot: {x: 0.13675486, y: 0.15556887}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0899cbba370cb210800000000000000
+      internalID: 1349961937144354827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Attack_27
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 66
+        width: 267
+        height: 146
+      alignment: 9
+      pivot: {x: 0.13026525, y: 0.14722145}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 683e46044645af1f0800000000000000
+      internalID: -1010402376837438586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Attack_28
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 55
+        width: 260
+        height: 147
+      alignment: 9
+      pivot: {x: 0.15745427, y: 0.18611903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c345ce489369be320800000000000000
+      internalID: 2588327584641864764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Attack_29
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 61
+        width: 174
+        height: 135
+      alignment: 9
+      pivot: {x: 0.20027179, y: 0.20040724}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cf4d323da2862520800000000000000
+      internalID: 2676970708902170569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Attack_30
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 52
+        width: 142
+        height: 141
+      alignment: 9
+      pivot: {x: 0.28263488, y: 0.22070448}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc8219cbc1e6ef90800000000000000
+      internalID: -6924599111667512129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Attack_31
+      rect:
+        serializedVersion: 2
+        x: 1885
+        y: 57
+        width: 140
+        height: 132
+      alignment: 9
+      pivot: {x: 0.2795297, y: 0.21778817}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 163c4f85702b537f0800000000000000
+      internalID: -633404427948735647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BlackSwordsman_Attack_32
+      rect:
+        serializedVersion: 2
+        x: 2038
+        y: 65
+        width: 118
+        height: 117
+      alignment: 9
+      pivot: {x: 0.31058413, y: 0.10883168}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0899eae18bffbec0800000000000000
+      internalID: -3548841445934131189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 05865a035687c1f4995baefd5782411b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      BlackSwordsman_Attack_0: -1666774723217277621
+      BlackSwordsman_Attack_1: 3273645071204537620
+      BlackSwordsman_Attack_10: 2346069259016875152
+      BlackSwordsman_Attack_11: 5919935430943053563
+      BlackSwordsman_Attack_12: 1746502034752933787
+      BlackSwordsman_Attack_13: 4041093013841545544
+      BlackSwordsman_Attack_14: 4022238202655439966
+      BlackSwordsman_Attack_15: 5861678048909636504
+      BlackSwordsman_Attack_16: 3871130927362420615
+      BlackSwordsman_Attack_17: -4228365732532808360
+      BlackSwordsman_Attack_18: 4372370030069470115
+      BlackSwordsman_Attack_19: 2054522446001676310
+      BlackSwordsman_Attack_2: 6006735338024465660
+      BlackSwordsman_Attack_20: 6486820609970937097
+      BlackSwordsman_Attack_21: 608891169020219242
+      BlackSwordsman_Attack_22: -6075292951201253869
+      BlackSwordsman_Attack_23: 7297738694027641768
+      BlackSwordsman_Attack_24: -9022419911745100482
+      BlackSwordsman_Attack_25: -1044534081250175846
+      BlackSwordsman_Attack_26: 1349961937144354827
+      BlackSwordsman_Attack_27: -1010402376837438586
+      BlackSwordsman_Attack_28: 2588327584641864764
+      BlackSwordsman_Attack_29: 2676970708902170569
+      BlackSwordsman_Attack_3: -4844923512505551779
+      BlackSwordsman_Attack_30: -6924599111667512129
+      BlackSwordsman_Attack_31: -633404427948735647
+      BlackSwordsman_Attack_32: -3548841445934131189
+      BlackSwordsman_Attack_4: -480404946010849955
+      BlackSwordsman_Attack_5: 9047521459965895638
+      BlackSwordsman_Attack_6: -8296099710497455881
+      BlackSwordsman_Attack_7: 1115241755981467919
+      BlackSwordsman_Attack_8: -5361170103338401543
+      BlackSwordsman_Attack_9: -8545618144580717476
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

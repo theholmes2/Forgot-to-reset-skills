@@ -42,6 +42,7 @@ Transform:
   - {fileID: 4537460694932567330}
   - {fileID: 3576527202388916793}
   - {fileID: 3587027668174011749}
+  - {fileID: 3434364731775057172}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &3882320157257335254
@@ -236,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 326f36c038de82542b0c8da8bcf0bca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 769edc2732a6e4946ab37f6326e24426, type: 2}
+  enemyData: {fileID: 11400000, guid: 082af21e5dd1cc941aab965099cbea2c, type: 2}
 --- !u!114 &6546237097654807701
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -252,7 +253,9 @@ MonoBehaviour:
   enemy: {fileID: 0}
   movement: {fileID: 0}
   attackCooldown: 1
-  attackMotionTime: 0.4
+  attackPrefab: {fileID: 2969128702864474781, guid: 60afd3162f004544e91afe923bfb74d7, type: 3}
+  attackPoint: {fileID: 3434364731775057172}
+  fallbackDamage: 1
 --- !u!114 &8987642801422299076
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -282,7 +285,6 @@ MonoBehaviour:
   alertTime: 2
   canJump: 0
   jumpPower: 6
-  jumpCooldown: 0.8
   stepJumpChance: 0.8
   target: {fileID: 0}
   groundCheck: {fileID: 8902093292246567695}
@@ -294,8 +296,11 @@ MonoBehaviour:
   groundCheckRadius: 0.15
   frontCheckRadius: 0.15
   wallCheckDistance: 0.4
+  stepDownCheckDistance: 3
+  canStepDown: 1
   visualRoot: {fileID: 0}
   isMovingRight: 1
+  defaultAttackActiveTime: 0.2
   dashSpeed: 8
   dashTime: 0.25
   dashReadyTime: 0.15
@@ -484,6 +489,37 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &5832506213589845261
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3434364731775057172}
+  m_Layer: 6
+  m_Name: AttackPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3434364731775057172
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5832506213589845261}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.47, y: 3, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1647391244757638087}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6069328793758650625
 GameObject:
   m_ObjectHideFlags: 0

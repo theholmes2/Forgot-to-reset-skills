@@ -283,15 +283,20 @@ public class SkillTreeController : MonoBehaviour
         if (skillData == null)
             return false;
 
-        bool isChanged = AddPermanentSkill(skillData, false);
+        // 지급하기 전에 이미 영구 스킬을 보유하고 있었는지 확인
+        bool wasPermanentlyUnlocked =
+            playerProgress.unlockedSkillPool.Contains(skillData.id);
+
+        bool dataChanged = AddPermanentSkill(skillData, false);
 
         SkillTreeNodeData node = FindNodeBySkill(skillData);
 
         if (node != null &&
             !playerProgress.unlockedSkillNodeIds.Contains(node.nodeId))
         {
+            // 기존 저장 데이터에 노드 해금만 빠져 있다면 함께 복구
             playerProgress.unlockedSkillNodeIds.Add(node.nodeId);
-            isChanged = true;
+            dataChanged = true;
         }
 
         if (node == null)
@@ -302,11 +307,12 @@ public class SkillTreeController : MonoBehaviour
             );
         }
 
-        if (isChanged && autoSave)
+        if (dataChanged && autoSave)
         {
             SaveSystem.Save(playerProgress);
         }
 
-        return isChanged;
+        // 실제 데이터 변경 여부가 아니라 최초 영구 획득 여부를 반환
+        return !wasPermanentlyUnlocked;
     }
 }
