@@ -10,6 +10,14 @@ public class PlayerAnimationController : MonoBehaviour
     private static readonly int HitHash = Animator.StringToHash("Hit");
     private static readonly int DieHash = Animator.StringToHash("Die");
 
+    private static readonly int JumpHash = Animator.StringToHash("Jump");
+    private static readonly int LandHash = Animator.StringToHash("Land");
+    private static readonly int VerticalSpeedHash = Animator.StringToHash("VerticalSpeed");
+    private static readonly int IsGroundedHash = Animator.StringToHash("IsGrounded");
+
+    private bool wasGrounded = true;
+    private float ignoreGroundedUntil;
+
     private const string AttackLockKey = "Attack";
 
     private PlayerControlLock controlLock;
@@ -109,4 +117,37 @@ public class PlayerAnimationController : MonoBehaviour
         if (controlLock != null)
             controlLock.Unlock(AttackLockKey);
     }
+
+    public void PlayJump()
+    {
+        if (isDead)
+            return;
+
+        ignoreGroundedUntil = Time.time + 0.1f;
+        wasGrounded = false;
+
+        animator.ResetTrigger(LandHash);
+        animator.SetTrigger(JumpHash);
+    }
+
+    public void SetAirState(float verticalSpeed, bool isGrounded)
+    {
+        if (isDead)
+            return;
+
+        if (Time.time < ignoreGroundedUntil)
+            isGrounded = false;
+
+        animator.SetFloat(VerticalSpeedHash, verticalSpeed);
+        animator.SetBool(IsGroundedHash, isGrounded);
+
+        if (!wasGrounded && isGrounded)
+        {
+            animator.ResetTrigger(JumpHash);
+            animator.SetTrigger(LandHash);
+        }
+
+        wasGrounded = isGrounded;
+    }
+
 }

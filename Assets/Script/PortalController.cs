@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PortalController : MonoBehaviour
 {
@@ -15,6 +16,8 @@ public class PortalController : MonoBehaviour
     public GameObject endingPanel; // 플레이해주셔서 감사합니다 UI
     public bool hidePlayerOnEnter = true; // 포탈 진입 시 플레이어 숨길지
     public bool lockPlayerOnEnter = true; // 포탈 진입 시 플레이어 조작 막을지
+    public bool returnToTitleAfterEnding;
+    public float returnToTitleDelay = 5f;
 
     private bool isOpening; // 포탈이 열리는 중인지
     private bool isOpen; // 포탈이 완전히 열렸는지
@@ -139,6 +142,21 @@ public class PortalController : MonoBehaviour
             playerObject.SetActive(false); // 캐릭터 사라짐
 
         if (endingPanel != null)
-            endingPanel.SetActive(true); // 엔딩 UI 표시
+            endingPanel.SetActive(true);
+
+        if (returnToTitleAfterEnding)
+            StartCoroutine(ReturnToTitleRoutine());
+    }
+
+    private IEnumerator ReturnToTitleRoutine()
+    {
+        yield return new WaitForSecondsRealtime(returnToTitleDelay);
+
+        int titleSceneIndex = 0;
+
+        if (GameManager.Instance != null)
+            titleSceneIndex = GameManager.Instance.titleSceneIndex;
+
+        SceneManager.LoadScene(titleSceneIndex);
     }
 }

@@ -28,8 +28,13 @@ public class Player : MonoBehaviour
 
     public PlayerHealth playerHealth;
 
+    public GroundStickController groundStickController;
+
     private void Awake()
     {
+        if (groundStickController == null)
+            groundStickController = GetComponent<GroundStickController>();
+
         if (playerHealth == null)
             playerHealth = GetComponent<PlayerHealth>();
 
@@ -72,6 +77,10 @@ public class Player : MonoBehaviour
 
         Move();
         Jump();
+
+        if (animationController != null && groundStickController != null)
+            animationController.SetAirState(rigid.linearVelocity.y, groundStickController.IsGrounded());
+
     }
     void OnMove(InputValue value)
     {
@@ -121,10 +130,17 @@ public class Player : MonoBehaviour
     {
 
         if (isJumping)
-        { //ㅇㅋ 점프함
-            rigid.linearVelocity = new Vector2(rigid.linearVelocity.x, jumpPower); //점프
-            JumpCount--; //점프 횟수 차감
-            isJumping = false; //점프 끝
+        {
+            if (groundStickController != null)
+                groundStickController.AllowUpwardVelocity(0.25f);
+
+            rigid.linearVelocity = new Vector2(rigid.linearVelocity.x, jumpPower);
+
+            if (animationController != null)
+                animationController.PlayJump();
+
+            JumpCount--;
+            isJumping = false;
         }
 
         if (JumpCount == 0) //점프 횟수 소진

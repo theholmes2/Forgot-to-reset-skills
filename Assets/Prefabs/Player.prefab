@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2029886921363025031}
   - component: {fileID: 471106697368373701}
   - component: {fileID: 9169550345939603561}
+  - component: {fileID: 4182710713161024146}
+  - component: {fileID: 7046032710103587151}
   m_Layer: 0
   m_Name: Visual
   m_TagString: Untagged
@@ -123,6 +125,120 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d281c8759226a74d82f6f64e9c7dad2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!82 &4182710713161024146
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3400774026882116808}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &7046032710103587151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3400774026882116808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10638b83ddead724cab9cd7fa72ec4ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackClip: {fileID: 0}
+  hitClip: {fileID: 0}
+  jumpClip: {fileID: 0}
+  landClip: {fileID: 0}
+  fireSlashClip: {fileID: 0}
 --- !u!1 &6035738802477594461
 GameObject:
   m_ObjectHideFlags: 0
@@ -206,6 +322,7 @@ GameObject:
   - component: {fileID: 8016637097724386942}
   - component: {fileID: 7523500790038437265}
   - component: {fileID: 9047736403239992932}
+  - component: {fileID: 1721514130745450210}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -282,6 +399,7 @@ MonoBehaviour:
   skillTreeUIManager: {fileID: 0}
   controlLock: {fileID: 0}
   playerHealth: {fileID: 0}
+  groundStickController: {fileID: 0}
 --- !u!50 &8603573320103989036
 Rigidbody2D:
   serializedVersion: 5
@@ -416,7 +534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats:
-    attack: 10
+    attack: 100
     defense: 5
     maxHp: 100
     maxMp: 50
@@ -474,3 +592,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 2029886921363025031}
   visual: {fileID: 8838630689452380327}
+--- !u!114 &1721514130745450210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8885418059188129045}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c6a0301c17502448064b4e72b6eb1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigid: {fileID: 8603573320103989036}
+  bodyCollider: {fileID: 1265333253650126611}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  groundCheckDistance: 0.12
+  groundGraceTime: 0.12
+  maxGroundedUpwardSpeed: 1

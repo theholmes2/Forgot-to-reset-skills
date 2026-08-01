@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 9082235846161807221}
   - component: {fileID: 6546237097654807701}
   - component: {fileID: 8987642801422299076}
+  - component: {fileID: -1817532858662657354}
   m_Layer: 6
   m_Name: hamster
   m_TagString: Enemy
@@ -311,6 +312,26 @@ MonoBehaviour:
   randomDashTimeMax: 0.35
   dashJumpChance: 0.25
   dashJumpPower: 3
+--- !u!114 &-1817532858662657354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 21677362411461452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93c6a0301c17502448064b4e72b6eb1a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rigid: {fileID: 3882320157257335254}
+  bodyCollider: {fileID: 7397899701963960740}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  groundCheckDistance: 0.12
+  groundGraceTime: 0.12
+  maxGroundedUpwardSpeed: 0.5
 --- !u!1 &2207017976319729584
 GameObject:
   m_ObjectHideFlags: 0

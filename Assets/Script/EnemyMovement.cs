@@ -62,8 +62,14 @@ public class EnemyMovement : MonoBehaviour
 
     public event System.Action<float> OnAttackActive;
 
+
+    public GroundStickController groundStickController;
+
     protected virtual void Awake()
     {
+        if (groundStickController == null)
+            groundStickController = GetComponent<GroundStickController>();
+
         enemy = GetComponent<Enemy>();
         rb = GetComponent<Rigidbody2D>();
 
@@ -356,6 +362,8 @@ public class EnemyMovement : MonoBehaviour
             return; // 항상 점프하지 않고 확률로 점프
 
         canUseJump = false; // 점프 사용
+
+        groundStickController?.AllowUpwardVelocity(0.25f);
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
     }
 

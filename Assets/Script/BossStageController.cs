@@ -205,9 +205,12 @@ public class BossStageController : MonoBehaviour
         }
 
         Enemy bossEnemy = bossObject.GetComponent<Enemy>();
+        EnemyMovement bossMovement = bossObject.GetComponent<EnemyMovement>();
 
-        if (bossEnemy != null)
-            bossEnemy.ChangeState(Enemy.State.Chase); // 보스전 시작 후 추적 시작
+        if (bossMovement != null && player != null)
+            bossMovement.StartChase(player.transform);
+        else if (bossEnemy != null)
+            bossEnemy.ChangeState(Enemy.State.Chase);
 
         if (shouldLockCamera && cameraFollow != null)
             cameraFollow.isLocked = false; // 카메라 다시 플레이어 추적

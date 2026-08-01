@@ -17,6 +17,9 @@ public class BossAssistEventController : MonoBehaviour
     private bool isTriggered; // 이미 발동됐는지
     private Coroutine checkRoutine;
 
+    public Transform assistSpawnPoint;
+    public SupportCharacterController assistCharacter;
+
     private void Awake()
     {
         if (bossStageController == null)
@@ -30,6 +33,9 @@ public class BossAssistEventController : MonoBehaviour
 
         if (assistMessagePanel != null)
             assistMessagePanel.SetActive(false); // 시작할 때 메시지 숨김
+
+        if (assistCharacter == null && assistNpcObject != null)
+            assistCharacter = assistNpcObject.GetComponent<SupportCharacterController>();
     }
 
     public void BeginAssistCheck()
@@ -91,11 +97,17 @@ public class BossAssistEventController : MonoBehaviour
         isTriggered = true;
         isChecking = false;
 
+        if (assistNpcObject != null && assistSpawnPoint != null)
+            assistNpcObject.transform.SetPositionAndRotation(assistSpawnPoint.position, assistSpawnPoint.rotation);
+
         if (assistNpcObject != null)
-            assistNpcObject.SetActive(true); // 지원 NPC 등장
+            assistNpcObject.SetActive(true);
+
+        if (assistCharacter != null && bossStageController != null && bossStageController.bossObject != null)
+            assistCharacter.BeginAssist(bossStageController.bossObject.transform);
 
         if (bossStageController != null)
-            bossStageController.OpenEscapePortalByAssist(); // 보스전 관리자에게 포탈 열기 요청
+            bossStageController.OpenEscapePortalByAssist();
 
         StartCoroutine(MessageRoutine());
     }

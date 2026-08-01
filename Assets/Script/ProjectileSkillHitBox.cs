@@ -45,15 +45,13 @@ public class ProjectileSkillHitBox : MonoBehaviour
         owner = skillOwner;
         skillId = usedSkillId;
 
-        // 플레이어가 y 180이면 오른쪽을 보는 구조라서 그 기준으로 방향 결정
         if (owner != null)
         {
-            float yRotation = owner.eulerAngles.y;
-            bool isFacingRight = yRotation > 90f && yRotation < 270f;
+            Transform facingRoot = owner.Find("FacingRoot");
+            bool isFacingRight = facingRoot == null || facingRoot.lossyScale.x > 0f;
 
             moveDirection = isFacingRight ? Vector3.right : Vector3.left;
 
-            // 플레이어 방향에 맞춰 투사체 이미지 좌우반전
             foreach (SpriteRenderer renderer in renderers)
             {
                 if (renderer == null)
@@ -66,8 +64,6 @@ public class ProjectileSkillHitBox : MonoBehaviour
         {
             moveDirection = transform.right;
         }
-
-      
     }
 
     private void FadeOut()

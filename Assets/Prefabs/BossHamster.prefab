@@ -541,8 +541,8 @@ MonoBehaviour:
   randomPatrolTimeMax: 3
   randomFlipChance: 0.35
   randomStayChance: 0.25
-  chaseRangeX: 8
-  chaseRangeY: 5
+  chaseRangeX: 22
+  chaseRangeY: 6
   attackRangeX: 1.5
   attackRangeY: 1.5
   alertTime: 2
