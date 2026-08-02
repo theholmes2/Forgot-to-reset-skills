@@ -70,7 +70,7 @@ public class EnemyHealth : MonoBehaviour
         float finalDamage = ApplyDefense(damage);
         Debug.Log("Enemy 데미지 받음: 원본 " + damage + " / 방어 적용 " + finalDamage);
 
-        // [추가] 어떤 스킬에 맞았는지 보스 광폭화 컨트롤러에게 전달
+        // 어떤 스킬에 맞았는지 보스 광폭화 컨트롤러에게 전달
         // 일반공격처럼 skillId가 없으면 빈 문자열이라서 광폭화 조건에 걸리지 않음
         BossRageController rageController = GetComponent<BossRageController>();
 

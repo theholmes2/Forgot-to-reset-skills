@@ -7377,7 +7377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseStats:
-    attack: 10
+    attack: 50
     defense: 5
     maxHp: 100
     maxMp: 50

@@ -208,5 +208,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coll: {fileID: 3310070473686820612}
-  startDelay: 0.2
-  activeTime: 0.2
