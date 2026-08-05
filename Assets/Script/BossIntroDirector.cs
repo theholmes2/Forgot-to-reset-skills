@@ -30,6 +30,10 @@ public class BossIntroDirector : MonoBehaviour
     public float followBossTime = 1f; // 보스를 따라가는 시간
     public float followBossSpeed = 8f; // 보스를 따라가는 속도
 
+    [Header("Sound")]
+    public AudioSource audioSource;
+    public AudioClip introClip;
+
     private void Awake()
     {
         if (cameraShake == null && Camera.main != null)
@@ -37,6 +41,10 @@ public class BossIntroDirector : MonoBehaviour
 
         if (cameraFocusTarget == null && bossObject != null)
             cameraFocusTarget = bossObject.transform; // 기본 포커스는 보스 위치
+
+        if (audioSource == null)
+            audioSource = GetComponent<AudioSource>();
+
     }
 
     public IEnumerator PlayIntro()
@@ -46,6 +54,9 @@ public class BossIntroDirector : MonoBehaviour
 
         if (bossObject != null)
             bossObject.SetActive(true); // 보스 출현
+
+        if (audioSource != null && introClip != null)
+            audioSource.PlayOneShot(introClip);
 
         if (useCameraShake && cameraShake != null)
             cameraShake.Shake(shakeTime, shakePower); // 흔들림 시작

@@ -222,6 +222,9 @@ public class BossStageController : MonoBehaviour
             bossSummonController.StartSummon(); // 보스전 시작 후 잡몹 소환 시작
         currentState = BossStageState.Battle;
 
+        if (GameSoundController.Instance != null)
+            GameSoundController.Instance.PlayBossBgm();
+
         if (assistEventController != null)
             assistEventController.BeginAssistCheck(); // 보스전 시작 후 지원 이벤트 조건 확인
     }
@@ -252,6 +255,12 @@ public class BossStageController : MonoBehaviour
         currentState = BossStageState.Clear;
         SetRestrictionWalls(false); // 보스전 끝나면 제한 벽 끄기
         Debug.Log("보스 클리어!");
+
+        if (GameSoundController.Instance != null)
+        {
+            GameSoundController.Instance.PlayStageClear();
+            GameSoundController.Instance.PlayStageBgm();
+        }
 
         if (clearPanelRoutine != null)
             StopCoroutine(clearPanelRoutine); // 이전 문구 코루틴 정리

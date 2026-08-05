@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -6,6 +7,11 @@ public class SkillTreeController : MonoBehaviour
 {
     public List<SkillTreeData> skillTrees = new(); // 전체 스킬트리 목록
     public SkillTreeData currentData;
+
+    [Header("Default Tree")]
+    public SkillTreeData defaultSkillTree; // 새 게임부터 보이는 기본 스킬트리
+
+    public event Action<int> OnSkillPointsChanged;
 
     PlayerProgress playerProgress;
     RunState runState;
@@ -19,13 +25,20 @@ public class SkillTreeController : MonoBehaviour
         {
             playerProgress = GameManager.Instance.playerProgress;
             runState = GameManager.Instance.runState;
-            return;
         }
-        // GameManager가 없는 단독 테스트 씬에서만 임시 데이터 사용
-        Debug.LogWarning("GameManager가 없어 SkillTreeController가 임시 데이터를 사용합니다.");
-        
-        playerProgress = new PlayerProgress();
-        runState = new RunState();
+        else
+        {
+            Debug.LogWarning("GameManager가 없어 SkillTreeController가 임시 데이터를 사용합니다.");
+            playerProgress = new PlayerProgress();
+            runState = new RunState();
+        }
+
+        EnsureProgressLists();
+
+        if (currentData == null)
+            currentData = defaultSkillTree;
+
+        EnsureDefaultStartNodesUnlocked();
     }
     public SkillTreeNodeData FindNode(string nodeId)
     {
@@ -65,6 +78,9 @@ public class SkillTreeController : MonoBehaviour
 
         if (IsNodeUnlocked(nodeId))
             return false; // 이미 해금된 노드는 다시 해금 불가
+
+        if (!HasEnoughSkillPoint(findNode))
+            return false;
 
         if (findNode.isStartNode == true)  //1.시작노드면 true
         {
@@ -113,19 +129,20 @@ public class SkillTreeController : MonoBehaviour
 
     bool HasEnoughSkillPoint(SkillTreeNodeData node)
     {
-        return false;
+        if (playerProgress == null || node == null)
+            return false;
+
+        return playerProgress.skillPoints >= Mathf.Max(0, node.needSkillPoint);
     }
 
-    public void UnlockNode(string nodeId)
+    public bool UnlockNode(string nodeId)
     {
         SkillTreeNodeData node = FindNode(nodeId); // 노드 찾기
 
-        if (node == null)
-            return;
+        if (node == null || !CanUnlockNode(nodeId))
+            return false;
 
-        if (IsNodeUnlocked(nodeId))
-            return; // 이미 해금된 노드면 종료
-
+        playerProgress.skillPoints -= Mathf.Max(0, node.needSkillPoint);
         playerProgress.unlockedSkillNodeIds.Add(nodeId); // 해금한 노드 기록
 
         if (node.skillData != null)
@@ -136,8 +153,10 @@ public class SkillTreeController : MonoBehaviour
         }
 
         SaveSystem.Save(playerProgress); // 내가 찍은 스킬 노드는 즉시 자동저장
+        OnSkillPointsChanged?.Invoke(playerProgress.skillPoints);
 
         Debug.Log("노드 해금: " + nodeId);
+        return true;
     }
 
     public bool AddPermanentSkill(SkillData skillData, bool autoSave = true)
@@ -216,30 +235,96 @@ public class SkillTreeController : MonoBehaviour
         if (tree == null)
             return false;
 
-        foreach (SkillTreeNodeData node in tree.nodes)
-        {
-            if (node == null)
-                continue;
+        if (tree == defaultSkillTree)
+            return true;
 
-            if (IsNodeUnlocked(node.nodeId))
-                return true; // 이미 하나라도 해금했으면 표시
-
-            if (CanUnlockNodeInTree(tree, node.nodeId))
-                return true; // 하나라도 해금 가능하면 표시
-        }
-
-        return false; // 해금된 것도, 해금 가능한 것도 없으면 숨김
+        return playerProgress != null && playerProgress.unlockedSkillTreeIds.Contains(tree.id);
     }
 
-    private bool CanUnlockNodeInTree(SkillTreeData tree, string nodeId)
+    public bool UnlockSkillTree(SkillTreeData tree, bool autoSave = true)
     {
-        SkillTreeData beforeTree = currentData; // 원래 보고 있던 트리 저장
+        if (tree == null || playerProgress == null || string.IsNullOrEmpty(tree.id))
+            return false;
 
-        currentData = tree; // 검사할 트리로 잠깐 변경
-        bool result = CanUnlockNode(nodeId); // 기존 해금 가능 검사 재사용
-        currentData = beforeTree; // 다시 원래 트리로 복구
+        if (tree == defaultSkillTree || playerProgress.unlockedSkillTreeIds.Contains(tree.id))
+            return false;
 
-        return result;
+        playerProgress.unlockedSkillTreeIds.Add(tree.id);
+
+        if (autoSave)
+            SaveSystem.Save(playerProgress);
+
+        return true;
+    }
+
+    public int GetSkillPoints()
+    {
+        return playerProgress != null ? playerProgress.skillPoints : 0;
+    }
+
+    public bool AddSkillPoints(int amount, bool autoSave = true)
+    {
+        if (playerProgress == null || amount <= 0)
+            return false;
+
+        playerProgress.skillPoints += amount;
+
+        if (autoSave)
+            SaveSystem.Save(playerProgress);
+
+        OnSkillPointsChanged?.Invoke(playerProgress.skillPoints);
+        return true;
+    }
+
+    public bool GrantSkillPointReward(string rewardId, int amount)
+    {
+        if (playerProgress == null || string.IsNullOrEmpty(rewardId) || amount <= 0)
+            return false;
+
+        if (playerProgress.receivedRewardIds.Contains(rewardId))
+            return false;
+
+        playerProgress.receivedRewardIds.Add(rewardId);
+        playerProgress.skillPoints += amount;
+        SaveSystem.Save(playerProgress);
+        OnSkillPointsChanged?.Invoke(playerProgress.skillPoints);
+        return true;
+    }
+
+    private void EnsureProgressLists()
+    {
+        playerProgress.unlockedAbilityIds ??= new List<string>();
+        playerProgress.achievementIds ??= new List<string>();
+        playerProgress.unlockedSkillPool ??= new List<string>();
+        playerProgress.unlockedSkillNodeIds ??= new List<string>();
+        playerProgress.unlockedSkillTreeIds ??= new List<string>();
+        playerProgress.receivedRewardIds ??= new List<string>();
+    }
+
+    private void EnsureDefaultStartNodesUnlocked()
+    {
+        if (defaultSkillTree == null || defaultSkillTree.nodes == null)
+            return;
+
+        bool hasChanged = false;
+
+        foreach (SkillTreeNodeData node in defaultSkillTree.nodes)
+        {
+            if (node == null || !node.isStartNode)
+                continue;
+
+            if (!playerProgress.unlockedSkillNodeIds.Contains(node.nodeId))
+            {
+                playerProgress.unlockedSkillNodeIds.Add(node.nodeId);
+                hasChanged = true;
+            }
+
+            if (node.skillData != null && AddPermanentSkill(node.skillData, false))
+                hasChanged = true;
+        }
+
+        if (hasChanged && GameManager.Instance != null)
+            SaveSystem.Save(playerProgress);
     }
 
     private SkillTreeNodeData FindNodeBySkill(SkillData skillData)

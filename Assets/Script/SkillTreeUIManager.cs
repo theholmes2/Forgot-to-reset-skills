@@ -31,11 +31,25 @@ public class SkillTreeUIManager : MonoBehaviour
     [Header("Equip Popup")]
     public SkillTreeEquipPopupUI equipPopup; // 해금된 스킬 장착 팝업
 
+    [Header("Skill Point")]
+    public TMPro.TMP_Text skillPointText;
+
     private void Start()
     {
-       
-       
+        RefreshSkillPointText();
         CloseSkillTree(); // 시작할 때 닫아둠
+    }
+
+    private void OnEnable()
+    {
+        if (skillTreeController != null)
+            skillTreeController.OnSkillPointsChanged += OnSkillPointsChanged;
+    }
+
+    private void OnDisable()
+    {
+        if (skillTreeController != null)
+            skillTreeController.OnSkillPointsChanged -= OnSkillPointsChanged;
     }
 
     public void BuildTreeUI()
@@ -213,11 +227,23 @@ public class SkillTreeUIManager : MonoBehaviour
             if (!skillTreeController.CanUnlockNode(nodeId))
             {
                 Debug.Log("해금 조건을 만족하지 못함: " + nodeId);
+
+                if (GameSoundController.Instance != null)
+                    GameSoundController.Instance.PlayUnlockDenied();
+
                 RefreshAllNodes();
                 return;
             }
 
-            skillTreeController.UnlockNode(nodeId); // 해금 요청
+            if (!skillTreeController.UnlockNode(nodeId))
+            {
+                RefreshAllNodes();
+                return;
+            }
+
+            if (GameSoundController.Instance != null)
+                GameSoundController.Instance.PlayNodeUnlock();
+
             RefreshAllNodes(); // 해금 상태 UI 갱신
             isUnlocked = true;
         }
@@ -281,6 +307,7 @@ public class SkillTreeUIManager : MonoBehaviour
             treeViewObject.SetActive(false); // 스킬트리 화면 끄기
 
         BuildTabs();
+        RefreshSkillPointText();
         ClearTreeUI();
     }
 
@@ -378,6 +405,20 @@ public class SkillTreeUIManager : MonoBehaviour
 
         skillTreeController.SetCurrentTree(treeData);
         BuildTreeUI();
+    }
+
+    private void OnSkillPointsChanged(int skillPoints)
+    {
+        RefreshSkillPointText();
+        RefreshAllNodes();
+    }
+
+    private void RefreshSkillPointText()
+    {
+        if (skillPointText == null || skillTreeController == null)
+            return;
+
+        skillPointText.text = "SP " + skillTreeController.GetSkillPoints();
     }
 
 }

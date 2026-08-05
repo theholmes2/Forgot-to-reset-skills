@@ -7,7 +7,7 @@ public class EnemyAttackController : MonoBehaviour
     public EnemyMovement movement;   // 타겟/거리/공격 이동 담당
 
     public float attackCooldown = 2f;    // 공격 쿨타임
-    
+    private EnemySoundController soundController;
 
     private float lastAttackTime;
     private bool isAttacking;
@@ -29,6 +29,7 @@ public class EnemyAttackController : MonoBehaviour
             movement = GetComponent<EnemyMovement>();
 
         traitController = GetComponent<EnemyTraitController>();
+        soundController = GetComponent<EnemySoundController>();
     }
 
     private void Update()
@@ -132,6 +133,10 @@ public class EnemyAttackController : MonoBehaviour
         }
 
         hitBox.Init(GetAttackDamage(), activeTime);
+
+        if (soundController != null)
+            soundController.PlayAttackSound();
+
     }
 
     private void OnEnable()

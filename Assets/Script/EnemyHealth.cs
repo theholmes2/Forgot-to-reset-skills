@@ -14,12 +14,12 @@ public class EnemyHealth : MonoBehaviour
     private bool isDead; // 풀 재사용 대비, 중복 사망 방지
 
     public event Action<float, float> OnHealthChanged; // 현재 체력, 최대 체력 알림
-
+    private EnemySoundController soundController;
     private void Awake()
     {
         enemy = GetComponent<Enemy>();
         traitController = GetComponent<EnemyTraitController>();
-
+        soundController = GetComponent<EnemySoundController>();
         ResetHealth(); //  Awake에서도 ResetHealth를 통해 체력 초기화
     }
 
@@ -80,15 +80,23 @@ public class EnemyHealth : MonoBehaviour
         }
 
         currentHealth -= finalDamage;
-        OnHealthChanged?.Invoke(currentHealth, maxHealth); // 데미지 받은 뒤 UI 갱신
 
         if (currentHealth <= 0f)
         {
-            currentHealth = 0f; // 음수 체력 방지
-            OnHealthChanged?.Invoke(currentHealth, maxHealth); // 죽기 전 체력 0 표시
+            currentHealth = 0f;
+
+            if (soundController != null)
+                soundController.PlayDeathSound();
+
+            OnHealthChanged?.Invoke(currentHealth, maxHealth);
             Die();
             return;
         }
+
+        if (soundController != null)
+            soundController.PlayHitSound();
+
+        OnHealthChanged?.Invoke(currentHealth, maxHealth);
 
         enemy.OnDamaged(attacker); // 누가 때렸는지 Enemy에게 전달
     }

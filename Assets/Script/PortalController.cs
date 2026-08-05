@@ -42,6 +42,9 @@ public class PortalController : MonoBehaviour
         if (openRoutine != null)
             StopCoroutine(openRoutine);
 
+        if (GameSoundController.Instance != null)
+            GameSoundController.Instance.PlayPortalOpen();
+
         Debug.Log("포탈열기");
         openRoutine = StartCoroutine(PortalOpenRoutine());
     }
@@ -129,6 +132,9 @@ public class PortalController : MonoBehaviour
     {
         if (portalCollider != null)
             portalCollider.enabled = false; // 중복 진입 방지
+
+        if (GameSoundController.Instance != null)
+            GameSoundController.Instance.PlayPortalEnter();
 
         if (lockPlayerOnEnter)
         {

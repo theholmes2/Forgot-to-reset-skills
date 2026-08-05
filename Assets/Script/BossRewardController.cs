@@ -63,12 +63,31 @@ public class BossRewardController : MonoBehaviour
                     hasChanged = true;
                     receivedRewardNames.Add(reward.skillData.displayName);
                     break;
+
+                case RewardType.SkillPoint:
+                    if (string.IsNullOrEmpty(reward.id))
+                    {
+                        Debug.LogWarning("스킬 포인트 보상 ID가 비어 있습니다.");
+                        continue;
+                    }
+
+                    if (!skillTreeController.GrantSkillPointReward(reward.id, reward.amount))
+                        continue;
+
+                    hasChanged = true;
+                    receivedRewardNames.Add("스킬 포인트 " + reward.amount);
+                    break;
             }
         }
 
 
         if (receivedRewardNames.Count > 0)
+        {
             ShowRewardPanel(receivedRewardNames);
+
+            if (GameSoundController.Instance != null)
+                GameSoundController.Instance.PlayReward();
+        }
 
         return hasChanged;
     }

@@ -43,6 +43,9 @@ public class SkillTreeTabButtonUI : MonoBehaviour
         if (treeData == null || uiManager == null)
             return;
 
+        if (GameSoundController.Instance != null)
+            GameSoundController.Instance.PlayTabSwitch();
+
         uiManager.SelectTree(treeData); // 선택한 스킬트리 표시 요청
     }
 }

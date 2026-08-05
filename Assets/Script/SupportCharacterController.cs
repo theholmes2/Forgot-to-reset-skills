@@ -331,6 +331,9 @@ public class SupportCharacterController : MonoBehaviour
 
         float finalDamage = combatResolver.GetFinalAttackDamage(basicAttackSkillData);
         hitBox.Init(finalDamage, transform);
+
+        if (GameSoundController.Instance != null)
+            GameSoundController.Instance.PlaySupportAttack();
     }
 
     public void EndAttack()

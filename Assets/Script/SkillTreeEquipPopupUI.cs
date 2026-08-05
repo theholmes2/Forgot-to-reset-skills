@@ -125,6 +125,9 @@ public class SkillTreeEquipPopupUI : MonoBehaviour
 
         playerSkillController.SetSkill(key, selectedSkillData); // 실제 장착
 
+        if (GameSoundController.Instance != null)
+            GameSoundController.Instance.PlaySkillEquip();
+
         RefreshSlots(); // 슬롯 아이콘 갱신
         Close(); // 장착 후 닫기
     }

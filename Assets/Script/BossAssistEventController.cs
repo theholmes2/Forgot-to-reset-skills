@@ -103,6 +103,9 @@ public class BossAssistEventController : MonoBehaviour
         if (assistNpcObject != null)
             assistNpcObject.SetActive(true);
 
+        if (GameSoundController.Instance != null)
+            GameSoundController.Instance.PlaySupportAppear();
+
         if (assistCharacter != null && bossStageController != null && bossStageController.bossObject != null)
             assistCharacter.BeginAssist(bossStageController.bossObject.transform);
 

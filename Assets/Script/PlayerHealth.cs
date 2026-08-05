@@ -9,7 +9,9 @@ public class PlayerHealth : MonoBehaviour
 
     public PlayerStatController playerStatController; // 최종 스탯 계산기
     public PlayerAnimationController animationController;
+    private PlayerSoundController soundController;
     public event Action OnDied; // 플레이어 사망 알림
+    public event Action<float, float> OnHealthChanged; // 현재 체력, 최대 체력
    
     private bool isDead;
     public bool IsDead
@@ -25,6 +27,8 @@ public class PlayerHealth : MonoBehaviour
         if (animationController == null)
             animationController = GetComponent<PlayerAnimationController>();
 
+        soundController = GetComponentInChildren<PlayerSoundController>();
+
     }
 
     public void TakeDamage(float damage)
@@ -33,10 +37,11 @@ public class PlayerHealth : MonoBehaviour
             return;
 
         currentHealth -= damage;
+        currentHealth = Mathf.Max(currentHealth, 0f);
+        NotifyHealthChanged();
 
         if (currentHealth <= 0f)
         {
-            currentHealth = 0f;
             Die();
             return;
         }
@@ -51,6 +56,7 @@ public class PlayerHealth : MonoBehaviour
             return; // 이미 죽었으면 중복 처리 안 함
 
         currentHealth = 0f; // 체력을 0으로 만듦
+        NotifyHealthChanged();
         Die(); // 기존 사망/회귀 흐름 사용
     }
 
@@ -65,6 +71,8 @@ public class PlayerHealth : MonoBehaviour
 
         if (currentHealth > maxHealth)
             currentHealth = maxHealth;
+
+        NotifyHealthChanged();
     }
 
     private float GetMaxHealth()
@@ -84,6 +92,9 @@ public class PlayerHealth : MonoBehaviour
 
         if (animationController != null)
             animationController.PlayDie();
+
+        if (soundController != null)
+            soundController.PlayDeathSound();
 
 
         OnDied?.Invoke(); // 사망 알림
@@ -112,5 +123,20 @@ public class PlayerHealth : MonoBehaviour
             return 0f;
 
         return currentHealth / maxHealth; // 1 = 풀피, 0 = 사망
+    }
+
+    public float GetCurrentHealth()
+    {
+        return currentHealth;
+    }
+
+    public float GetMaximumHealth()
+    {
+        return GetMaxHealth();
+    }
+
+    private void NotifyHealthChanged()
+    {
+        OnHealthChanged?.Invoke(currentHealth, GetMaxHealth());
     }
 }

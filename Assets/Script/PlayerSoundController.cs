@@ -8,6 +8,7 @@ public class PlayerSoundController : MonoBehaviour
     [SerializeField] private AudioClip hitClip;
     [SerializeField] private AudioClip jumpClip;
     [SerializeField] private AudioClip landClip;
+    [SerializeField] private AudioClip deathClip;
 
     [Header("Skill")]
     [SerializeField] private AudioClip fireSlashClip;
@@ -53,5 +54,10 @@ public class PlayerSoundController : MonoBehaviour
             return;
 
         audioSource.PlayOneShot(clip);
+    }
+
+    public void PlayDeathSound()
+    {
+        PlayOneShot(deathClip);
     }
 }

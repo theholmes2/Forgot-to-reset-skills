@@ -42,6 +42,8 @@ public class PlayerSkillController : MonoBehaviour
 
     public PlayerAnimationController animationController;
     public PlayerStatController playerStatController;
+    private PlayerSoundController soundController;
+
     private void Awake()
     {
         if (combatResolver == null)
@@ -60,6 +62,10 @@ public class PlayerSkillController : MonoBehaviour
             if (facingRoot != null)
                 attackPoint = facingRoot.Find("AttackPoint");
         }
+
+        if (soundController == null)
+            soundController = GetComponentInChildren<PlayerSoundController>();
+
     }
 
     private void Update()
@@ -223,6 +229,10 @@ public class PlayerSkillController : MonoBehaviour
             float finalDamage = combatResolver.GetFinalAttackDamage(skillData); // 최종 데미지 계산
 
             projectile.Init(finalDamage, transform, skillData.id); // 투사체에 데미지/주인/스킬id 전달
+
+            if (soundController != null)
+                soundController.PlayFireSlashSound();
+
         }
 
         return true;

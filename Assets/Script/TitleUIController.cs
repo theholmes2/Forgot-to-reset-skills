@@ -27,6 +27,9 @@ public class TitleUIController : MonoBehaviour
         if (GameManager.Instance == null)
             return;
 
+        if (GameSoundController.Instance != null)
+            GameSoundController.Instance.PlayPersistentButtonClick();
+
         GameManager.Instance.StartNewGame();
     }
 
@@ -35,11 +38,17 @@ public class TitleUIController : MonoBehaviour
         if (GameManager.Instance == null)
             return;
 
+        if (GameSoundController.Instance != null)
+            GameSoundController.Instance.PlayPersistentButtonClick();
+
         GameManager.Instance.ContinueGame();
     }
 
     private void OnClickQuit()
     {
+        if (GameSoundController.Instance != null)
+            GameSoundController.Instance.PlayButtonClick();
+
         Application.Quit(); // 빌드된 게임 종료
     }
 }

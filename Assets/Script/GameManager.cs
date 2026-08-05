@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class GameManager : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class GameManager : MonoBehaviour
             DontDestroyOnLoad(gameObject); //파괴불가
 
             playerProgress = SaveSystem.Load(); //영구 데이터 받아오기
+            EnsureProgressData();
             StartNewRun(); // 회차 데이터 생성
         }
         else //이미 있다면
@@ -60,9 +62,21 @@ public class GameManager : MonoBehaviour
     public void ContinueGame()
     {
         playerProgress = SaveSystem.Load(); // 저장된 영구 데이터 불러오기
+        EnsureProgressData();
         StartNewRun(); // 저장된 영구 데이터 기반으로 회차 시작
 
         SceneManager.LoadScene(mainStageSceneIndex); // 메인 게임 시작
+    }
+
+    private void EnsureProgressData()
+    {
+        playerProgress ??= new PlayerProgress();
+        playerProgress.unlockedAbilityIds ??= new List<string>();
+        playerProgress.achievementIds ??= new List<string>();
+        playerProgress.unlockedSkillPool ??= new List<string>();
+        playerProgress.unlockedSkillNodeIds ??= new List<string>();
+        playerProgress.unlockedSkillTreeIds ??= new List<string>();
+        playerProgress.receivedRewardIds ??= new List<string>();
     }
 
 }
