@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 6bb89097b8b648648f657a7ed0a33871, type: 3}
   m_Name: LastBossData
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   id: enemy_last_boss
   displayName: "\uCD5C\uC885 \uBCF4\uC2A4"
   baseStats:
-    attack: 10
+    attack: 15
     defense: 5
     maxHp: 800
     maxMp: 50

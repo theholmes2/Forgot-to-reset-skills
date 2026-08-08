@@ -940,7 +940,7 @@ MonoBehaviour:
   baseStats:
     attack: 10
     defense: 5
-    maxHp: 100
+    maxHp: 150
     maxMp: 50
     moveSpeed: 5
     knockBack: 15

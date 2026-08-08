@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 6bb89097b8b648648f657a7ed0a33871, type: 3}
   m_Name: MiddleBossData
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
   id: enemy_middle_boss

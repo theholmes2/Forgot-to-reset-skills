@@ -9,14 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: TutorialBossEnemyData
+  m_Script: {fileID: 11500000, guid: 6bb89097b8b648648f657a7ed0a33871, type: 3}
+  m_Name: FirstBossData
   m_EditorClassIdentifier: Assembly-CSharp::EnemyData
-  id: enemy_tutorial_boss
-  displayName: "\uD29C\uD1A0\uB9AC\uC5BC \uBCF4\uC2A4"
+  id: enemy_first_boss
+  displayName: "\uCCAB \uBC88\uC9F8 \uBCF4\uC2A4"
   baseStats:
-    attack: 20
-    defense: 3
+    attack: 10
+    defense: 0
     maxHp: 250
     maxMp: 50
     moveSpeed: 2
@@ -27,6 +27,6 @@ MonoBehaviour:
     cooldownRate: 1
   rankValue: 1
   mainElement: 0
-  subElements: 
+  subElements:
   targetTags: 05000000
   elementModifiers: []

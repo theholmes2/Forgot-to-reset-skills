@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.U2D.Sprites;
@@ -205,3 +206,4 @@ public static class TailmapfixAutoSlicer
         );
     }
 }
+#endif

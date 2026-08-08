@@ -16189,6 +16189,7 @@ MonoBehaviour:
   tabRoot: {fileID: 2049259041}
   tabButtonPrefab: {fileID: 9202819005129301306, guid: 4895d8c6675c9cf47a9a1d43002bf75a, type: 3}
   equipPopup: {fileID: 318748692}
+  skillPointText: {fileID: 0}
 --- !u!1 &1521233052
 GameObject:
   m_ObjectHideFlags: 0
@@ -17295,6 +17296,9 @@ MonoBehaviour:
     rank: 0
     unlockedSkillPool: []
     unlockedSkillNodeIds: []
+    skillPoints: 0
+    unlockedSkillTreeIds: []
+    receivedRewardIds: []
   runState:
     currentStage: 1
     level: 1
@@ -31185,6 +31189,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1435637989611995902, guid: 562c6b11f94e97144b95ddfce895016f, type: 3}
+      propertyPath: enemyData
+      value: 
+      objectReference: {fileID: 11400000, guid: b2c60454d1e4d1d4b97d4eb508b53f4d, type: 2}
     - target: {fileID: 2057040593140167677, guid: 562c6b11f94e97144b95ddfce895016f, type: 3}
       propertyPath: knockBack
       value: 100
