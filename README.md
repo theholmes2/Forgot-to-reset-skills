@@ -6,7 +6,7 @@
 
 ## 플레이 영상
 
-[![Forgot to Reset Skills 플레이 영상](https://img.youtube.com/vi/LBZl-mAA8Mo/maxresdefault.jpg)](https://youtu.be/LBZl-mAA8Mo)
+[![Forgot to Reset Skills 플레이 영상](https://img.youtube.com/vi/LBZl-mAA8Mo/maxresdefault.jpg)](https://youtu.be/LhA1kfT_OqA)
 
 ▶ **[YouTube에서 전체 플레이 영상 보기](https://youtu.be/LhA1kfT_OqA)**
 
